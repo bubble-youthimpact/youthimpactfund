@@ -1,0 +1,40 @@
+name: Build pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "data/site.json"
+      - "data/portfolio.json"
+      - "scripts/build_pages.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate clean-URL pages, sitemap and 404
+        run: python scripts/build_pages.py
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Pages already up to date."
+          else
+            git commit -m "Rebuild pages"
+            git push
+          fi
