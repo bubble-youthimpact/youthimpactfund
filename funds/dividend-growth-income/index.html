@@ -1278,14 +1278,14 @@ V.campaigns = () => `${pageHead("Campaigns", "Campaigns & petitions", "We use ou
     <div class="tx"><h2>${esc(c.title)}</h2><p>${esc((c.summary || c.body).replace(/\[[^\]]*\]/g, ""))}</p><a class="pill-link" href="#campaign-${esc(c.id)}">${c.petition ? "Read and sign →" : "Click to see details →"}</a></div></article>`; }).join("")}</div>`;
 
 function petitionBox(c) {
-  const n = signCount(c), goal = n == null ? 0 : nextGoal(n), mine = store.get("yif:signed:" + c.id, null), u = DB.user;
+  const n = signCount(c), goal = n == null ? 0 : nextGoal(n), mine = S.justSigned?.cid === c.id ? S.justSigned.name : null, u = DB.user;
   const site = c.url ? (/change\.org/.test(c.url) ? "Change.org" : new URL(c.url).hostname.replace(/^www\./, "")) : "";
   return `<section class="sign" id="sign" aria-labelledby="signTitle">
     <div class="sign-count"><b class="num" id="signNum">${n == null ? "…" : fmtN(n)}</b><span id="signTitle">${n === 1 ? "person has" : "people have"} signed this petition</span></div>
     <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="${goal}" aria-valuenow="${n || 0}"><i style="width:${n == null ? 0 : Math.max(2, Math.min(100, n / goal * 100))}%"></i></div>
     <div class="goal">${n == null ? "Loading signatures…" : `Next goal: ${fmtN(goal)} signatures`}</div>
-    ${mine ? `<div class="signed">${CHECK}<div><b>Thank you, ${esc(firstName(mine))}!</b> Your signature has been added.${c.url && /change\.org/.test(c.url) ? ` You can also add your name on <a href="${esc(c.url)}" target="_blank" rel="noopener" style="text-decoration:underline">${esc(site)}</a>.` : ""}</div></div>`
-    : `<form data-act="sign" data-id="${esc(c.id)}" novalidate>
+    ${mine ? `<div class="signed">${CHECK}<div><b>Thank you, ${esc(firstName(mine))}!</b> Your signature has been added.${c.url && /change\.org/.test(c.url) ? ` You can also add your name on <a href="${esc(c.url)}" target="_blank" rel="noopener" style="text-decoration:underline">${esc(site)}</a>.` : ""}</div></div>` : ""}
+    ${`<form data-act="sign" data-id="${esc(c.id)}" novalidate>
         <label class="sr" for="sgName" style="position:absolute;left:-9999px">Full name</label><input id="sgName" name="name" placeholder="Full name" autocomplete="name" value="${esc(u?.name || "")}" required maxlength="100">
         <label class="sr" for="sgEmail" style="position:absolute;left:-9999px">Email</label><input id="sgEmail" name="email" type="email" placeholder="Email" autocomplete="email" value="${esc(u?.email || "")}" required>
         <label class="consent" id="signConsent"><input type="checkbox" id="sgAgree"><span>I agree to the <a href="#terms" target="_blank">Terms of Service</a> and <a href="#privacy" target="_blank">Privacy Policy</a>.</span></label>
@@ -1551,6 +1551,7 @@ function fixLinks(root = document) {
 }
 function route() {
   const h = currentId();
+  if (S.lastRoute !== h) { S.justSigned = null; S.lastRoute = h; }
   let html, after = "", nav = h.split("-")[0];
   let m;
   if (h === "home" || h === "") html = V.home();
@@ -1723,7 +1724,9 @@ document.addEventListener("submit", async e => {
     btn.disabled = true; btn.textContent = "Adding your signature…";
     try {
       await DB.sign(cid, name, email);
-      store.set("yif:signed:" + cid, name);
+      S.justSigned = { cid, name };
+      ["sgName", "sgEmail"].forEach(id => { const i = $("#" + id); if (i) i.value = ""; }); $("#sgAgree").checked = false;
+      btn.disabled = false; btn.textContent = "Sign this petition";
       L["pet:" + cid] = (L["pet:" + cid] || 0) + 1; rerender();
       $("#signNum")?.classList.add("pop"); toast("Thank you for signing!");
       setTimeout(() => DB.petitionCount(cid).then(v => { L["pet:" + cid] = v; rerender(); }).catch(() => {}), 1500);
