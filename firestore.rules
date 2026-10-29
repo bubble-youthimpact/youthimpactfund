@@ -1,0 +1,95 @@
+rules_version = '2';
+
+// Paste into Firebase console → Firestore Database → Rules, then Publish.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() { return request.auth != null; }
+
+    // ---------- Petitions ----------
+    // petitions/{campaignId}            { count, last }   public counter
+    // petitions/{campaignId}/signatures/{sha256(email)}   private (name, email)
+    match /petitions/{cid} {
+      allow read: if true;
+      allow create: if request.resource.data.keys().hasOnly(['count', 'last'])
+        && request.resource.data.count == 1
+        && existsAfter(/databases/$(database)/documents/petitions/$(cid)/signatures/$(request.resource.data.last));
+      allow update: if request.resource.data.keys().hasOnly(['count', 'last'])
+        && request.resource.data.count == resource.data.count + 1
+        && !exists(/databases/$(database)/documents/petitions/$(cid)/signatures/$(request.resource.data.last))
+        && existsAfter(/databases/$(database)/documents/petitions/$(cid)/signatures/$(request.resource.data.last));
+
+      match /signatures/{sid} {
+        allow create: if request.resource.data.keys().hasOnly(['name', 'email', 'uid', 'created'])
+          && request.resource.data.name is string
+          && request.resource.data.name.size() > 0 && request.resource.data.name.size() <= 100
+          && request.resource.data.email is string
+          && request.resource.data.email.matches('^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$')
+          && request.resource.data.created == request.time
+          && (request.resource.data.uid == null || (signedIn() && request.resource.data.uid == request.auth.uid))
+          && getAfter(/databases/$(database)/documents/petitions/$(cid)).data.last == sid;
+        allow read, update, delete: if false;   // only visible in the Firebase console
+      }
+    }
+
+    // ---------- Report votes (one vote per member, can be changed) ----------
+    // votes/{reportId}               { agree, disagree, hold }   public totals
+    // votes/{reportId}/ballots/{uid} { choice, created, updated } each member's own vote
+    match /votes/{rid} {
+      function ballotPath() { return /databases/$(database)/documents/votes/$(rid)/ballots/$(request.auth.uid); }
+      function n(f) { return request.resource.data.get(f, 0); }
+      function o(f) { return resource == null ? 0 : resource.data.get(f, 0); }
+      function same(f, a, b) { return f == a || f == b || n(f) == o(f); }
+      function firstVote(c) {
+        return !exists(ballotPath()) && n(c) == o(c) + 1
+          && same('agree', c, c) && same('disagree', c, c) && same('hold', c, c);
+      }
+      function changedVote(a, b) {
+        return a != b && n(b) == o(b) + 1 && n(a) == o(a) - 1
+          && same('agree', a, b) && same('disagree', a, b) && same('hold', a, b);
+      }
+      allow read: if true;
+      allow create, update: if signedIn()
+        && request.resource.data.keys().hasOnly(['agree', 'disagree', 'hold'])
+        && existsAfter(ballotPath())
+        && (firstVote(getAfter(ballotPath()).data.choice)
+            || (exists(ballotPath()) && changedVote(get(ballotPath()).data.choice, getAfter(ballotPath()).data.choice)));
+
+      match /ballots/{uid} {
+        allow read: if signedIn() && request.auth.uid == uid;
+        allow create: if signedIn() && request.auth.uid == uid
+          && request.resource.data.keys().hasOnly(['choice', 'created'])
+          && request.resource.data.choice in ['agree', 'disagree', 'hold']
+          && request.resource.data.created == request.time;
+        allow update: if signedIn() && request.auth.uid == uid
+          && request.resource.data.keys().hasOnly(['choice', 'created', 'updated'])
+          && request.resource.data.choice in ['agree', 'disagree', 'hold']
+          && request.resource.data.choice != resource.data.choice
+          && request.resource.data.created == resource.data.created
+          && request.resource.data.updated == request.time;
+        allow delete: if false;
+      }
+    }
+
+    // ---------- Lesson likes & comments ----------
+    match /lessons/{lid} {
+      match /likes/{uid} {
+        allow read: if true;
+        allow create: if signedIn() && request.auth.uid == uid
+          && request.resource.data.keys().hasOnly(['created']);
+        allow delete: if signedIn() && request.auth.uid == uid;
+      }
+      match /comments/{id} {
+        allow read: if true;
+        allow create: if signedIn()
+          && request.resource.data.keys().hasOnly(['uid', 'name', 'text', 'created'])
+          && request.resource.data.uid == request.auth.uid
+          && request.resource.data.name is string && request.resource.data.name.size() <= 100
+          && request.resource.data.text is string
+          && request.resource.data.text.size() > 0 && request.resource.data.text.size() <= 1000
+          && request.resource.data.created == request.time;
+        allow delete: if signedIn() && resource.data.uid == request.auth.uid;
+      }
+    }
+  }
+}

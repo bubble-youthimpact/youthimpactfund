@@ -1,0 +1,217 @@
+{
+  "_note": "returnMode 'live' computes total return from shares x latest price; set it to 'reported' to show reportedReturn instead. Allocation % is each holding's cost basis share.",
+  "returnMode": "live",
+  "reportedReturn": 27.92,
+  "holdings": [
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc",
+      "purchase": 113.785,
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information",
+      "logo": "assets/logos/googl.webp",
+      "shares": 15,
+      "info": {
+        "founded": "1998",
+        "product": "Google Services, Google Cloud, and Other Bets segments",
+        "marketCap": "2.13T",
+        "revenue": "318.15B",
+        "profitMargin": "25.90%",
+        "operatingMargin": "32.52%",
+        "peRatio": "1.79",
+        "beta": "1.05",
+        "float": "11.05B"
+      },
+      "url": "https://finance.yahoo.com/quote/GOOGL"
+    },
+    {
+      "symbol": "META",
+      "name": "Meta",
+      "purchase": 315.41,
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information",
+      "logo": "assets/logos/meta.webp",
+      "shares": 5,
+      "info": {
+        "founded": "2004",
+        "product": "Facebook, Instagram, Threads, WhatsApp, and Reality Labs (AR, VR)",
+        "marketCap": "1.12T",
+        "revenue": "142.71B",
+        "profitMargin": "32.06%",
+        "operatingMargin": "39.61%",
+        "peRatio": "1.03",
+        "beta": "1.18",
+        "float": "2.19B"
+      },
+      "url": "https://finance.yahoo.com/quote/META"
+    },
+    {
+      "symbol": "MSFT",
+      "name": "Microsoft",
+      "purchase": 285.81,
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "logo": "assets/logos/msft.webp",
+      "shares": 10,
+      "info": {
+        "founded": "1975",
+        "product": "Software, services, devices, and solutions",
+        "marketCap": "3.02T",
+        "revenue": "236.58B",
+        "profitMargin": "36.43%",
+        "operatingMargin": "44.59%",
+        "peRatio": "2.06",
+        "beta": "0.88",
+        "float": "7.42B"
+      },
+      "url": "https://finance.yahoo.com/quote/MSFT"
+    },
+    {
+      "symbol": "BEPC",
+      "name": "Brookfield Renewable Corp",
+      "purchase": 35.98,
+      "sector": "Utilities",
+      "industry": "Utilities - Renewable",
+      "logo": "assets/logos/bepc.webp",
+      "shares": 50,
+      "info": {
+        "founded": "2019",
+        "product": "Renewable power and sustainable solution assets (hydroelectric, wind, and solar power plants)",
+        "marketCap": "4.17B",
+        "revenue": "4.55B",
+        "profitMargin": "-3.98%",
+        "operatingMargin": "43.51%",
+        "peRatio": "N/A",
+        "beta": "0.89",
+        "float": "124.62M"
+      },
+      "url": "https://finance.yahoo.com/quote/BEPC"
+    },
+    {
+      "symbol": "C",
+      "name": "Citigroup Inc",
+      "purchase": 71.208,
+      "sector": "Financial Services",
+      "industry": "Banks - Diversified",
+      "logo": "assets/logos/c.webp",
+      "shares": 15,
+      "info": {
+        "founded": "1812",
+        "product": "Diversified financial services holding company (various financial products and services)",
+        "marketCap": "119.52B",
+        "revenue": "69.65B",
+        "profitMargin": "11.48%",
+        "operatingMargin": "25.54%",
+        "peRatio": "1.01",
+        "beta": "1.50",
+        "float": "1.85B"
+      },
+      "url": "https://finance.yahoo.com/quote/C"
+    },
+    {
+      "symbol": "DIS",
+      "name": "Walt Disney Company",
+      "purchase": 138.661,
+      "sector": "Communication Services",
+      "industry": "Entertainment",
+      "logo": "assets/logos/dis.webp",
+      "shares": 7,
+      "info": {
+        "founded": "1923",
+        "product": "Entertainment company (Disney Media and Entertainment Distribution and Disney Parks)",
+        "marketCap": "206.78B",
+        "revenue": "88.93B",
+        "profitMargin": "3.36%",
+        "operatingMargin": "12.89%",
+        "peRatio": "0.81",
+        "beta": "1.39",
+        "float": "1.83B"
+      },
+      "url": "https://finance.yahoo.com/quote/DIS"
+    },
+    {
+      "symbol": "GE",
+      "name": "General Electric",
+      "purchase": 81.2,
+      "sector": "Industrials",
+      "industry": "Specialty Industrial Machinery",
+      "logo": "assets/logos/ge.webp",
+      "shares": 20,
+      "info": {
+        "founded": "1892",
+        "product": "High-tech industrial company that provides both hardware and software for power generation, industrial, government, etc.",
+        "marketCap": "177.71B",
+        "revenue": "69.52B",
+        "profitMargin": "5.05%",
+        "operatingMargin": "9.61%",
+        "peRatio": "1.95",
+        "beta": "1.24",
+        "float": "1.09B"
+      },
+      "url": "https://finance.yahoo.com/quote/GE"
+    },
+    {
+      "symbol": "GM",
+      "name": "General Motors",
+      "purchase": 52.43,
+      "sector": "Consumer Cyclical",
+      "industry": "Auto Manufacturers",
+      "logo": "assets/logos/gm.webp",
+      "shares": 10,
+      "info": {
+        "founded": "1908",
+        "product": "Trucks, crossovers, cars, and automobile parts; software-enabled services and subscriptions",
+        "marketCap": "52.28B",
+        "revenue": "174.87B",
+        "profitMargin": "6.13%",
+        "operatingMargin": "8.88%",
+        "peRatio": "0.81",
+        "beta": "1.51",
+        "float": "1.14B"
+      },
+      "url": "https://finance.yahoo.com/quote/GM"
+    },
+    {
+      "symbol": "TSM",
+      "name": "TSMC",
+      "purchase": 111.17,
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "logo": "assets/logos/tsm.webp",
+      "shares": 15,
+      "info": {
+        "founded": "1987",
+        "product": "Manufactures, packages, tests, and sells integrated circuits and other semiconductor devices",
+        "marketCap": "3.22T",
+        "revenue": "2.25T",
+        "profitMargin": "38.16%",
+        "operatingMargin": "42.02%",
+        "peRatio": "7.78",
+        "beta": "1.24",
+        "float": "24.17B"
+      },
+      "url": "https://finance.yahoo.com/quote/TSM"
+    },
+    {
+      "symbol": "XPEV",
+      "name": "Xpeng Inc",
+      "purchase": 43.363,
+      "sector": "Consumer Cyclical",
+      "industry": "Auto Manufacturers",
+      "logo": "assets/logos/xpev.webp",
+      "shares": 10,
+      "info": {
+        "founded": "2015",
+        "product": "Smart electric vehicles (EV)",
+        "marketCap": "7.30B",
+        "revenue": "30.68B",
+        "profitMargin": "-33.82%",
+        "operatingMargin": "-15.33%",
+        "peRatio": "N/A",
+        "beta": "2.92",
+        "float": "1.21B"
+      },
+      "url": "https://finance.yahoo.com/quote/XPEV"
+    }
+  ]
+}

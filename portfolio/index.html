@@ -1,0 +1,1818 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<base href="/">
+<script>window.YIF_CLEAN = true;</script>
+<!--seo-->
+<title>Portfolio · Youth Impact Fund</title>
+<meta name="description" content="Holdings, returns and allocation of the main Youth Impact Fund portfolio, updated during market hours.">
+<link rel="canonical" href="https://youthimpactfund.com/portfolio/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Youth Impact Fund">
+<meta property="og:title" content="Portfolio · Youth Impact Fund">
+<meta property="og:description" content="Holdings, returns and allocation of the main Youth Impact Fund portfolio, updated during market hours.">
+<meta property="og:url" content="https://youthimpactfund.com/portfolio/">
+<meta property="og:image" content="https://youthimpactfund.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Portfolio · Youth Impact Fund">
+<meta name="twitter:description" content="Holdings, returns and allocation of the main Youth Impact Fund portfolio, updated during market hours.">
+<meta name="twitter:image" content="https://youthimpactfund.com/assets/og-image.png">
+<!--/seo-->
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="color-scheme" content="light only">
+<meta name="theme-color" content="#003EDD">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif:wght@400;600&display=swap">
+<style>
+/* Layout: one centered 880px column on a pale blue-grey ground; blue is the only brand color. Single light theme by choice (matches the live site). */
+:root {
+  color-scheme: light only;
+  --bg: #EFF3F8;
+  --surface: #FFFFFF;
+  --ink: #111318;
+  --ink-2: #3C4250;
+  --muted: #6E7686;
+  --line: #DCE2EA;
+  --blue: #003EDD;
+  --blue-ink: #FFFFFF;
+  --blue-soft: #D3E3FA;
+  --chip: #E9EDF3;
+  --orange: #F07A3C;
+  --gain: #F04452;      /* Korean market convention: up = red */
+  --loss: #12A95E;      /*                           down = green */
+  --gain-on-blue: #FF6B6B;
+  --loss-on-blue: #3BE37A;
+  --font: "Manrope", "Noto Sans KR", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif: "Noto Serif", Georgia, "Times New Roman", serif;
+  --w: 1500px;
+  --r: 22px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 400 15px/1.55 var(--font); -webkit-font-smoothing: antialiased;
+  min-height: 100vh; display: flex; flex-direction: column;
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+button { font: inherit; color: inherit; cursor: pointer; border: 0; background: none; }
+html, body { color-scheme: light only; }
+input, textarea, select { color-scheme: light only; background-color: #fff; color: var(--ink); font: inherit; }
+input::placeholder, textarea::placeholder { color: #8A92A1; opacity: 1; }
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, textarea:-webkit-autofill {
+  -webkit-text-fill-color: var(--ink); -webkit-box-shadow: 0 0 0 1000px #fff inset; caret-color: var(--ink); transition: background-color 9999s; }
+.comment input, .composer textarea, .search input { background-color: transparent; }
+.search input { background-color: var(--surface); }
+:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-radius: 6px; }
+h1, h2, h3 { margin: 0; text-wrap: balance; letter-spacing: -0.02em; }
+p { margin: 0; }
+.num { font-variant-numeric: tabular-nums; }
+
+.wrap {
+  width: 100%; max-width: calc(var(--w) + 32px); margin-inline: auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+
+/* ---------- header ---------- */
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--bg); }
+.site-header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(8px); }
+.nav { display: flex; align-items: center; gap: 24px; height: 64px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 14px; line-height: 1.2; flex: none; }
+.brand img, .brand svg { width: auto; height: 32px; }
+.menu { display: flex; gap: 26px; margin-left: auto; font-size: 14px; font-weight: 500; }
+.menu a { padding: 6px 0; color: var(--ink-2); border-bottom: 2px solid transparent; }
+.menu a:hover { color: var(--ink); }
+.menu a[aria-current="page"] { color: var(--blue); border-color: var(--blue); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; height: 40px; padding: 0 22px; border-radius: 999px; font-weight: 500; font-size: 14px; transition: transform .15s, background .15s; }
+.btn:active { transform: scale(.97); }
+.btn-blue { background: var(--blue); color: var(--blue-ink); }
+.btn-blue:hover { background: #0034BC; }
+.btn-white { background: var(--surface); color: var(--blue); }
+.btn-outline { height: 30px; padding: 0 13px; border: 1px solid var(--ink); font-size: 12px; }
+.btn-outline:hover { background: var(--ink); color: var(--surface); }
+#acctSlot > .btn-blue { margin-left: 28px; }
+.burger { display: none; width: 42px; height: 42px; border-radius: 12px; margin-left: 8px; position: relative; flex: none; }
+.burger:hover { background: var(--chip); }
+.burger span { position: absolute; left: 11px; width: 20px; height: 2px; border-radius: 2px; background: var(--ink); transition: transform .25s, opacity .2s, top .25s; }
+.burger span:nth-child(1) { top: 14px; } .burger span:nth-child(2) { top: 20px; } .burger span:nth-child(3) { top: 26px; }
+.burger[aria-expanded="true"] span:nth-child(1) { top: 20px; transform: rotate(45deg); }
+.burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.burger[aria-expanded="true"] span:nth-child(3) { top: 20px; transform: rotate(-45deg); }
+.menu-acct { display: none; }
+@media (max-width: 900px) {
+  .burger { display: block; }
+  #acctSlot { display: none; }
+  .burger { margin-left: auto; }
+  .menu { position: absolute; top: 100%; left: 0; right: 0; height: calc(100dvh - 64px - env(safe-area-inset-top, 0px)); margin: 0; flex-direction: column; gap: 0; background: var(--bg);
+    padding: 12px max(20px, env(safe-area-inset-right, 0px)) calc(24px + env(safe-area-inset-bottom, 0px)) max(20px, env(safe-area-inset-left, 0px)); overflow-y: auto;
+    opacity: 0; visibility: hidden; transform: translateY(-8px); transition: opacity .2s, transform .2s, visibility 0s .2s; }
+  .menu.open { opacity: 1; visibility: visible; transform: none; transition: opacity .2s, transform .2s; }
+  .menu > a { display: flex; justify-content: space-between; align-items: center; padding: 16px 4px; font-size: 22px; font-weight: 600; letter-spacing: -0.02em; color: var(--ink); border-bottom: 1px solid var(--line); }
+  .menu > a::after { content: "→"; font-size: 18px; color: var(--muted); font-weight: 400; transition: transform .15s; }
+  .menu > a:hover::after { transform: translateX(3px); color: var(--blue); }
+  .menu > a[aria-current="page"] { color: var(--blue); border-color: var(--line); }
+  .menu > a[aria-current="page"]::after { color: var(--blue); }
+  .menu-acct { display: flex; flex-direction: column; gap: 10px; margin-top: auto; padding-top: 28px; }
+  .menu-acct .btn { height: 48px; font-size: 15px; font-weight: 600; width: 100%; }
+  .menu-acct .btn-white { box-shadow: 0 0 0 1px var(--line) inset; }
+  .menu-acct a.btn { border: 0; padding: 0 22px; }
+  .menu-acct .btn-blue, .menu-acct .btn-blue:hover { color: #fff; }
+  .menu-acct .btn-white, .menu-acct .btn-white:hover { color: var(--blue); }
+  .menu-acct .me { display: flex; align-items: center; gap: 12px; background: var(--surface); border-radius: 16px; padding: 14px 16px; }
+  .menu-acct .me .avatar { width: 40px; height: 40px; color: #fff; font-size: 14px; }
+  .menu-acct .me b { display: block; font-size: 15px; } .menu-acct .me span { font-size: 13px; color: var(--muted); overflow-wrap: anywhere; }
+  body.menu-open { overflow: hidden; }
+  #acctSlot > .btn-blue { margin-left: 0; height: 38px; padding: 0 16px; }
+  .acct { margin-left: 0; }
+  .acct-btn .nm { display: none; }
+  .acct-btn { padding: 0 5px; }
+}
+@media (max-width: 900px) and (prefers-reduced-motion: reduce) { .menu, .menu.open { transition: none; transform: none; } }
+
+/* ---------- shared ---------- */
+main { flex: 1; padding-block: 28px 96px; }
+.stack { display: flex; flex-direction: column; gap: 16px; }
+.panel { background: var(--surface); border-radius: var(--r); padding: 36px; }
+.page-title { font-size: clamp(32px, 6vw, 48px); font-weight: 600; line-height: 1.1; margin: 28px 0 28px; }
+.page-title.center { text-align: center; }
+.eyebrow { font-size: 13px; letter-spacing: .06em; text-transform: uppercase; }
+.section-title { font-size: 26px; font-weight: 600; margin: 48px 0 24px; }
+.empty { padding: 48px 24px; text-align: center; color: var(--muted); background: var(--surface); border-radius: var(--r); }
+.empty strong { display: block; color: var(--ink); font-size: 17px; margin-bottom: 6px; }
+.back { display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 14px 0 10px; margin: 8px 0 22px; border-radius: 999px; background: var(--surface); color: var(--ink-2); font-size: 13.5px; font-weight: 600; box-shadow: 0 0 0 1px var(--line) inset; transition: color .15s, box-shadow .15s, background .15s; }
+.back svg { transition: transform .15s; }
+.back:hover { color: var(--blue); box-shadow: 0 0 0 1px var(--blue) inset; }
+.back:hover svg { transform: translateX(-3px); }
+.chg { font-weight: 600; font-variant-numeric: tabular-nums; }
+.up { color: var(--gain); } .down { color: var(--loss); }
+.placeholder-img { background: linear-gradient(135deg, var(--blue-soft), #EDF2FB); color: var(--blue); display: grid; place-items: center; font-weight: 700; }
+
+/* ---------- home ---------- */
+.hero { background: var(--blue-soft); border-radius: var(--r); padding: 40px 34px; display: grid; grid-template-columns: 1fr 220px; align-items: center; gap: 24px; }
+.hero h1 { font-size: clamp(32px, 6vw, 46px); font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; }
+.hero p { margin: 14px 0 26px; }
+.hero .row { display: flex; gap: 14px; flex-wrap: wrap; }
+.hero-art { width: 100%; max-width: 220px; justify-self: end; margin-block: -20px; }
+.about-row .art img { width: 100%; max-width: 200px; }
+.about-row { display: grid; grid-template-columns: 200px 1fr; gap: 40px; align-items: center; }
+.about-row h2, .port-row h2 { font-size: 26px; font-weight: 700; }
+.about-row p { margin: 14px 0 20px; }
+.port-row { display: grid; grid-template-columns: 260px 1fr; gap: 28px; align-items: center; padding: 28px 34px; }
+.port-row .intro p { margin-top: 14px; color: var(--ink-2); }
+.cards-wrap { position: relative; }
+.refresh { position: absolute; top: -2px; right: -6px; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; z-index: 1; background: var(--surface); }
+.refresh:hover { background: var(--chip); }
+.refresh.spin svg { animation: spin .8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.stock-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; padding-right: 30px; }
+.stock { border: 1px solid #EEF1F5; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; min-width: 0; background: var(--surface); }
+.stock .rank { font-size: 13px; }
+.logo-box { width: 28px; height: 28px; margin: 8px 0 10px; border-radius: 7px; display: grid; place-items: center; font-size: 12px; font-weight: 800; color: #fff; overflow: hidden; }
+.logo-box img { width: 100%; height: 100%; object-fit: contain; }
+.logo-box.has-img { border-radius: 0; overflow: visible; width: auto; min-width: 28px; max-width: 80px; justify-items: start; }
+.logo-box.has-img img { width: auto; height: 28px; max-width: 80px; object-fit: contain; object-position: left center; }
+.stock .sym { font-size: 15px; font-weight: 500; }
+.stock .co { font-size: 10px; color: var(--muted); min-height: 15px; overflow-wrap: anywhere; }
+.stock .chg { font-size: 18px; text-align: right; margin: 10px 0 8px; font-weight: 500; }
+.kv { display: flex; justify-content: space-between; gap: 8px; font-size: 11px; }
+.kv b { font-weight: 600; }
+.kv.small { font-size: 9.5px; color: var(--muted); margin-top: 3px; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.mini { display: flex; flex-direction: column; }
+.mini h2 { font-size: 26px; font-weight: 600; padding-bottom: 8px; border-bottom: 1px solid var(--ink-2); margin-bottom: 16px; }
+.mini.blue-soft { background: var(--blue-soft); }
+.mini ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+.mini li a:hover { color: var(--blue); }
+.mini-camps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.mini-camp { background: var(--surface); border-radius: 12px; overflow: hidden; font-size: 13px; line-height: 1.4; display: flex; flex-direction: column; }
+.mini-camp .im { aspect-ratio: 3/2; }
+.mini-camp .im img { width: 100%; height: 100%; object-fit: cover; }
+.mini-camp p { padding: 14px 12px 18px; }
+.mini-camp:hover p { color: var(--blue); }
+.view-more { margin-top: auto; padding-top: 28px; }
+.view-more a { display: flex; justify-content: center; align-items: center; height: 36px; border-radius: 999px; background: #EEF1F5; font-size: 14px; }
+.view-more a:hover { background: var(--chip); color: var(--blue); }
+.mini.blue-soft .view-more a { background: var(--surface); }
+
+/* home: hero, holdings, funds */
+.home-hero { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: 40px; align-items: center; margin-top: 28px; }
+.home-hero .eyebrow { color: var(--blue); font-weight: 600; font-size: 12px; }
+.home-hero h1 { font-size: clamp(36px, 5.4vw, 60px); font-weight: 800; line-height: 1.04; letter-spacing: -0.035em; margin-top: 12px; }
+.home-hero p { color: var(--ink-2); font-size: 16px; line-height: 1.65; margin-top: 18px; max-width: 560px; }
+.home-hero .row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 26px; }
+.hero-art2 { position: relative; aspect-ratio: 1; max-width: 460px; width: 100%; justify-self: center; display: grid; place-items: center; }
+.hero-art2 .glow { position: absolute; inset: 8%; border-radius: 50%; background: radial-gradient(circle at 50% 45%, rgba(0,62,221,.22), rgba(0,62,221,.08) 45%, transparent 70%); animation: pulse 6s ease-in-out infinite; }
+.hero-art2 .ring { position: absolute; border-radius: 50%; border: 1px dashed rgba(0,62,221,.22); }
+.hero-art2 .r1 { inset: 12%; animation: spin 60s linear infinite; }
+.hero-art2 .r2 { inset: 0; border-style: solid; border-color: rgba(0,62,221,.08); }
+.hero-art2 img { position: relative; width: 78%; filter: drop-shadow(0 24px 30px rgba(0,30,110,.18)); animation: float 5s ease-in-out infinite; }
+.hero-art2 .shadow { position: absolute; bottom: 10%; width: 46%; height: 6%; border-radius: 50%; background: radial-gradient(rgba(0,30,110,.22), transparent 70%); animation: shadow 5s ease-in-out infinite; }
+@keyframes float { 0%, 100% { transform: translateY(0) rotate(-1deg); } 50% { transform: translateY(-14px) rotate(1deg); } }
+@keyframes shadow { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(.82); opacity: .6; } }
+@keyframes pulse { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.05); opacity: .8; } }
+@media (prefers-reduced-motion: reduce) { .hero-art2 img, .hero-art2 .shadow, .hero-art2 .glow, .hero-art2 .r1 { animation: none; } }
+.stack > .ab-stats { margin-top: 24px; }
+.hold-list { background: var(--surface); border-radius: var(--r); padding: 6px 24px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 48px; }
+.hrow { display: grid; grid-template-columns: 52px minmax(0, 1fr) auto 90px; gap: 14px; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.hold-list .hrow:nth-last-child(-n+2) { border-bottom: 0; }
+.hrow .logo-box { margin: 0; width: 52px; min-width: 52px; max-width: 52px; justify-items: center; }
+.hrow .logo-box img { max-width: 52px; object-position: center; }
+.hrow .nm { min-width: 0; }
+.hrow .nm b { display: block; font-size: 15px; font-weight: 600; }
+.hrow .nm small { display: block; font-size: 12.5px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hrow .px { font-size: 14px; color: var(--ink-2); }
+.hrow .chg { text-align: right; font-size: 15px; }
+.hrow:hover .nm b { color: var(--blue); }
+.hfunds { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.hfund { background: var(--surface); border-radius: 18px; padding: 18px; display: flex; gap: 14px; align-items: center; transition: box-shadow .15s, transform .15s; min-width: 0; }
+.hfund:hover { box-shadow: 0 10px 26px rgba(17,19,24,.08); transform: translateY(-2px); }
+.hfund .ic { width: 56px; height: 56px; flex: none; border-radius: 14px; background: var(--blue-soft); display: grid; place-items: center; font-size: 28px; overflow: hidden; }
+.hfund .ic img { width: 80%; height: 80%; object-fit: contain; }
+.hfund h3 { font-size: 15px; font-weight: 700; line-height: 1.3; letter-spacing: -0.01em; }
+.hfund span { font-size: 13px; color: var(--muted); }
+.hfund:hover h3 { color: var(--blue); }
+@media (max-width: 960px) { .home-hero { grid-template-columns: 1fr; } .hero-art2 { max-width: 340px; } .hfunds { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 760px) { .hold-list { grid-template-columns: 1fr; padding: 4px 18px; } .hold-list .hrow:nth-last-child(2) { border-bottom: 1px solid var(--line); } }
+@media (max-width: 600px) { .hero-art2 { display: none; } .home-hero { margin-top: 12px; } }
+@media (max-width: 480px) { .hfunds { grid-template-columns: 1fr; } .hrow { grid-template-columns: 44px minmax(0, 1fr) auto; } .hrow .px { display: none; } .hrow .logo-box { width: 44px; min-width: 44px; } }
+
+/* home: reports + campaigns */
+.see-all { font-size: 14px; font-weight: 600; color: var(--blue); }
+.see-all:hover { text-decoration: underline; text-underline-offset: 3px; }
+.stack > .sec-title { margin: 40px 0 2px; }
+.hcamps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.hcamp { background: var(--surface); border-radius: var(--r); overflow: hidden; display: flex; flex-direction: column; transition: box-shadow .15s, transform .15s; }
+.hcamp:hover { box-shadow: 0 12px 30px rgba(17,19,24,.08); transform: translateY(-2px); }
+.hcamp .im { aspect-ratio: 16/8; }
+.hcamp .im img { width: 100%; height: 100%; object-fit: cover; }
+.hcamp .tx { padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.hcamp .d { font-size: 12.5px; color: var(--muted); }
+.hcamp h3 { font-size: 17px; font-weight: 700; line-height: 1.35; letter-spacing: -0.01em; }
+.hcamp:hover h3 { color: var(--blue); }
+.hcamp .go { margin-top: auto; padding-top: 6px; font-size: 13.5px; font-weight: 600; color: var(--blue); }
+@media (max-width: 860px) { .hcamps { grid-template-columns: 1fr; } .hcamp { flex-direction: row; } .hcamp .im { width: 38%; aspect-ratio: auto; flex: none; } }
+@media (max-width: 480px) { .hcamp { flex-direction: column; } .hcamp .im { width: 100%; aspect-ratio: 16/9; } }
+
+/* ---------- portfolio ---------- */
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.kpi { background: var(--surface); border-radius: 18px; padding: 20px 22px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.kpi span { font-size: 12.5px; color: var(--muted); }
+.kpi b { font-size: clamp(22px, 2.6vw, 30px); font-weight: 700; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.kpi small { font-size: 12.5px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.kpi.lead { background: var(--blue); }
+.kpi.lead span, .kpi.lead small { color: rgba(255,255,255,.8); }
+.kpi.lead b, .kpi.lead b.up, .kpi.lead b.down { color: #fff; }
+.kpi .dir { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 600; border-radius: 999px; padding: 3px 9px; white-space: nowrap; align-self: flex-start; }
+.kpi .dir.up { background: #FDECEE; } .kpi .dir.down { background: #E7F6EE; }
+.ptable-wrap { background: var(--surface); border-radius: var(--r); overflow-x: auto; }
+.ptable { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 820px; }
+.ptable th { text-align: right; font-size: 11.5px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); padding: 14px 18px; background: #F7F9FC; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.ptable th:first-child, .ptable td:first-child { text-align: left; }
+.ptable td { text-align: right; padding: 14px 18px; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.ptable tbody tr { cursor: pointer; transition: background .12s; }
+.ptable tbody tr:hover { background: #F7F9FC; }
+.ptable tbody tr:last-child td { border-bottom: 0; }
+.ptable .co { display: flex; align-items: center; gap: 12px; }
+.ptable .co .logo-box { margin: 0; flex: none; width: 52px; min-width: 52px; max-width: 52px; justify-items: center; }
+.ptable .co .logo-box img { max-width: 52px; object-position: center; }
+.ptable .co b { display: block; font-weight: 600; }
+.ptable .co small { display: block; color: var(--muted); font-size: 12px; white-space: normal; }
+.wbar { display: inline-flex; align-items: center; gap: 10px; justify-content: flex-end; }
+.wbar i { display: block; width: 80px; height: 6px; border-radius: 999px; background: var(--chip); overflow: hidden; }
+.wbar i em { display: block; height: 100%; background: var(--blue); }
+.ptable tfoot td { font-weight: 700; background: #F7F9FC; border-top: 1px solid var(--line); border-bottom: 0; }
+.ret-pill { display: inline-block; min-width: 76px; text-align: right; font-weight: 600; }
+.alloc-tabs { display: flex; gap: 6px; margin-bottom: 22px; flex-wrap: wrap; }
+@media (max-width: 860px) { .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.ret-box { background: var(--blue); color: #fff; border-radius: var(--r); padding: 28px 30px; display: grid; grid-template-columns: minmax(0, 1.1fr) 1fr; gap: 24px; align-items: center; }
+.ret-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.ret-table th { text-align: left; font-size: 11px; font-weight: 500; padding-bottom: 6px; }
+.ret-table td { padding: 4px 0; }
+.ret-table .up { color: var(--gain-on-blue); } .ret-table .down { color: var(--loss-on-blue); }
+.big-ret { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.big-ret .v { display: flex; align-items: center; gap: 16px; font-size: clamp(40px, 7vw, 64px); font-weight: 700; letter-spacing: -0.02em; }
+.big-ret small { font-size: 12px; opacity: .8; }
+.alloc h3 { font-size: 14px; font-weight: 500; margin-bottom: 12px; }
+.alloc-row { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 32px; align-items: center; margin-bottom: 48px; }
+.alloc-row:last-child { margin-bottom: 0; }
+.pie { width: 100%; max-width: 280px; }
+.ltable { width: 100%; border-collapse: collapse; font-size: 13px; }
+.ltable th { background: #F2F4F7; font-weight: 500; padding: 9px 12px; border-bottom: 1px solid var(--line); }
+.ltable th + th, .ltable td + td { border-left: 1px solid var(--line); text-align: center; width: 30%; }
+.ltable td { padding: 8px 12px; border-bottom: 1px solid #EEF0F3; }
+.sw { display: inline-block; width: 12px; height: 12px; border-radius: 2px; margin-right: 8px; vertical-align: -1px; }
+
+/* ---------- reports ---------- */
+/* reports page */
+.rp-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin: 28px 0 22px; }
+.rp-head h1, .rp-head h2 { font-size: clamp(28px, 4.6vw, 40px); font-weight: 600; line-height: 1.1; }
+.rp-head p { color: var(--ink-2); font-size: 14px; margin-top: 8px; max-width: 520px; }
+.rp-head .count { font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.votes { display: flex; flex-direction: column; gap: 14px; }
+.vcard { background: var(--surface); border-radius: var(--r); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; padding: 26px 30px; align-items: center; min-width: 0; }
+.vcard .vl { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.vcard .vr { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.tag { align-self: flex-start; font-size: 11px; font-weight: 600; letter-spacing: .02em; color: var(--blue); background: var(--blue-soft); border-radius: 999px; padding: 3px 9px; }
+.vcard h3 { font-size: 18px; font-weight: 600; line-height: 1.3; letter-spacing: -0.01em; }
+.vcard .by { font-size: 13px; color: var(--ink-2); }
+.vcard .by a { color: var(--blue); }
+.tally { display: flex; height: 8px; border-radius: 999px; overflow: hidden; background: var(--chip); margin-top: 4px; }
+.tally i { display: block; height: 100%; transition: width .5s ease; }
+.c-agree { background: var(--blue); } .c-disagree { background: #E5484D; } .c-hold { background: #7B8596; }
+.legend { display: flex; gap: 4px 10px; flex-wrap: wrap; font-size: 12px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.legend span { display: inline-flex; align-items: center; gap: 5px; }
+.legend i { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.seg { display: flex; flex-wrap: wrap; gap: 10px; padding-top: 6px; }
+.vbtn { background: var(--chip); border-radius: 999px; height: 40px; padding: 0 20px; font-size: 14px; font-weight: 500; display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-width: 0; white-space: nowrap; }
+.vbtn:hover:not(:disabled) { background: #DDE3EC; }
+.vbtn svg { color: var(--blue); flex: none; }
+.vote-note { font-size: 12px; color: var(--muted); }
+.lib-tools { display: flex; gap: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap; margin-bottom: 20px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { height: 32px; padding: 0 12px; border-radius: 999px; font-size: 13px; font-weight: 500; background: var(--surface); color: var(--ink-2); display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 0 0 1px var(--line) inset; }
+.chip:hover { color: var(--ink); }
+.chip small { font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.chip[aria-pressed="true"] { background: var(--ink); color: #fff; box-shadow: none; }
+.chip[aria-pressed="true"] small { color: rgba(255,255,255,.7); }
+.search { position: relative; flex: 0 1 240px; min-width: 180px; }
+.search input { width: 100%; height: 36px; border-radius: 999px; border: 0; box-shadow: 0 0 0 1px var(--line) inset; background: var(--surface); padding: 0 14px 0 34px; font: inherit; font-size: 13px; }
+.search input:focus { outline: 2px solid var(--blue); box-shadow: none; }
+.search svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--muted); }
+.lib { background: var(--surface); border-radius: var(--r); overflow: hidden; }
+.rrow { display: grid; grid-template-columns: 170px minmax(0, 1fr) 190px 64px; gap: 20px; align-items: center; padding: 16px 24px; border-top: 1px solid var(--line); text-align: left; width: 100%; transition: background .12s; }
+.rrow:first-child { border-top: 0; }
+.rrow:hover { background: #F7F9FC; }
+.rrow .tag { justify-self: start; align-self: center; }
+.rrow h3 { font-size: 15px; font-weight: 600; line-height: 1.4; letter-spacing: -0.01em; }
+.rrow:hover h3 { color: var(--blue); }
+.rrow .au { font-size: 13.5px; color: var(--ink-2); }
+.rrow .go { font-size: 13px; font-weight: 600; color: var(--blue); justify-self: end; }
+@media (max-width: 1100px) and (min-width: 861px) { .rrow, .lib-head { grid-template-columns: 150px minmax(0, 1fr) 150px 50px; gap: 16px; } }
+.lib-head { display: grid; grid-template-columns: 170px minmax(0, 1fr) 190px 64px; gap: 20px; padding: 12px 24px; font-size: 11.5px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); background: #F7F9FC; border-bottom: 1px solid var(--line); }
+.more { display: flex; justify-content: center; margin-top: 28px; }
+.doc { aspect-ratio: 1; border-radius: 16px; background: var(--surface); overflow: hidden; position: relative; padding: 14% 10% 0; font-family: var(--serif); }
+.doc::before { content: ""; position: absolute; top: 0; left: 10%; right: 0; height: 5px; background: var(--blue); border-radius: 0 0 0 4px; }
+.doc .dt { font-size: 9.5px; font-weight: 600; line-height: 1.3; }
+.doc .da { font-size: 7px; text-align: right; margin: 8px 0 10px; font-weight: 600; }
+.doc i { display: block; height: 3px; background: #E3E6EB; border-radius: 2px; margin-bottom: 5px; }
+.doc.cover { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0; text-align: center; }
+.doc.cover::before { display: none; }
+.doc.cover .dt { color: #1F3A8A; font-weight: 400; font-size: 11px; }
+.doc.cover .da { text-align: center; color: #1F3A8A; font-weight: 400; margin: 6px 0 0; }
+.doc:has(img)::before { display: none; }
+.doc img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+
+/* ---------- funds ---------- */
+.fund-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.fund-card { border-radius: var(--r); padding: 28px 26px; min-height: 240px; display: flex; flex-direction: column; background: var(--blue-soft); transition: transform .2s; }
+.fund-card:hover { transform: translateY(-3px); }
+.fund-card.dark { background: var(--blue); color: #fff; }
+.fund-card .mgr { font-size: 12px; }
+.fund-card h3 { font-size: 18px; font-weight: 600; margin-top: 10px; line-height: 1.3; }
+.fund-card .ic { margin-top: auto; align-self: flex-end; font-size: 58px; line-height: 1; width: 72px; height: 72px; display: grid; place-items: center; }
+.fund-card .ic img { width: 100%; height: 100%; object-fit: contain; }
+.fund-hero { background: var(--blue); color: #fff; border-radius: var(--r); padding: 64px 84px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.fund-hero h1 { font-size: clamp(28px, 5vw, 36px); font-weight: 700; line-height: 1.2; }
+.fund-hero p { font-size: 13px; margin-top: 12px; }
+.fund-hero .ic { flex: none; width: 120px; height: 120px; border-radius: 20px; overflow: hidden; display: grid; place-items: center; font-size: 88px; line-height: 1; }
+.fund-hero .ic img { width: 100%; height: 100%; object-fit: contain; }
+.fund-body { max-width: none; }
+.prose { background: var(--surface); border-radius: var(--r); padding: 32px 28px; display: flex; flex-direction: column; gap: 18px; font-size: 14.5px; color: var(--ink); }
+.prose strong { font-weight: 700; }
+.prose ul, .prose ol { margin: 6px 0; padding-left: 22px; display: flex; flex-direction: column; gap: 4px; }
+.prose ul ul { margin-top: 4px; }
+.prose a { color: var(--blue); text-decoration: underline; text-underline-offset: 2px; overflow-wrap: anywhere; }
+.keys { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; }
+.keys .prose { padding: 22px; font-size: 14px; gap: 10px; }
+.fund-hero .totals { display: flex; gap: 28px; margin-top: 22px; flex-wrap: wrap; }
+.fund-hero .totals div { display: flex; flex-direction: column; gap: 2px; }
+.fund-hero .totals span { font-size: 11px; opacity: .75; text-transform: uppercase; letter-spacing: .06em; }
+.fund-hero .totals b { font-size: 18px; font-weight: 600; }
+.camp-meta { display: flex; gap: 14px; flex-wrap: wrap; color: var(--muted); font-size: 13px; margin: -12px 0 22px; }
+.stock-link { display: flex; flex-direction: column; min-width: 0; }
+.stock-link .stock { flex: 1; transition: box-shadow .15s; }
+.stock-link:hover .stock { box-shadow: 0 0 0 1.5px var(--blue) inset; }
+.info-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; margin-top: 24px; }
+.info-grid div { box-shadow: 1px 0 0 var(--line), 0 1px 0 var(--line); padding: 16px 18px; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.info-grid span { font-size: 12px; color: var(--muted); }
+.info-grid b { font-size: 16px; font-weight: 600; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.stock-head { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.stock-head .logo-box { width: 56px; height: 56px; margin: 0; border-radius: 14px; font-size: 20px; }
+.stock-head .logo-box.has-img { width: auto; max-width: 140px; border-radius: 0; }
+.stock-head .logo-box.has-img img { height: 56px; max-width: 140px; }
+.stock-head h1 { font-size: 30px; font-weight: 700; }
+.stock-head .px { margin-left: auto; text-align: right; }
+.stock-head .px b { font-size: 28px; font-weight: 700; display: block; }
+.hold-wrap { background: var(--surface); border-radius: var(--r); padding: 28px; position: relative; }
+.hold-wrap .stock-grid { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); padding-right: 40px; }
+.hold-wrap .refresh { top: 22px; right: 22px; }
+.comp { background: var(--surface); border-radius: var(--r); padding: 36px 40px; display: grid; grid-template-columns: 300px minmax(0, 860px); justify-content: center; gap: 64px; align-items: center; }
+.comp .ltable td + td { text-align: right; padding-right: 18px; } .comp .ltable th + th, .comp .ltable td + td { width: auto; }
+
+/* ---------- page header (shared) ---------- */
+.ph-head { margin: 28px 0 34px; max-width: 640px; }
+.ph-head .eyebrow { color: var(--blue); font-weight: 600; font-size: 12px; }
+.ph-head h1 { font-size: clamp(32px, 5.4vw, 46px); font-weight: 700; line-height: 1.08; margin-top: 10px; letter-spacing: -0.03em; }
+.ph-head p { color: var(--ink-2); font-size: 15.5px; margin-top: 14px; line-height: 1.6; }
+.sec-title { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 56px 0 18px; }
+.sec-title h2 { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; }
+.sec-title span { color: var(--muted); font-size: 13px; }
+
+/* ---------- team ---------- */
+.team-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 40px 24px; background: var(--surface); border-radius: var(--r); padding: 48px 32px 44px; }
+@media (max-width: 860px) { .team-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 32px 16px; } }
+.person { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4px; }
+.person .ph { width: min(160px, 100%); aspect-ratio: 1; border-radius: 50%; overflow: hidden; font-size: 34px; background: #E9EEF5; margin-bottom: 14px; box-shadow: 0 0 0 1px var(--line); }
+.person .ph img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; }
+.person h3 { font-size: 17px; font-weight: 700; letter-spacing: -0.01em; }
+.person p { font-size: 14px; color: var(--muted); line-height: 1.4; }
+.mgr-list { background: var(--surface); border-radius: var(--r); padding: 6px 28px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 48px; }
+@media (max-width: 760px) { .mgr-list { grid-template-columns: 1fr; padding: 6px 18px; } }
+.mrow { display: flex; align-items: flex-start; gap: 14px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+.mgr-list .mrow:last-child, .mgr-list .mrow:nth-last-child(2):nth-child(odd) { border-bottom: 0; }
+@media (max-width: 760px) { .mgr-list .mrow:nth-last-child(2):nth-child(odd) { border-bottom: 1px solid var(--line); } }
+.mrow .avatar { width: 36px; height: 36px; font-size: 12px; background: var(--chip); color: var(--ink-2); flex: none; }
+.mrow b { font-size: 15px; font-weight: 600; display: block; margin-bottom: 2px; }
+.mrow a { display: block; font-size: 14px; color: var(--ink-2); line-height: 1.5; }
+.mrow a:hover { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---------- curriculum ---------- */
+.course-hero { background: var(--blue); color: #fff; border-radius: var(--r); padding: 44px 44px 40px; display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: end; margin-top: 12px; }
+.course-hero .eyebrow { opacity: .75; font-weight: 600; font-size: 12px; }
+.course-hero h1 { font-size: clamp(30px, 5vw, 42px); font-weight: 700; line-height: 1.1; margin-top: 10px; letter-spacing: -0.03em; white-space: pre-line; }
+.course-hero p { margin-top: 14px; opacity: .85; white-space: pre-line; max-width: 560px; font-size: 15px; }
+.course-hero .facts { display: flex; gap: 22px; font-size: 13px; }
+.course-hero .facts b { display: block; font-size: 24px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.lessons { display: flex; flex-direction: column; gap: 10px; margin-top: 24px; }
+.lesson { display: flex; align-items: center; gap: 16px; background: var(--surface); border-radius: 16px; padding: 16px 18px; font-size: 15px; transition: box-shadow .15s; }
+.lesson:hover { box-shadow: 0 0 0 1.5px var(--blue) inset; }
+.lesson .n { flex: none; width: 40px; height: 40px; border-radius: 12px; background: var(--blue-soft); color: var(--blue); font-weight: 700; display: grid; place-items: center; font-variant-numeric: tabular-nums; }
+.lesson:hover .n { background: var(--blue); color: #fff; }
+.lesson .t { font-weight: 600; flex: 1; min-width: 0; }
+.lesson .d { color: var(--muted); display: flex; align-items: center; gap: 14px; flex: none; font-size: 13px; }
+.lesson .d span { display: inline-flex; align-items: center; gap: 5px; }
+.course-card { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 16px; }
+.course-card h3 { font-size: 20px; font-weight: 600; white-space: pre-line; }
+.course-card p { color: var(--ink-2); margin-top: 8px; font-size: 14px; }
+.watch { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 20px; align-items: start; margin-top: 8px; }
+.player { aspect-ratio: 16/9; border-radius: 20px; overflow: hidden; position: relative; display: grid; place-items: center; background: radial-gradient(120% 120% at 15% 10%, #2B63F0 0%, #0034BC 45%, #071E66 100%); color: #fff; }
+.player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: #000; }
+.player .cap { position: absolute; left: 28px; bottom: 24px; right: 28px; }
+.player .cap span { font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; opacity: .75; }
+.player .cap b { display: block; font-size: clamp(20px, 3.4vw, 30px); font-weight: 700; letter-spacing: -0.02em; margin-top: 6px; line-height: 1.15; }
+.player .play { width: 72px; height: 72px; border-radius: 50%; background: #fff; color: var(--blue); display: grid; place-items: center; box-shadow: 0 10px 30px rgba(0,0,0,.25); transition: transform .2s; }
+.player .play svg { width: 28px; height: 28px; margin-left: 4px; }
+.player .play:hover { transform: scale(1.06); }
+.player .note { position: absolute; top: 18px; right: 20px; font-size: 12px; background: rgba(255,255,255,.15); border-radius: 999px; padding: 4px 10px; }
+.lesson-info { background: var(--surface); border-radius: 20px; padding: 22px 24px; margin-top: 14px; }
+.lesson-info .crumb { font-size: 13px; color: var(--muted); }
+.lesson-info .crumb a { color: var(--blue); }
+.lesson-info h1 { font-size: clamp(22px, 3.4vw, 28px); font-weight: 700; letter-spacing: -0.02em; margin-top: 6px; }
+.lesson-info .acts { display: flex; gap: 8px; margin-top: 16px; align-items: center; flex-wrap: wrap; }
+.pill { display: inline-flex; align-items: center; gap: 7px; height: 36px; padding: 0 14px; border-radius: 999px; background: var(--chip); font-size: 13px; font-weight: 500; }
+button.pill:hover, a.pill:hover { background: #DDE3EC; }
+.likebtn[aria-pressed="true"] { background: #FDECEE; color: var(--gain); }
+.likebtn[aria-pressed="true"] svg { fill: currentColor; }
+.discuss { background: var(--surface); border-radius: 20px; padding: 22px 24px; margin-top: 14px; }
+.discuss h2 { font-size: 18px; font-weight: 700; letter-spacing: -0.01em; }
+.discuss h2 span { color: var(--muted); font-weight: 500; margin-left: 6px; }
+.composer { display: flex; gap: 12px; margin-top: 16px; align-items: flex-start; }
+.composer .box { flex: 1; min-width: 0; border: 1px solid #C9CED6; border-radius: 14px; padding: 10px 12px; display: flex; flex-direction: column; gap: 8px; transition: border-color .15s; }
+.composer .box:focus-within { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(0,62,221,.12); }
+.composer textarea { border: 0; outline: 0; resize: none; font: inherit; font-size: 14px; min-height: 44px; background: transparent; }
+.composer .row { display: flex; justify-content: space-between; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); }
+.composer .btn { height: 34px; padding: 0 16px; font-size: 13px; }
+.comments { list-style: none; margin: 22px 0 0; padding: 0; display: flex; flex-direction: column; gap: 18px; }
+.comments li { display: flex; gap: 12px; }
+.comments .avatar { width: 36px; height: 36px; font-size: 12px; }
+.comments .body { flex: 1; min-width: 0; font-size: 14px; }
+.comments .body b { font-weight: 600; margin-right: 8px; }
+.comments .body time { font-size: 12px; color: var(--muted); }
+.comments .body p { margin-top: 3px; white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.55; }
+.comments .del { font-size: 12px; color: var(--muted); }
+.comments .del:hover { color: var(--gain); }
+.no-comments { color: var(--muted); font-size: 14px; margin-top: 18px; }
+.playlist { background: var(--surface); border-radius: 20px; padding: 18px; position: sticky; top: calc(76px + env(safe-area-inset-top, 0px)); }
+.playlist h3 { font-size: 15px; font-weight: 700; white-space: pre-line; line-height: 1.3; }
+.playlist .sub { font-size: 12px; color: var(--muted); margin: 4px 0 12px; }
+.playlist .prog { height: 4px; background: var(--chip); border-radius: 999px; overflow: hidden; margin-bottom: 12px; }
+.playlist .prog i { display: block; height: 100%; background: var(--blue); }
+.playlist ol { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.playlist a { display: flex; gap: 12px; align-items: center; padding: 10px; border-radius: 12px; font-size: 13.5px; }
+.playlist a:hover { background: var(--bg); }
+.playlist a[aria-current="true"] { background: var(--blue-soft); }
+.playlist .k { flex: none; width: 28px; height: 28px; border-radius: 8px; background: var(--chip); display: grid; place-items: center; font-size: 12px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.playlist a[aria-current="true"] .k { background: var(--blue); color: #fff; }
+.playlist .lt { flex: 1; min-width: 0; font-weight: 500; line-height: 1.3; }
+.playlist .lt small { display: block; color: var(--muted); font-weight: 400; margin-top: 2px; }
+
+/* ---------- campaigns ---------- */
+.camp { display: grid; grid-template-columns: 36% 1fr; background: var(--surface); border-radius: var(--r); overflow: hidden; min-height: 220px; }
+.camp .im { min-height: 200px; font-size: 44px; }
+.camp .im img { width: 100%; height: 100%; object-fit: cover; }
+.camp .tx { padding: 26px 28px; display: flex; flex-direction: column; gap: 16px; align-items: flex-start; min-width: 0; }
+.camp h2 { font-size: 21px; font-weight: 600; line-height: 1.25; }
+.camp p { font-size: 12.5px; color: var(--ink-2); display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
+.pill-link { background: var(--chip); border-radius: 999px; padding: 5px 14px; font-size: 12.5px; }
+.pill-link:hover { background: var(--blue-soft); color: var(--blue); }
+.camp-layout { display: grid; grid-template-columns: minmax(0, 1fr) 400px; gap: 32px; align-items: start; }
+.camp-side { position: sticky; top: calc(84px + env(safe-area-inset-top, 0px)); }
+.camp-side .sign { margin-bottom: 0; }
+.camp-side .sign form { grid-template-columns: 1fr; }
+@media (max-width: 960px) { .camp-layout { grid-template-columns: 1fr; } .camp-side { position: static; order: -1; } }
+.camp-detail .im { aspect-ratio: 21/9; max-height: 520px; width: 100%; border-radius: var(--r); overflow: hidden; font-size: 64px; margin-bottom: 28px; }
+.camp-detail img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* ---------- about ---------- */
+.ab-hero { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 40px; align-items: start; margin-top: 28px; }
+.ab-hero .eyebrow { color: var(--blue); font-weight: 600; font-size: 12px; }
+.ab-hero h1 { font-size: clamp(36px, 6vw, 56px); font-weight: 800; line-height: 1.02; letter-spacing: -0.035em; margin-top: 12px; white-space: pre-line; }
+.ab-hero p { color: var(--ink-2); font-size: 16px; line-height: 1.6; margin-top: 18px; max-width: 460px; }
+.ab-hero .row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 26px; }
+.ab-art { background: var(--blue-soft); border-radius: 28px; aspect-ratio: 1; display: grid; place-items: center; position: relative; overflow: hidden; }
+.ab-art::before { content: ""; position: absolute; width: 70%; aspect-ratio: 1; border-radius: 50%; background: rgba(255,255,255,.55); }
+.ab-art img { position: relative; width: 74%; }
+.ab-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--line); border-radius: 20px; overflow: hidden; margin-top: 40px; }
+.ab-stats div { background: var(--surface); padding: 22px 22px 20px; }
+.ab-stats b { display: block; font-size: clamp(24px, 3.4vw, 32px); font-weight: 800; letter-spacing: -0.02em; color: var(--blue); font-variant-numeric: tabular-nums; }
+.ab-stats span { font-size: 13px; color: var(--ink-2); }
+.mission-band { background: var(--blue); color: #fff; border-radius: var(--r); padding: 44px 44px 46px; margin-top: 56px; }
+.mission-band .eyebrow { opacity: .75; font-weight: 600; font-size: 12px; }
+.mission-band h2 { font-size: clamp(24px, 3.8vw, 34px); font-weight: 700; letter-spacing: -0.025em; margin-top: 10px; max-width: 640px; line-height: 1.2; }
+.pillars { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 32px; }
+.pillar { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.18); border-radius: 18px; padding: 22px; }
+.pillar .ic { width: 52px; height: 52px; border-radius: 14px; background: #fff; display: grid; place-items: center; font-size: 26px; }
+.pillar .ic img { width: 34px; height: 34px; object-fit: contain; }
+.pillar h3 { font-size: 20px; font-weight: 700; margin: 18px 0 8px; letter-spacing: -0.01em; }
+.pillar p { font-size: 13.5px; line-height: 1.6; opacity: .88; }
+.explore { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.ex { background: var(--surface); border-radius: 18px; padding: 20px; display: flex; flex-direction: column; gap: 6px; transition: box-shadow .15s, transform .15s; }
+.ex:hover { box-shadow: 0 10px 26px rgba(17,19,24,.08); transform: translateY(-2px); }
+.ex b { font-size: 28px; font-weight: 800; color: var(--blue); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.ex h3 { font-size: 15px; font-weight: 700; }
+.ex p { font-size: 13px; color: var(--ink-2); line-height: 1.5; }
+.ex .go { margin-top: auto; padding-top: 8px; font-size: 13px; color: var(--blue); font-weight: 600; }
+.faces { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; background: var(--surface); border-radius: 20px; padding: 18px 22px; }
+.faces .stack-av { display: flex; }
+.faces .stack-av img, .faces .stack-av span { width: 46px; height: 46px; border-radius: 50%; border: 3px solid var(--surface); object-fit: cover; margin-left: -10px; background: var(--blue-soft); }
+.faces .stack-av :first-child { margin-left: 0; }
+.faces p { flex: 1; min-width: 200px; font-size: 14px; color: var(--ink-2); }
+.faces p b { color: var(--ink); }
+.join { background: var(--blue-soft); border-radius: var(--r); padding: 34px; display: grid; grid-template-columns: auto 1fr auto; gap: 22px; align-items: center; margin-top: 56px; }
+.join .ic img { width: 64px; height: 64px; }
+.join h2 { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; }
+.join p { font-size: 14px; color: var(--ink-2); margin-top: 6px; }
+.join .row { display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* ---------- login ---------- */
+.login { max-width: 420px; margin: 24px auto; }
+.login form { display: flex; flex-direction: column; gap: 14px; margin-top: 20px; }
+.login label { font-size: 13px; font-weight: 600; display: flex; flex-direction: column; gap: 6px; }
+.login input { height: 44px; border: 1px solid #C9CED6; border-radius: 12px; padding: 0 14px; font: inherit; }
+.login input:focus { outline: 2px solid var(--blue); border-color: transparent; }
+.login .msg { font-size: 13px; color: var(--ink-2); background: var(--chip); border-radius: 12px; padding: 12px 14px; }
+
+/* ---------- account / auth ---------- */
+.acct { position: relative; margin-left: 28px; }
+.acct-btn { display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 14px 0 5px; border-radius: 999px; background: var(--surface); font-size: 14px; font-weight: 500; box-shadow: 0 0 0 1px var(--line) inset; }
+.avatar { width: 30px; height: 30px; border-radius: 50%; background: var(--blue); color: #fff; display: grid; place-items: center; font-size: 12px; font-weight: 700; flex: none; }
+.acct-menu { position: absolute; right: 0; top: 48px; background: var(--surface); border-radius: 14px; box-shadow: 0 12px 32px rgba(17,19,24,.14); padding: 8px; min-width: 220px; z-index: 30; }
+.acct-menu .who { padding: 10px 12px 12px; border-bottom: 1px solid var(--line); margin-bottom: 6px; font-size: 13px; }
+.acct-menu .who b { display: block; font-size: 14px; }
+.acct-menu .who span { color: var(--muted); overflow-wrap: anywhere; }
+.acct-menu button { width: 100%; text-align: left; padding: 10px 12px; border-radius: 8px; font-size: 14px; }
+.acct-menu button:hover { background: var(--chip); }
+.btn-google { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; height: 44px; border-radius: 12px; border: 1px solid #C9CED6; background: var(--surface); font-weight: 600; font-size: 14px; margin-top: 22px; }
+.btn-google:hover { background: #F7F9FC; }
+.or { display: flex; align-items: center; gap: 12px; color: var(--muted); font-size: 12px; margin: 18px 0 4px; }
+.or::before, .or::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+.login .sub { color: var(--ink-2); font-size: 14px; margin-top: 8px; }
+.login form .btn { height: 44px; }
+.linkbtn { color: var(--blue); font-size: 13px; padding: 0; align-self: flex-start; }
+.linkbtn:hover { text-decoration: underline; }
+.msg.error { background: #FDECEE; color: #B42318; }
+.msg.ok { background: #E7F6EE; color: #0B7A45; }
+.preview-note { font-size: 12px; color: var(--muted); background: var(--chip); border-radius: 10px; padding: 10px 12px; margin-top: 16px; line-height: 1.5; }
+
+/* ---------- petitions ---------- */
+.sign { background: var(--surface); border-radius: var(--r); padding: 26px 28px; margin-bottom: 28px; box-shadow: 0 0 0 2px var(--blue) inset; }
+.sign-count { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.sign-count b { font-size: 34px; font-weight: 800; letter-spacing: -0.02em; color: var(--blue); font-variant-numeric: tabular-nums; }
+.sign-count span { color: var(--ink-2); }
+.bar { height: 8px; border-radius: 999px; background: var(--chip); overflow: hidden; margin: 12px 0 6px; }
+.bar i { display: block; height: 100%; background: var(--blue); border-radius: 999px; transition: width .6s ease; }
+.goal { font-size: 12px; color: var(--muted); }
+.sign form { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 18px; }
+.sign input { height: 44px; border: 1px solid #C9CED6; border-radius: 12px; padding: 0 14px; font: inherit; min-width: 0; }
+.sign input:focus { outline: 2px solid var(--blue); border-color: transparent; }
+.sign form .btn { grid-column: 1 / -1; height: 46px; font-size: 15px; font-weight: 600; }
+.sign .fine { grid-column: 1 / -1; font-size: 12px; color: var(--muted); }
+.sign .msg { grid-column: 1 / -1; font-size: 13px; border-radius: 10px; padding: 10px 12px; }
+.signed { display: flex; gap: 12px; align-items: center; margin-top: 16px; background: #E7F6EE; color: #0B7A45; border-radius: 12px; padding: 14px 16px; font-size: 14px; }
+.signed svg { flex: none; }
+.count-chip { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; font-weight: 600; color: var(--blue); background: var(--blue-soft); border-radius: 999px; padding: 4px 10px; }
+@keyframes pop { 0% { transform: scale(1); } 40% { transform: scale(1.18); } 100% { transform: scale(1); } }
+.pop { display: inline-block; animation: pop .5s ease; }
+
+/* ---------- votes / comments ---------- */
+.vbtn[data-choice="disagree"] svg { color: #E5484D; } .vbtn[data-choice="hold"] svg { color: #7B8596; }
+.vbtn[aria-pressed="true"], .vbtn[aria-pressed="true"]:hover:not(:disabled) { color: #fff; }
+.vbtn[data-choice="agree"][aria-pressed="true"] { background: var(--blue); }
+.vbtn[data-choice="disagree"][aria-pressed="true"] { background: #E5484D; }
+.vbtn[data-choice="hold"][aria-pressed="true"] { background: #7B8596; }
+.vbtn[aria-pressed="true"] svg { color: #fff; }
+.vbtn:disabled { cursor: default; opacity: .55; }
+.vbtn[aria-pressed="true"]:disabled { opacity: 1; }
+.vote-note { font-size: 12px; color: var(--muted); }
+
+/* ---------- consent ---------- */
+.consent { display: flex !important; flex-direction: row !important; align-items: flex-start; gap: 10px !important; font-size: 13px !important; font-weight: 500 !important; color: var(--ink-2); line-height: 1.5; cursor: pointer; }
+.consent input { appearance: none; -webkit-appearance: none; flex: none; width: 20px; height: 20px !important; margin: 0; padding: 0 !important; border: 1.5px solid #B7BECB !important; border-radius: 6px !important; background: #fff; display: grid; place-items: center; cursor: pointer; transition: background .12s, border-color .12s; }
+.consent input:checked { background: var(--blue); border-color: var(--blue) !important; }
+.consent input:checked::after { content: ""; width: 10px; height: 6px; border: 2px solid #fff; border-top: 0; border-right: 0; transform: translateY(-1px) rotate(-45deg); }
+.consent input:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+.consent a { color: var(--blue); text-decoration: underline; text-underline-offset: 2px; }
+.sign .consent { grid-column: 1 / -1; }
+.consent.shake { animation: shake .35s; }
+@keyframes shake { 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
+.fine-note { font-size: 12px; color: var(--muted); text-align: center; margin-top: 10px; }
+.fine-note a { color: var(--ink-2); text-decoration: underline; }
+
+/* ---------- profile modal ---------- */
+.modal { position: fixed; inset: 0; z-index: 60; display: grid; place-items: center; padding: max(16px, env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) max(16px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }
+.modal-bg { position: absolute; inset: 0; background: rgba(12,18,34,.45); backdrop-filter: blur(2px); animation: fade .15s; }
+.modal-card { position: relative; width: min(460px, 100%); max-height: 100%; overflow-y: auto; background: var(--surface); border-radius: 22px; padding: 26px; box-shadow: 0 30px 80px rgba(12,18,34,.25); animation: rise .2s ease; }
+@keyframes fade { from { opacity: 0; } } @keyframes rise { from { opacity: 0; transform: translateY(10px) scale(.98); } }
+@media (prefers-reduced-motion: reduce) { .modal-bg, .modal-card { animation: none; } }
+.modal-card .x { position: absolute; top: 14px; right: 14px; width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; color: var(--ink-2); }
+.modal-card .x:hover { background: var(--chip); }
+.modal-card .head { display: flex; align-items: center; gap: 14px; margin-bottom: 22px; padding-right: 36px; }
+.modal-card .head .avatar { width: 52px; height: 52px; font-size: 17px; }
+.modal-card .head b { display: block; font-size: 18px; font-weight: 700; }
+.modal-card .head span { font-size: 13px; color: var(--muted); overflow-wrap: anywhere; }
+.modal-card form { display: flex; flex-direction: column; gap: 12px; }
+.modal-card label { font-size: 13px; font-weight: 600; display: flex; flex-direction: column; gap: 6px; }
+.modal-card input:not([type=checkbox]) { height: 44px; border: 1px solid #C9CED6; border-radius: 12px; padding: 0 14px; font: inherit; font-weight: 400; }
+.modal-card input:focus { outline: 2px solid var(--blue); border-color: transparent; }
+.modal-card input[readonly] { background: var(--bg); color: var(--muted); }
+.modal-card .btn { height: 44px; }
+.modal-card .msg { font-size: 13px; border-radius: 10px; padding: 10px 12px; background: var(--chip); color: var(--ink-2); }
+.modal-card .msg.error { background: #FDECEE; color: #B42318; } .modal-card .msg.ok { background: #E7F6EE; color: #0B7A45; }
+.modal-card .head .avatar { color: #fff; }
+.modal-card .row { display: flex; gap: 8px; justify-content: flex-end; flex-wrap: wrap; }
+.danger { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line); }
+.danger h3 { font-size: 15px; font-weight: 700; }
+.danger p { font-size: 13px; color: var(--ink-2); margin: 6px 0 14px; line-height: 1.5; }
+.btn-danger { background: #FDECEE; color: #B42318; }
+.btn-danger:hover { background: #FAD7DB; }
+.btn-danger.solid { background: #D92D20; color: #fff; }
+.btn-danger.solid:hover { background: #B42318; }
+.btn-danger:disabled { opacity: .5; cursor: not-allowed; }
+.btn-ghost { background: var(--chip); color: var(--ink); }
+.btn-ghost:hover { background: #DDE3EC; }
+body.modal-open { overflow: hidden; }
+
+/* ---------- legal pages ---------- */
+.legal { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 40px; align-items: start; }
+.legal nav { position: sticky; top: calc(84px + env(safe-area-inset-top, 0px)); display: flex; flex-direction: column; gap: 4px; }
+.legal nav a { padding: 10px 14px; border-radius: 12px; font-size: 14px; font-weight: 500; color: var(--ink-2); }
+.legal nav a:hover { background: var(--surface); }
+.legal nav a[aria-current="page"] { background: var(--surface); color: var(--blue); font-weight: 600; }
+.legal .doc-body { background: var(--surface); border-radius: var(--r); padding: 36px 44px; max-width: 860px; font-size: 15px; line-height: 1.75; color: var(--ink-2); display: flex; flex-direction: column; gap: 14px; }
+.legal .doc-body .para:empty { display: none; }
+.legal .doc-body strong { color: var(--ink); }
+.legal .doc-body h2.lh { font-size: 19px; font-weight: 700; color: var(--ink); letter-spacing: -0.01em; margin-top: 18px; }
+.legal .doc-body ul { padding-left: 20px; margin: 0; display: flex; flex-direction: column; gap: 6px; }
+.legal .doc-body a { color: var(--blue); text-decoration: underline; text-underline-offset: 2px; }
+@media (max-width: 860px) { .legal { grid-template-columns: 1fr; gap: 16px; } .legal nav { position: static; flex-direction: row; } .legal .doc-body { padding: 24px 20px; } }
+.foot-legal { display: flex; gap: 18px; }
+.foot-legal a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---------- footer / toast ---------- */
+.site-footer { background: var(--blue); color: #fff; font-size: 14px; }
+.site-footer .wrap { padding-block: 52px calc(28px + env(safe-area-inset-bottom, 0px)); }
+.foot-top { display: grid; grid-template-columns: 1.4fr repeat(3, minmax(0, 1fr)); gap: 32px; }
+.foot-brand { display: flex; flex-direction: column; gap: 14px; max-width: 280px; }
+.foot-brand .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 16px; }
+.foot-brand .logo img, .foot-brand .logo svg { height: 30px; width: auto; background: #fff; border-radius: 8px; padding: 4px 5px; box-sizing: content-box; }
+.foot-brand p { opacity: .8; font-size: 13px; line-height: 1.6; }
+.foot-col h4 { margin: 0 0 14px; font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; opacity: .7; }
+.foot-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.foot-col a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.foot-bottom { margin-top: 44px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.25); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 12px; opacity: .8; }
+@media (max-width: 760px) { .foot-top { grid-template-columns: 1fr 1fr; } .foot-brand { grid-column: 1 / -1; } }
+.toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translate(-50%, 20px); background: var(--ink); color: #fff; padding: 10px 18px; border-radius: 999px; font-size: 13px; opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 50; max-width: calc(100% - 32px); text-align: center; }
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+/* ---------- responsive ---------- */
+@media (max-width: 860px) {
+  .grid4, .fund-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .port-row, .alloc-row, .comp, .ret-box, .two, .about-row { grid-template-columns: 1fr; }
+  .about-row .art { max-width: 160px; }
+  .hold-wrap .stock-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .watch { grid-template-columns: 1fr; }
+  .playlist { position: static; }
+  .ab-hero { grid-template-columns: 1fr; }
+  .ab-art { max-width: 320px; }
+  .ab-stats, .explore { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .vcard { grid-template-columns: 1fr; gap: 18px; padding: 22px; }
+  .rrow { grid-template-columns: minmax(0, 1fr) auto; gap: 6px 14px; padding: 14px 18px; }
+  .rrow .tag { grid-column: 1 / -1; }
+  .rrow .au { grid-column: 1; }
+  .rrow .go { grid-row: 2; grid-column: 2; }
+  .lib-head { display: none; }
+  .join { grid-template-columns: 1fr; }
+  .fund-hero { padding: 40px 28px; }
+  .keys { grid-template-columns: 1fr; }
+  .info-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .panel { padding: 24px 20px; }
+  .hero { grid-template-columns: 1fr; padding: 30px 22px; }
+  .hero-art { max-width: 150px; justify-self: start; order: -1; }
+  .stock-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); padding-right: 0; padding-top: 30px; }
+  .refresh { top: -4px; }
+  .camp { grid-template-columns: 1fr; }
+  .camp .im { aspect-ratio: 16/9; min-height: 0; }
+  .mini-camps { grid-template-columns: 1fr 1fr; }
+  .stats .inner { grid-template-columns: 1fr; }
+  .stat + .stat { border-left: 0; border-top: 1px solid rgba(255,255,255,.35); }
+  .stat { padding: 40px 16px; }
+  .mission-band, .course-hero { padding: 30px 22px; }
+  .course-hero { grid-template-columns: 1fr; }
+  .pillars { grid-template-columns: 1fr; }
+  .lesson .d .cm { display: none; }
+  .search { flex: 1 1 100%; }
+  .sign form { grid-template-columns: 1fr; }
+  .fund-hero { flex-direction: column-reverse; align-items: flex-start; }
+  .fund-hero .ic { width: 84px; height: 84px; font-size: 56px; }
+  .stock-head .px { margin-left: 0; text-align: left; width: 100%; }
+  .lesson .d .dur { display: none; }
+}
+@media (max-width: 380px) { .grid4, .fund-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="#home" id="brand"></a>
+    <nav class="menu" id="menu" aria-label="Main"></nav>
+    <div id="acctSlot"><a class="btn btn-blue" href="#login" id="loginBtn">Log In</a></div>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="app" class="wrap" aria-live="polite"></main>
+
+<footer class="site-footer"><div class="wrap" id="footer"></div></footer>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(() => {
+"use strict";
+
+/* ===================== state & data ===================== */
+const S = { site: null, port: null, prices: { prices: {} }, reportFilter: null, reportLimit: 20 };
+const NAV = [["about","About"],["campaigns","Campaigns"],["curriculum","Curriculum"],["fund","Fund"],["portfolio","Portfolio"],["reports","Reports"],["team","Team"]];
+const PIE_COLORS = ["#B995BF","#BC7C93","#A2C3E8","#A6E3F8","#B9FAFB","#9ACFE0","#7FA7C2","#6A7FA0","#4F5675","#A3A8D4","#C9B6E4","#8EB8B0"];
+const LOGO_COLORS = ["#4285F4","#0866FF","#F25022","#1F4E9C","#056DAE","#113CCF","#3B73B9","#0170CE","#CC0000","#2B2B2B"];
+
+async function getJSON(url, fresh) {
+  const r = await fetch(fresh ? url + "?t=" + Date.now() : url, { cache: fresh ? "no-store" : "default" });
+  if (!r.ok) throw new Error(url + " (" + r.status + ")");
+  return r.json();
+}
+async function loadPrices() {
+  try { S.prices = await getJSON("data/prices.json", true); } catch (e) { console.warn("prices", e); }
+}
+
+/* ===================== backend: Firebase or browser-only preview ===================== */
+const FB_VERSION = "10.14.1";
+const mem = {};
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v == null ? (k in mem ? mem[k] : d) : JSON.parse(v); } catch { return k in mem ? mem[k] : d; } },
+  set(k, v) { mem[k] = v; try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
+};
+async function sha256(t) {
+  const b = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(t));
+  return [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, "0")).join("");
+}
+function loadScript(src) {
+  return new Promise((res, rej) => { const el = document.createElement("script"); el.src = src; el.onload = res; el.onerror = () => rej(new Error("Couldn't load " + src)); document.head.appendChild(el); });
+}
+class AuthError extends Error {}
+const AUTH_MSG = {
+  "auth/invalid-email": "That email address doesn't look right.",
+  "auth/missing-password": "Enter your password.",
+  "auth/weak-password": "Use a password with at least 6 characters.",
+  "auth/email-already-in-use": "An account with this email already exists. Log in instead.",
+  "auth/invalid-credential": "Email or password is incorrect.",
+  "auth/wrong-password": "Email or password is incorrect.",
+  "auth/user-not-found": "No account uses this email. Sign up first.",
+  "auth/too-many-requests": "Too many attempts. Wait a minute and try again.",
+  "auth/popup-closed-by-user": "Google sign-in was closed before it finished.",
+  "auth/unauthorized-domain": "This website's domain isn't authorized in Firebase yet (Authentication → Settings → Authorized domains).",
+  "auth/operation-not-allowed": "This sign-in method isn't enabled in Firebase yet (Authentication → Sign-in method).",
+  "auth/network-request-failed": "Network error. Check your connection and try again."
+};
+const authMsg = e => AUTH_MSG[e?.code] || e?.message || "Something went wrong. Try again.";
+
+const DB = {
+  mode: "preview", user: null, auth: null, db: null, listeners: [],
+  onChange(fn) { this.listeners.push(fn); },
+  emit() { this.listeners.forEach(fn => fn(this.user)); },
+  setUser(u) { this.user = u ? { uid: u.uid, name: u.displayName || (u.email || "Member").split("@")[0], email: u.email || "" } : null; },
+
+  async init() {
+    let cfg = null;
+    try { cfg = await getJSON("data/firebase.json"); } catch {}
+    if (cfg?.apiKey && cfg?.projectId) {
+      try {
+        for (const m of ["app", "auth", "firestore"]) await loadScript(`https://www.gstatic.com/firebasejs/${FB_VERSION}/firebase-${m}-compat.js`);
+        firebase.initializeApp(cfg);
+        this.auth = firebase.auth(); this.db = firebase.firestore(); this.mode = "firebase";
+        this.auth.getRedirectResult().catch(e => toast(authMsg(e)));
+        await new Promise(res => {
+          let first = true; setTimeout(() => { if (first) { first = false; res(); } }, 4000);
+          this.auth.onAuthStateChanged(u => { this.setUser(u); if (first) { first = false; res(); } else this.emit(); });
+        });
+        return;
+      } catch (e) { console.warn("Firebase unavailable, using preview mode:", e); }
+    }
+    this.user = store.get("yif:session", null);
+  },
+  get live() { return this.mode === "firebase"; },
+  fv() { return firebase.firestore.FieldValue; },
+
+  /* ---- auth ---- */
+  async signUp(name, email, pw) {
+    if (!name) throw new AuthError("Enter your name.");
+    if (this.live) {
+      try {
+        const c = await this.auth.createUserWithEmailAndPassword(email, pw);
+        await c.user.updateProfile({ displayName: name });
+        this.setUser({ uid: c.user.uid, displayName: name, email }); this.emit();
+      } catch (e) { throw new AuthError(authMsg(e)); }
+      return;
+    }
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) throw new AuthError(AUTH_MSG["auth/invalid-email"]);
+    if ((pw || "").length < 6) throw new AuthError(AUTH_MSG["auth/weak-password"]);
+    const users = store.get("yif:users", {}), key = email.toLowerCase();
+    if (users[key]) throw new AuthError(AUTH_MSG["auth/email-already-in-use"]);
+    users[key] = { uid: "local-" + (await sha256(key)).slice(0, 16), name, email, pw: await sha256(pw) };
+    store.set("yif:users", users); this._session(users[key]);
+  },
+  async logIn(email, pw) {
+    if (this.live) { try { await this.auth.signInWithEmailAndPassword(email, pw); this.setUser(this.auth.currentUser); this.emit(); } catch (e) { throw new AuthError(authMsg(e)); } return; }
+    const u = store.get("yif:users", {})[(email || "").toLowerCase()];
+    if (!u || u.pw !== await sha256(pw || "")) throw new AuthError(AUTH_MSG["auth/invalid-credential"]);
+    this._session(u);
+  },
+  _session(u) { this.user = { uid: u.uid, name: u.name, email: u.email }; store.set("yif:session", this.user); this.emit(); },
+  async google() {
+    if (!this.live) throw new AuthError("Google sign-in starts working once Firebase is connected (add your keys to data/firebase.json).");
+    const p = new firebase.auth.GoogleAuthProvider(); p.setCustomParameters({ prompt: "select_account" });
+    try { await this.auth.signInWithPopup(p); this.setUser(this.auth.currentUser); this.emit(); }
+    catch (e) {
+      if (["auth/popup-blocked", "auth/operation-not-supported-in-this-environment"].includes(e.code)) return this.auth.signInWithRedirect(p);
+      throw new AuthError(authMsg(e));
+    }
+  },
+  async reset(email) {
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email || "")) throw new AuthError("Enter your email above first, then press “Forgot password?”.");
+    if (!this.live) throw new AuthError("Password reset emails start working once Firebase is connected.");
+    try { await this.auth.sendPasswordResetEmail(email); } catch (e) { throw new AuthError(authMsg(e)); }
+  },
+  async updateName(name) {
+    name = (name || "").trim();
+    if (!name) throw new AuthError("Enter your name.");
+    if (name.length > 100) throw new AuthError("Use 100 characters or fewer.");
+    if (this.live) { try { await this.auth.currentUser.updateProfile({ displayName: name }); } catch (e) { throw new AuthError(authMsg(e)); } this.user.name = name; this.emit(); return; }
+    const users = store.get("yif:users", {}), k = (this.user.email || "").toLowerCase();
+    if (users[k]) { users[k].name = name; store.set("yif:users", users); }
+    this.user.name = name; store.set("yif:session", this.user); this.emit();
+  },
+  get usesPassword() {
+    if (!this.live) return true;
+    return (this.auth.currentUser?.providerData || []).some(p => p.providerId === "password");
+  },
+  async deleteAccount(pw) {
+    if (this.live) {
+      const u = this.auth.currentUser;
+      try {
+        if (this.usesPassword) {
+          if (!pw) throw new AuthError("Enter your password to confirm.");
+          await u.reauthenticateWithCredential(firebase.auth.EmailAuthProvider.credential(u.email, pw));
+        } else {
+          await u.reauthenticateWithPopup(new firebase.auth.GoogleAuthProvider());
+        }
+        await u.delete();
+      } catch (e) { if (e instanceof AuthError) throw e; throw new AuthError(authMsg(e)); }
+      this.user = null; this.emit(); return;
+    }
+    const users = store.get("yif:users", {}), k = (this.user.email || "").toLowerCase();
+    if (!users[k] || users[k].pw !== await sha256(pw || "")) throw new AuthError(pw ? "That password is incorrect." : "Enter your password to confirm.");
+    delete users[k]; store.set("yif:users", users);
+    this.user = null; store.set("yif:session", null); this.emit();
+  },
+  async logOut() { if (this.live) await this.auth.signOut(); this.user = null; store.set("yif:session", null); this.emit(); },
+
+  /* ---- petitions ---- */
+  async petitionCount(cid) {
+    if (this.live) { const d = await this.db.doc(`petitions/${cid}`).get(); return d.exists ? d.data().count || 0 : 0; }
+    return Object.keys(store.get("yif:sig:" + cid, {})).length;
+  },
+  async sign(cid, name, email) {
+    const sid = await sha256(email.trim().toLowerCase());
+    if (this.live) {
+      const ref = this.db.doc(`petitions/${cid}`), b = this.db.batch();
+      b.set(ref.collection("signatures").doc(sid), { name, email: email.trim(), uid: this.user?.uid || null, created: this.fv().serverTimestamp() });
+      b.set(ref, { count: this.fv().increment(1), last: sid }, { merge: true });
+      try { await b.commit(); } catch (e) { if (e.code === "permission-denied") throw new AuthError("This email has already signed this petition."); throw e; }
+      return;
+    }
+    const sigs = store.get("yif:sig:" + cid, {});
+    if (sigs[sid]) throw new AuthError("This email has already signed this petition.");
+    sigs[sid] = { name, created: Date.now() }; store.set("yif:sig:" + cid, sigs);
+  },
+
+  /* ---- votes ---- */
+  async votes(rid) {
+    if (this.live) {
+      const d = await this.db.doc(`votes/${rid}`).get();
+      let mine = null;
+      if (this.user) { const b = await this.db.doc(`votes/${rid}/ballots/${this.user.uid}`).get(); mine = b.exists ? b.data().choice : null; }
+      return { counts: d.exists ? d.data() : {}, mine };
+    }
+    const all = store.get("yif:votes:" + rid, {}), counts = { agree: 0, disagree: 0, hold: 0 };
+    Object.values(all).forEach(c => counts[c]++);
+    return { counts, mine: this.user ? all[this.user.uid] || null : null };
+  },
+  async vote(rid, choice, prev) {
+    if (prev === choice) return;
+    if (this.live) {
+      const ref = this.db.doc(`votes/${rid}`), bref = ref.collection("ballots").doc(this.user.uid), b = this.db.batch(), ts = this.fv().serverTimestamp();
+      if (prev) {
+        b.update(bref, { choice, updated: ts });
+        b.set(ref, { [choice]: this.fv().increment(1), [prev]: this.fv().increment(-1) }, { merge: true });
+      } else {
+        b.set(bref, { choice, created: ts });
+        b.set(ref, { [choice]: this.fv().increment(1) }, { merge: true });
+      }
+      try { await b.commit(); } catch (e) { if (e.code === "permission-denied") throw new AuthError("Couldn't save your vote. Refresh the page and try again."); throw e; }
+      return;
+    }
+    const all = store.get("yif:votes:" + rid, {});
+    all[this.user.uid] = choice; store.set("yif:votes:" + rid, all);
+  },
+
+  /* ---- lesson likes & comments ---- */
+  async likes(lid) {
+    if (this.live) { const q = await this.db.collection(`lessons/${lid}/likes`).get(); return { count: q.size, mine: !!this.user && q.docs.some(d => d.id === this.user.uid) }; }
+    const all = store.get("yif:likes:" + lid, {}); return { count: Object.keys(all).length, mine: !!this.user && !!all[this.user.uid] };
+  },
+  async toggleLike(lid, on) {
+    if (this.live) { const ref = this.db.doc(`lessons/${lid}/likes/${this.user.uid}`); return on ? ref.set({ created: this.fv().serverTimestamp() }) : ref.delete(); }
+    const all = store.get("yif:likes:" + lid, {}); if (on) all[this.user.uid] = 1; else delete all[this.user.uid]; store.set("yif:likes:" + lid, all);
+  },
+  async comments(lid) {
+    if (this.live) {
+      const q = await this.db.collection(`lessons/${lid}/comments`).orderBy("created", "asc").limit(200).get();
+      return q.docs.map(d => ({ id: d.id, ...d.data(), created: d.data().created?.toMillis?.() || Date.now() }));
+    }
+    return store.get("yif:comments:" + lid, []);
+  },
+  async addComment(lid, text) {
+    const c = { uid: this.user.uid, name: this.user.name, text };
+    if (this.live) { await this.db.collection(`lessons/${lid}/comments`).add({ ...c, created: this.fv().serverTimestamp() }); return; }
+    const all = store.get("yif:comments:" + lid, []); all.push({ id: String(Date.now()), ...c, created: Date.now() }); store.set("yif:comments:" + lid, all);
+  },
+  async deleteComment(lid, id) {
+    if (this.live) return this.db.doc(`lessons/${lid}/comments/${id}`).delete();
+    store.set("yif:comments:" + lid, store.get("yif:comments:" + lid, []).filter(c => c.id !== id));
+  }
+};
+
+/* Async data cache: views read synchronously; a miss starts a load and re-renders when it lands. */
+const L = {};
+function live(key, loader) {
+  if (key in L) return L[key];
+  L[key] = undefined;
+  Promise.resolve().then(loader).then(v => { L[key] = v; rerender(); }).catch(e => { console.warn(key, e); L[key] = null; rerender(); });
+  return undefined;
+}
+const drop = (...keys) => keys.forEach(k => delete L[k]);
+const fmtN = n => Number(n || 0).toLocaleString("en-US");
+function ago(t) {
+  const s = Math.max(1, (Date.now() - t) / 1000);
+  if (s < 60) return "just now"; if (s < 3600) return Math.floor(s / 60) + "m ago"; if (s < 86400) return Math.floor(s / 3600) + "h ago";
+  if (s < 604800) return Math.floor(s / 86400) + "d ago"; return new Date(t).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+}
+function requireLogin(msg) {
+  if (DB.user) return true;
+  S.returnTo = currentId(); toast(msg); go("login"); return false;
+}
+const firstName = n => String(n || "").split(/\s+/)[0];
+const previewNote = () => DB.live ? "" : `<div class="preview-note">Preview mode: Firebase isn't connected yet, so this is saved only in this browser. Add your Firebase keys to <code>data/firebase.json</code> to make it live.</div>`;
+const GOOGLE_G = '<svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg>';
+const CHECK = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m7.5 12.5 3 3 6-6.5"/></svg>';
+
+const X_ICON = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>';
+function openProfile(step = "main") {
+  const u = DB.user; if (!u) return;
+  closeProfile(true);
+  const pwUser = DB.usesPassword;
+  const el = document.createElement("div");
+  el.className = "modal"; el.id = "profileModal"; el.setAttribute("role", "dialog"); el.setAttribute("aria-modal", "true"); el.setAttribute("aria-labelledby", "pfTitle");
+  el.innerHTML = `<div class="modal-bg" data-act="closeProfile"></div><div class="modal-card">
+    <button class="x" data-act="closeProfile" aria-label="Close">${X_ICON}</button>
+    <div class="head"><span class="avatar" id="pfAv">${esc(initials(u.name))}</span><div style="min-width:0"><b id="pfTitle">${esc(u.name)}</b><span>${esc(u.email)}</span></div></div>
+    ${step === "main" ? `<form data-act="saveName" novalidate>
+        <label for="pfName">Name<input id="pfName" value="${esc(u.name)}" maxlength="100" autocomplete="name" required></label>
+        <label for="pfEmail">Email<input id="pfEmail" value="${esc(u.email)}" readonly></label>
+        <div class="msg" id="pfMsg" role="status" hidden></div>
+        <div class="row"><button class="btn btn-blue" id="pfSave">Save changes</button></div></form>
+      <section class="danger"><h3>Delete account</h3><p>Permanently delete your account and login. Your petition signatures and votes stay counted. Comments you posted stay unless you delete them first.</p>
+        <button class="btn btn-danger" data-act="profileDelete">Delete account…</button></section>`
+    : `<form data-act="confirmDelete" novalidate><section class="danger" style="margin-top:0;padding-top:0;border:0"><h3>Delete your account?</h3>
+        <p>This can't be undone. You'll be logged out, and you'll need to sign up again to vote or comment.</p>
+        ${pwUser ? `<label for="pfPw">Enter your password to confirm<input id="pfPw" type="password" autocomplete="current-password"></label>` : `<p style="margin-top:0">You'll be asked to confirm with Google.</p>`}
+        <div class="msg error" id="pfDelMsg" role="alert" hidden style="margin-top:12px"></div>
+        <div class="row" style="margin-top:14px"><button type="button" class="btn btn-ghost" data-act="profileBack">Cancel</button><button class="btn btn-danger solid" id="pfDel">Delete my account</button></div></section></form>`}
+  </div>`;
+  document.body.appendChild(el); document.body.classList.add("modal-open");
+  setTimeout(() => (step === "main" ? $("#pfName") : ($("#pfPw") || $("#pfDel")))?.focus(), 30);
+}
+function closeProfile(silent) {
+  const m = $("#profileModal"); if (!m) return;
+  m.remove(); document.body.classList.remove("modal-open");
+  if (!silent) $(".acct-btn")?.focus();
+}
+
+function renderAccount() {
+  const slot = $("#acctSlot"); if (!slot) return;
+  setTimeout(() => { fixLinks(slot); fixLinks($("#menu") || document); }, 0);
+  const u = DB.user, ma = $("#menuAcct");
+  if (ma) ma.innerHTML = u ? `<div class="me"><span class="avatar">${esc(initials(u.name))}</span><div style="min-width:0"><b>${esc(u.name)}</b><span>${esc(u.email)}</span></div></div><button class="btn btn-blue" data-act="profile">Profile &amp; settings</button><button class="btn btn-white" data-act="logout">Log out</button>`
+    : `<a class="btn btn-blue" href="#signup">Sign up</a><a class="btn btn-white" href="#login">Log in</a>`;
+  slot.innerHTML = u ? `<div class="acct"><button class="acct-btn" data-act="acct" aria-haspopup="menu" aria-expanded="false"><span class="avatar">${esc(initials(u.name))}</span><span class="nm">${esc(firstName(u.name))}</span></button>
+      <div class="acct-menu" id="acctMenu" role="menu" hidden><div class="who"><b>${esc(u.name)}</b><span>${esc(u.email)}</span></div><button role="menuitem" data-act="profile">Profile &amp; settings</button><button role="menuitem" data-act="logout">Log out</button></div></div>`
+    : `<a class="btn btn-blue" href="#login" id="loginBtn">Log In</a>`;
+}
+
+/* ===================== helpers ===================== */
+const $ = (s, el = document) => el.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
+function bb(src) {
+  let t = esc(String(src || "").replace(/\r/g, "").trim());
+  t = t.replace(/\s*\[(\/?)(ul|ol|li)\]\s*/gi, "[$1$2]");
+  const link = (u, label) => { u = u.trim(); if (u.startsWith("#")) return `<a href="${u}">${label}</a>`; if (!/^https?:/i.test(u)) u = "https://" + u; return `<a href="${u}" target="_blank" rel="noopener">${label}</a>`; };
+  t = t.replace(/\[url=([^\]]+)\]([\s\S]*?)\[\/url\]/gi, (_, u, l) => link(u, l))
+       .replace(/\[url\]([\s\S]*?)\[\/url\]/gi, (_, u) => link(u, u))
+       .replace(/\[color=[^\]]*\]|\[\/color\]/gi, "")
+       .replace(/\[(\/?)b\]/gi, "<$1strong>").replace(/\[(\/?)i\]/gi, "<$1em>").replace(/\[(\/?)u\]/gi, "")
+       .replace(/\[(\/?)(ul|ol|li)\]/gi, "<$1$2>")
+       .replace(/\[h\]([\s\S]*?)\[\/h\]/gi, "<h2 class=\"lh\">$1</h2>")
+       .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+  return t.split(/\n{2,}/).map(p => `<div class="para">${p.replace(/\n/g, "<br>")}</div>`).join("");
+}
+const isImg = v => /[./]/.test(v || "") && !/^\p{Extended_Pictographic}/u.test(v);
+const icon = (v, alt = "") => !v ? "" : isImg(v) ? `<img src="${esc(v)}" alt="${esc(alt)}" loading="lazy">` : `<span aria-hidden="true">${esc(v)}</span>`;
+const initials = n => String(n).split(/\s+/).map(w => w[0]).join("").slice(0, 2).toUpperCase();
+function money(v, cur = "USD") {
+  if (v == null || isNaN(v)) return "—";
+  if (cur === "KRW") return "₩" + Math.round(v).toLocaleString("en-US");
+  return "$" + Number(v).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+const pctTxt = v => v == null ? "—" : (v > 0 ? "+" : "") + (Math.round(v * 100) / 100) + "%";
+const cls = v => v == null ? "" : v >= 0 ? "up" : "down";
+function dateTxt(iso) {
+  if (!iso) return "—";
+  const d = new Date(iso); if (isNaN(d)) return "—";
+  return String(d.getMonth() + 1).padStart(2, "0") + "/" + String(d.getDate()).padStart(2, "0") + "/" + d.getFullYear();
+}
+function quote(h) {
+  const p = S.prices.prices?.[h.symbol];
+  const price = p?.price ?? h.current ?? null;
+  const change = price != null && h.purchase ? (price / h.purchase - 1) * 100 : null;
+  return { price, change, time: p?.time || S.prices.updated, currency: p?.currency || h.currency || "USD" };
+}
+function toast(msg) {
+  const t = $("#toast"); t.textContent = msg; t.classList.add("show");
+  clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove("show"), 2600);
+}
+const ICONS = {
+  refresh: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M20 12a8 8 0 1 1-2.34-5.66"/><path d="M20 4v5h-5"/></svg>',
+  back: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>',
+  chev: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#003EDD" stroke-width="2" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg>',
+  bubble: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12c0-4 3.6-7 8-7s8 3 8 7-3.6 7-8 7c-1.2 0-2.4-.2-3.4-.6L4 20l1.2-3.6A6.5 6.5 0 0 1 4 12Z"/></svg>',
+  heart: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg>',
+  send: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M21 3 3 10.5l7 2.5 2.5 7L21 3Z"/><path d="m10 13 4-4"/></svg>',
+  up: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9H4v-9h3Zm0 0 4-8c1.7 0 2.6 1 2.3 2.7L12.8 9H19a2 2 0 0 1 2 2.4l-1.4 6.8A2 2 0 0 1 17.6 20H7"/></svg>',
+  down: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 13V4h3v9h-3Zm0 0-4 8c-1.7 0-2.6-1-2.3-2.7l.5-3.3H5a2 2 0 0 1-2-2.4l1.4-6.8A2 2 0 0 1 6.4 4H17"/></svg>',
+  hold: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M10 9.5v5M14 9.5v5"/></svg>',
+  play: '<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>',
+  trend: '<svg width="72" height="48" viewBox="0 0 72 48" fill="none" stroke="#FF4B4B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 40 24 21l12 12 26-26"/><path d="M46 7h17v17"/></svg>',
+  money: '<svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#fff" stroke-width="1.6"><circle cx="21" cy="14" r="9"/><path d="M24 10.5c-.8-1-2-1.5-3.2-1.5-1.8 0-3 .9-3 2.3 0 3.2 6.4 1.7 6.4 5 0 1.4-1.4 2.4-3.3 2.4-1.4 0-2.7-.6-3.4-1.6M21 7.5v2M21 19v2"/><path d="M5 30c3-3 6-4 9-3l5 2h5a2 2 0 0 1 0 4h-7M5 36l4-2 10 2 13-6a2 2 0 0 0-2-3l-8 3"/></svg>',
+  globe: '<svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#fff" stroke-width="1.6"><circle cx="19" cy="22" r="13"/><path d="M8 16c4 1 6 4 5 7s1 5 4 5M24 10c-1 3 1 5 4 5s5 2 4 6M17 35c0-3 2-4 4-5"/><path d="M27 4c5 0 9 3 9 8-5 1-9-2-9-8Z"/></svg>',
+  people: '<svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#fff" stroke-width="1.6"><circle cx="10" cy="11" r="4"/><circle cx="20" cy="9" r="4"/><circle cx="30" cy="11" r="4"/><path d="M4 23c0-4 2.6-6 6-6 1.5 0 2.8.4 3.8 1.3M36 23c0-4-2.6-6-6-6-1.5 0-2.8.4-3.8 1.3M13 22c0-5 3-8 7-8s7 3 7 8"/><rect x="6" y="22" width="28" height="12" rx="2"/><path d="M6 27h28"/></svg>'
+};
+const LOGO_SVG = '<svg viewBox="0 0 26 32" aria-hidden="true"><rect x="9" y="3" width="15" height="4.5" rx="2.25" fill="#5B8DEF"/><rect x="9" y="11" width="11" height="4.5" rx="2.25" fill="#3567D6"/><circle cx="5.5" cy="5.2" r="2.4" fill="#F07A3C"/><path d="M5 11.5 2.6 28" stroke="#F07A3C" stroke-width="4.4" stroke-linecap="round"/><path d="M11.5 15.5 10 24" stroke="#5B8DEF" stroke-width="4.4" stroke-linecap="round"/></svg>';
+
+function logoBox(h, i) {
+  if (h.logo) return `<div class="logo-box has-img"><img src="${esc(h.logo)}" alt=""></div>`;
+  const txt = /^\d/.test(h.symbol) ? initials(h.name) : h.symbol.slice(0, 1);
+  return `<div class="logo-box" style="background:${LOGO_COLORS[i % LOGO_COLORS.length]}">${esc(txt)}</div>`;
+}
+
+/* ===================== charts ===================== */
+function pie(items, { donut = false, size = 280 } = {}) {
+  const total = items.reduce((a, b) => a + b.value, 0) || 1, r = size / 2, cx = r, cy = r;
+  let a0 = -Math.PI / 2, out = "";
+  items.forEach((it, i) => {
+    const frac = it.value / total, a1 = a0 + frac * Math.PI * 2;
+    const col = it.color || PIE_COLORS[i % PIE_COLORS.length];
+    if (frac >= 0.9999) out += `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${col}"/>`;
+    else {
+      const x0 = cx + r * Math.cos(a0), y0 = cy + r * Math.sin(a0), x1 = cx + r * Math.cos(a1), y1 = cy + r * Math.sin(a1);
+      out += `<path d="M${cx},${cy} L${x0.toFixed(2)},${y0.toFixed(2)} A${r},${r} 0 ${frac > .5 ? 1 : 0} 1 ${x1.toFixed(2)},${y1.toFixed(2)} Z" fill="${col}" stroke="#fff" stroke-width="1.5"><title>${esc(it.label)}: ${Math.round(frac * 100)}%</title></path>`;
+    }
+    a0 = a1;
+  });
+  if (donut) out += `<circle cx="${cx}" cy="${cy}" r="${r * .3}" fill="#fff"/>`;
+  return `<svg class="pie" viewBox="0 0 ${size} ${size}" role="img" aria-label="Allocation chart">${out}</svg>`;
+}
+function group(holdings, key) {
+  const m = new Map();
+  holdings.forEach(h => m.set(h[key], (m.get(h[key]) || 0) + h.weight));
+  return [...m].map(([label, value]) => ({ label, value })).sort((a, b) => b.value - a.value);
+}
+function allocBlock(title, items, head) {
+  const rows = items.map((it, i) => `<tr><td><span class="sw" style="background:${PIE_COLORS[i % PIE_COLORS.length]}"></span>${esc(it.label)}</td><td class="num">${Math.round(it.value)}%</td></tr>`).join("");
+  return `<div class="alloc"><h3>${title}</h3><div class="alloc-row">${pie(items)}<div style="overflow-x:auto"><table class="ltable"><thead><tr><th>${head}</th><th>Percentage</th></tr></thead><tbody>${rows}</tbody></table></div></div></div>`;
+}
+
+/* ===================== shared components ===================== */
+function stockCard(h, i, { quantity = false, link = false } = {}) {
+  const q = quote(h);
+  return `${link ? `<a class="stock-link" href="#stock-${esc(h.symbol)}" aria-label="${esc(h.name)} details">` : ""}<article class="stock">
+    <div class="rank">${i + 1}</div>${logoBox(h, i)}
+    <div class="sym">${esc(h.symbol)}</div><div class="co">${esc(h.name)}</div>
+    <div class="chg ${cls(q.change)}">${pctTxt(q.change)}</div>
+    <div class="kv"><b>Price</b><span class="num">${money(q.price, q.currency)}</span></div>
+    ${quantity ? `<div class="kv small"><span>Quantity</span><span>${h.shares} shares</span></div>` : ""}
+    <div class="kv small"><span>${quantity ? "Updated" : "Date"}</span><span class="num">${dateTxt(q.time)}</span></div>
+  </article>${link ? "</a>" : ""}`;
+}
+const refreshBtn = () => `<button class="refresh" data-act="refresh" aria-label="Refresh prices" title="Refresh prices">${ICONS.refresh}</button>`;
+function reportTitle(r) { return r.tag ? `[${r.tag}] ${r.title}` : r.title; }
+function docThumb(r) {
+  if (r.thumb) return `<div class="doc"><img src="${esc(r.thumb)}" alt="" loading="lazy"></div>`;
+  if (/^[A-Z]{2,}.*Holding/.test(r.title)) return `<div class="doc cover"><div class="dt">${esc(r.title.split(" ")[0])} Investment Report</div><div class="da">${esc(r.author)}</div></div>`;
+  const lines = Array.from({ length: 16 }, (_, k) => `<i style="width:${70 + ((k * 37) % 30)}%"></i>`).join("");
+  return `<div class="doc"><div class="dt">${esc(r.title)}</div><div class="da">${esc(r.author)}</div>${lines}</div>`;
+}
+function reportCard(r) {
+  return `<button class="rep" data-act="report" data-id="${esc(r.id)}">${docThumb(r)}<div class="ttl">${esc(reportTitle(r))}</div><div class="by">${esc(r.author)}</div></button>`;
+}
+const imgOr = (src, alt, fallback) => src ? `<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy">` : fallback;
+
+/* ===================== views ===================== */
+const pageHead = (eyebrow, title, sub) => `<header class="ph-head"><div class="eyebrow">${esc(eyebrow)}</div><h1>${esc(title)}</h1>${sub ? `<p>${esc(sub)}</p>` : ""}</header>`;
+function mins(list) {
+  const sec = list.reduce((a, l) => { const [m, s2] = String(l.duration || "0:0").split(":").map(Number); return a + (m || 0) * 60 + (s2 || 0); }, 0);
+  return Math.round(sec / 60);
+}
+const V = {};
+
+V.home = () => {
+  const { brand, home } = S.site, H = S.port.holdings, st = S.site;
+  const cost = H.reduce((a, h) => a + h.purchase * h.shares, 0), val = H.reduce((a, h) => a + (quote(h).price ?? h.purchase) * h.shares, 0);
+  const ret = S.port.returnMode !== "reported" ? (val / cost - 1) * 100 : S.port.reportedReturn;
+  const stats = [["$100K+", "assets under management"], [pctTxt(ret), "main portfolio return"], [String(st.funds.length), "student-run funds"], [String(st.reports.length), "research reports"]];
+  const top = H.map((h, i) => ({ h, i, q: quote(h), v: (quote(h).price ?? h.purchase) * h.shares })).sort((a, b) => b.v - a.v);
+  const camps = st.campaigns.slice(0, 3).map(c =>
+    `<a class="hcamp" href="#campaign-${esc(c.id)}"><div class="im placeholder-img">${imgOr(c.image, "", "")}</div><div class="tx">${c.date ? `<span class="d">${esc(c.date)}</span>` : ""}<h3>${esc(c.title)}</h3><span class="go">${c.petition ? "Read and sign →" : "Read more →"}</span></div></a>`).join("");
+  const reps = st.reports.slice(0, 6).map(reportCardNew).join("");
+  if (!S.homeFunds) { const a = [...st.funds]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } S.homeFunds = a.slice(0, 4); }
+  const funds = S.homeFunds;
+  return `<div class="stack">
+    <section class="home-hero"><div><div class="eyebrow">${esc(brand.name)}</div><h1>${esc(brand.tagline)}</h1>
+        <p>${esc(home.aboutText)} ${esc(home.portfolioText)}</p>
+        <div class="row">${DB.user ? `<a class="btn btn-blue" href="#campaigns">See our campaigns</a><a class="btn btn-white" href="#reports">Vote on reports</a>` : `<a class="btn btn-blue" href="#signup">Join Youth Impact Fund</a><a class="btn btn-white" href="#about">Learn more</a>`}</div></div>
+      <div class="hero-art2" aria-hidden="true"><span class="glow"></span><span class="ring r1"></span><span class="ring r2"></span>${home.heroImage ? `<img src="${esc(home.heroImage)}" alt="">` : ""}<span class="shadow"></span></div></section>
+    <div class="ab-stats">${stats.map(([v, l]) => `<div><b>${esc(v)}</b><span>${esc(l)}</span></div>`).join("")}</div>
+
+    <div class="sec-title"><h2>Main portfolio</h2><span><span style="margin-right:14px">Prices as of ${dateTxt(S.prices.updated)} · <button data-act="refresh" style="color:var(--blue);font:inherit">Refresh</button></span><a class="see-all" href="#portfolio">Full portfolio →</a></span></div>
+    <div class="hold-list">${top.map(r => `<a class="hrow" href="#stock-${esc(r.h.symbol)}">${logoBox(r.h, r.i)}<span class="nm"><b>${esc(r.h.symbol)}</b><small>${esc(r.h.name)}</small></span>
+        <span class="px num">${money(r.q.price, r.q.currency)}</span><span class="chg num ${cls(r.q.change)}">${pctTxt(r.q.change)}</span></a>`).join("")}</div>
+
+    <div class="sec-title"><h2>Student-run funds</h2><a class="see-all" href="#fund">All ${st.funds.length} funds →</a></div>
+    <div class="hfunds">${funds.map(f => `<a class="hfund" href="#fund-${esc(f.slug)}"><div class="ic">${icon(f.icon, f.name)}</div><div><h3>${esc(f.name)}</h3><span>${esc(f.manager)}</span></div></a>`).join("")}</div>
+
+    <div class="sec-title"><h2>Latest reports</h2><a class="see-all" href="#reports">All ${st.reports.length} reports →</a></div>
+    <div class="lib home-lib">${reps}</div>
+    <div class="sec-title"><h2>Campaigns</h2><a class="see-all" href="#campaigns">All campaigns →</a></div>
+    <div class="hcamps">${camps}</div>
+  </div>`;
+};
+
+V.about = () => {
+  const a = S.site.about, home = S.site.home, st = S.site;
+  const stats = [["$100K+", "assets under management"], ["2020", "founded"], [String(st.funds.length), "student-run funds"], ["100%", "managed by students"]];
+  const ex = [["#fund", st.funds.length, "Funds", "Each member runs a themed fund with its own thesis and holdings."],
+    ["#reports", st.reports.length, "Reports", "Company, industry, ESG and macro research written by members."],
+    ["#campaigns", st.campaigns.length, "Campaigns", "Shareholder activism and petitions that push companies to do better."],
+    ["#curriculum", st.curriculum.reduce((n, c) => n + c.lessons.length, 0), "Lessons", "Video lessons on stock basics and shareholder activism."]];
+  const team = st.team;
+  return `<section class="ab-hero"><div><div class="eyebrow">About Youth Impact Fund</div><h1>${esc(a.headline.replace(/'/g, "’"))}</h1>
+      <p>${esc(home.aboutText)} ${esc(home.portfolioText)}</p>
+      <div class="row"><a class="btn btn-blue" href="#${DB.user ? "campaigns" : "signup"}">${DB.user ? "See our campaigns" : "Join Youth Impact Fund"}</a><a class="btn btn-white" href="#portfolio">View the portfolio</a></div></div>
+      <div class="ab-art">${home.aboutImage ? `<img src="${esc(home.aboutImage)}" alt="">` : ""}</div></section>
+    <div class="ab-stats">${stats.map(([v, l]) => `<div><b>${esc(v)}</b><span>${esc(l)}</span></div>`).join("")}</div>
+    <section class="mission-band"><div class="eyebrow">${esc(a.missionLabel)}</div><h2>${esc(a.mission)}</h2>
+      <div class="pillars">${a.pillars.map(p => `<article class="pillar"><div class="ic">${icon(p.icon)}</div><h3>${esc(p.title)}</h3><p>${esc(p.text)}</p></article>`).join("")}</div></section>
+    <div class="sec-title"><h2>What we do</h2><span>Everything here is built and run by students</span></div>
+    <div class="explore">${ex.map(([h, n, t, d]) => `<a class="ex" href="${h}"><b>${n}</b><h3>${t}</h3><p>${d}</p><span class="go">Explore →</span></a>`).join("")}</div>
+    <section class="join"><div class="ic">${icon(a.joinIcon || "🤝")}</div><div><h2>${esc(a.joinTitle)}</h2><p>${esc(a.joinText)}</p></div>
+      <div class="row">${DB.user ? `<a class="btn btn-blue" href="#reports">Vote on reports</a>` : `<a class="btn btn-blue" href="#signup">Sign up</a><a class="btn btn-white" href="#login">Log in</a>`}</div></section>`;
+};
+
+V.team = () => {
+  const by = new Map();
+  S.site.funds.forEach(f => { const k = f.manager.trim(); if (!by.has(k)) by.set(k, []); by.get(k).push(f); });
+  const rows = [...by];
+  return `${pageHead("Team", "Meet our executives", "Students who lead YIF's research, investing and campaigns, guided by our mentor.")}
+  <div class="team-grid">${S.site.team.map(p => `<article class="person"><div class="ph placeholder-img">${imgOr(p.photo, p.name, esc(initials(p.name)))}</div>
+    <h3>${esc(p.name)}</h3><p>${esc(p.role)}</p></article>`).join("")}</div>
+  <div class="sec-title"><h2>Fund managers</h2><span>${rows.length} managers · ${S.site.funds.length} funds</span></div>
+  <div class="mgr-list">${rows.map(([n, fs]) => `<div class="mrow"><span class="avatar">${esc(initials(n))}</span><div style="min-width:0"><b>${esc(n)}</b>
+    ${fs.map(f => `<a href="#fund-${esc(f.slug)}">${esc(f.name)}</a>`).join("")}</div></div>`).join("")}</div>`;
+};
+
+function signCount(c) {
+  const n = live("pet:" + c.id, () => DB.petitionCount(c.id));
+  return n == null ? null : (c.petition.startCount || 0) + n;
+}
+function nextGoal(n) {
+  const steps = [100, 250, 500, 1000, 2500, 5000, 10000, 25000, 50000, 100000];
+  return steps.find(g => g > n) || Math.ceil((n + 1) / 100000) * 100000;
+}
+V.campaigns = () => `${pageHead("Campaigns", "Campaigns & petitions", "We use our position as shareholders to push companies on worker safety, privacy, governance and more. Open a campaign to read it and add your signature.")}<div class="stack" style="gap:20px">
+  ${S.site.campaigns.map((c, i) => { return `<article class="camp"><div class="im placeholder-img">${imgOr(c.image, "", String(i + 1).padStart(2, "0"))}</div>
+    <div class="tx"><h2>${esc(c.title)}</h2><p>${esc((c.summary || c.body).replace(/\[[^\]]*\]/g, ""))}</p><a class="pill-link" href="#campaign-${esc(c.id)}">${c.petition ? "Read and sign →" : "Click to see details →"}</a></div></article>`; }).join("")}</div>`;
+
+function petitionBox(c) {
+  const n = signCount(c), goal = n == null ? 0 : nextGoal(n), mine = store.get("yif:signed:" + c.id, null), u = DB.user;
+  const site = c.url ? (/change\.org/.test(c.url) ? "Change.org" : new URL(c.url).hostname.replace(/^www\./, "")) : "";
+  return `<section class="sign" id="sign" aria-labelledby="signTitle">
+    <div class="sign-count"><b class="num" id="signNum">${n == null ? "…" : fmtN(n)}</b><span id="signTitle">${n === 1 ? "person has" : "people have"} signed this petition</span></div>
+    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="${goal}" aria-valuenow="${n || 0}"><i style="width:${n == null ? 0 : Math.max(2, Math.min(100, n / goal * 100))}%"></i></div>
+    <div class="goal">${n == null ? "Loading signatures…" : `Next goal: ${fmtN(goal)} signatures`}</div>
+    ${mine ? `<div class="signed">${CHECK}<div><b>Thank you, ${esc(firstName(mine))}!</b> Your signature has been added.${c.url && /change\.org/.test(c.url) ? ` You can also add your name on <a href="${esc(c.url)}" target="_blank" rel="noopener" style="text-decoration:underline">${esc(site)}</a>.` : ""}</div></div>`
+    : `<form data-act="sign" data-id="${esc(c.id)}" novalidate>
+        <label class="sr" for="sgName" style="position:absolute;left:-9999px">Full name</label><input id="sgName" name="name" placeholder="Full name" autocomplete="name" value="${esc(u?.name || "")}" required maxlength="100">
+        <label class="sr" for="sgEmail" style="position:absolute;left:-9999px">Email</label><input id="sgEmail" name="email" type="email" placeholder="Email" autocomplete="email" value="${esc(u?.email || "")}" required>
+        <label class="consent" id="signConsent"><input type="checkbox" id="sgAgree"><span>I agree to the <a href="#terms" target="_blank">Terms of Service</a> and <a href="#privacy" target="_blank">Privacy Policy</a>.</span></label>
+        <div class="msg error" id="signMsg" hidden></div>
+        <button class="btn btn-blue" id="signBtn">Sign this petition</button>
+        <p class="fine">Your email is only used to make sure each person signs once. It's never shown publicly.${c.url ? ` ${/change\.org/.test(c.url) ? "Also posted on" : "Campaign page:"} <a href="${esc(c.url)}" target="_blank" rel="noopener" style="text-decoration:underline">${esc(site)}</a>.` : ""}</p>
+      </form>`}
+    ${previewNote()}
+  </section>`;
+}
+V.campaign = id => {
+  const n = S.site.campaigns.findIndex(x => x.id === id), c = S.site.campaigns[n]; if (!c) return V.notfound();
+  return `<a class="back" href="#campaigns">${ICONS.back}<span>All campaigns</span></a>
+    <div class="im placeholder-img camp-detail" style="width:100%;height:clamp(200px,30vw,460px);border-radius:var(--r);overflow:hidden;margin-bottom:32px">${imgOr(c.image, "", String(n + 1).padStart(2, "0"))}</div>
+    <div class="camp-layout"><article class="camp-detail" style="min-width:0">
+      <h1 class="page-title" style="margin-top:0;font-size:clamp(26px,3.6vw,40px)">${esc(c.title)}</h1>
+      <div class="camp-meta">${c.author ? `<span>${esc(c.author)}</span>` : ""}${c.date ? `<span>${esc(c.date)}</span>` : ""}</div>
+      <div class="prose" style="font-size:15.5px;line-height:1.7">${bb(c.body)}</div>
+      ${!c.petition && c.url ? `<p style="margin-top:22px"><a class="btn btn-blue" href="${esc(c.url)}" target="_blank" rel="noopener">Visit campaign ↗</a></p>` : ""}</article>
+    ${c.petition ? `<aside class="camp-side">${petitionBox(c)}</aside>` : ""}</div>`;
+};
+
+V.curriculum = () => {
+  const cs = S.site.curriculum;
+  if (cs.length === 1) return V.course(cs[0].slug);
+  return `<h1 class="page-title">Curriculum</h1><div class="stack">${cs.map(c => `<a class="panel course-card" href="#course-${esc(c.slug)}"><div><h3>${esc(c.title)}</h3><p>${c.lessons.length} lessons</p></div>${ICONS.chev}</a>`).join("")}</div>`;
+};
+V.course = slug => {
+  const c = S.site.curriculum.find(x => x.slug === slug); if (!c) return V.notfound();
+  return `<section class="course-hero"><div><div class="eyebrow">Curriculum</div><h1>${esc(c.title)}</h1><p>${esc(c.description)}</p></div>
+      <div class="facts"><div><b>${c.lessons.length}</b>lessons</div><div><b>${mins(c.lessons)}</b>minutes</div></div></section>
+  <div class="lessons">${c.lessons.map((l, i) => { const n = live(`cm:${c.slug}-${i + 1}`, () => DB.comments(`${c.slug}-${i + 1}`))?.length ?? 0;
+    return `<a class="lesson" href="#lesson-${esc(c.slug)}-${i + 1}"><span class="n">${i + 1}</span><span class="t">${esc(l.title)}</span>
+    <span class="d"><span class="num">${ICONS.play.replace('width="22" height="22"', 'width="12" height="12"')}${esc(l.duration)}</span><span class="cm">${ICONS.bubble}${n}</span>${ICONS.chev}</span></a>`; }).join("")}</div>`;
+};
+function embedUrl(u) {
+  const gd = u.match(/drive\.google\.com\/file\/d\/([\w-]+)/);
+  if (gd) return `https://drive.google.com/file/d/${gd[1]}/preview`;
+  const yt = u.match(/(?:youtu\.be\/|v=|embed\/)([\w-]{11})/);
+  return yt ? `https://www.youtube.com/embed/${yt[1]}?autoplay=1&rel=0` : u;
+}
+V.lesson = (slug, n) => {
+  const c = S.site.curriculum.find(x => x.slug === slug), l = c?.lessons[n - 1]; if (!l) return V.notfound();
+  const lid = `${slug}-${n}`, cm = live("cm:" + lid, () => DB.comments(lid)), lk = live("lk:" + lid + ":" + (DB.user?.uid || ""), () => DB.likes(lid));
+  const next = n < c.lessons.length ? `<a class="pill" href="#lesson-${slug}-${n + 1}">Next lesson →</a>` : `<a class="pill" href="#course-${slug}">Back to course</a>`;
+  const u = DB.user;
+  return `<div class="watch"><div style="min-width:0">
+    <div class="player" id="player" data-video="${esc(l.video ? embedUrl(l.video) : "")}">
+      <button class="play" data-act="play" aria-label="Play ${esc(l.title)}">${ICONS.play}</button>
+      <div class="cap"><span>Lesson ${n} · ${esc(l.duration)}</span><b>${esc(l.title)}</b></div>
+      ${l.video ? "" : `<div class="note">Video coming soon</div>`}
+    </div>
+    <section class="lesson-info"><div class="crumb"><a href="#course-${slug}">${esc(c.title.replace(/\n/g, " "))}</a> · Lesson ${n} of ${c.lessons.length}</div>
+      <h1>${esc(l.title)}</h1>
+      <div class="acts"><button class="pill likebtn" data-act="like" data-id="${lid}" aria-pressed="${!!lk?.mine}">${ICONS.heart}<span class="num">${(l.likes || 0) + (lk?.count || 0)}</span> ${lk?.mine ? "Liked" : "Like"}</button>
+        ${l.video ? `<a class="pill" href="${esc(l.video)}" target="_blank" rel="noopener">Open in Drive ↗</a>` : ""}<span style="flex:1"></span>${next}</div></section>
+    <section class="discuss"><h2>Discussion<span class="num">${cm ? cm.length : ""}</span></h2>
+      <form class="composer" data-act="comment" data-id="${lid}"><span class="avatar">${u ? esc(initials(u.name)) : "?"}</span>
+        <div class="box"><label for="cmt" style="position:absolute;left:-9999px">Write a comment</label><textarea id="cmt" rows="2" maxlength="1000" placeholder="${u ? "Share a question or takeaway…" : "Log in to join the discussion"}"></textarea>
+          <div class="row"><span>${u ? `Commenting as ${esc(u.name)}` : `<a href="#login" style="color:var(--blue)">Log in</a> to comment`}</span><button class="btn btn-blue">Post</button></div></div></form>
+      ${cm == null ? `<p class="no-comments">Loading comments…</p>` : cm.length ? `<ul class="comments">${cm.map(x => `<li><span class="avatar">${esc(initials(x.name || "?"))}</span><div class="body"><b>${esc(x.name)}</b><time>${ago(x.created)}</time>${u?.uid === x.uid ? ` · <button class="del" data-act="delComment" data-lid="${lid}" data-id="${esc(x.id)}">Delete</button>` : ""}<p>${esc(x.text)}</p></div></li>`).join("")}</ul>` : `<p class="no-comments">No comments yet. Start the discussion.</p>`}
+    </section></div>
+    <aside class="playlist"><h3>${esc(c.title.replace(/\n/g, " "))}</h3><div class="sub">${c.lessons.length} lessons · ${mins(c.lessons)} min</div>
+      <div class="prog"><i style="width:${n / c.lessons.length * 100}%"></i></div>
+      <ol>${c.lessons.map((x, i) => `<li><a href="#lesson-${slug}-${i + 1}" aria-current="${i + 1 === n}"><span class="k">${i + 1}</span><span class="lt">${esc(x.title)}<small>${esc(x.duration)}</small></span></a></li>`).join("")}</ol></aside></div>`;
+};
+
+V.fund = () => `${pageHead("Funds", "Introducing our funds", "Every fund is designed and managed by a student, each with its own thesis, criteria and holdings.")}
+  <div class="fund-grid">${S.site.funds.map((f, i) => `<a class="fund-card ${i % 2 ? "dark" : ""}" href="#fund-${esc(f.slug)}"><div class="mgr">${esc(f.manager)}</div><h3>${esc(f.name)}</h3><div class="ic">${icon(f.icon)}</div></a>`).join("")}</div>`;
+
+V.fundDetail = slug => {
+  const f = S.site.funds.find(x => x.slug === slug); if (!f) return V.notfound();
+  const sec = (t, body) => body ? `<h2 class="section-title">${esc(t)}</h2><div class="prose">${bb(body)}</div>` : "";
+  const T = f.totals || {}, tot = [], fc = f.currency || "KRW";
+  const fx = S.prices.prices?.["KRW=X"]?.price || 1400, conv = (v, from) => from === fc ? v : fc === "KRW" ? v * fx : v / fx;
+  let rows = [], value = 0, cost = 0;
+  if (f.holdings?.length) {
+    rows = f.holdings.map(h => { const q = quote(h); return { h, q, amt: conv((q.price ?? h.purchase) * h.shares, h.currency || "USD"), cost: conv(h.purchase * h.shares, h.currency || "USD") }; });
+    value = rows.reduce((a, r) => a + r.amt, 0); cost = rows.reduce((a, r) => a + r.cost, 0);
+    tot.push(["Holdings value", money(value, fc)], ["Return", pctTxt((value / cost - 1) * 100)], ["Holdings", String(rows.length)]);
+  } else {
+    if (T.krw) tot.push(["Total fund", money(T.krw, "KRW")]);
+    if (T.usd) tot.push(["In USD", money(T.usd)]);
+  }
+  const secs = (f.sections || []).map(x => sec(x.title, x.body)).join("");
+  const keys = f.keyFeatures?.length ? `<h2 class="section-title">Key Features</h2><div class="keys">${f.keyFeatures.map(k => `<div class="prose">${bb(k)}</div>`).join("")}</div>` : "";
+  let holdings = "";
+  if (rows.length) {
+    const items = rows.map(r => ({ label: r.h.symbol, value: r.amt }));
+    const mixed = rows.some(r => (r.h.currency || "USD") !== fc);
+    holdings = `<h2 class="section-title">Portfolio Holdings</h2>
+      <div class="hold-wrap">${refreshBtn()}<div class="stock-grid">${f.holdings.map((h, i) => stockCard(h, i, { quantity: true })).join("")}</div></div>
+      <h2 class="section-title">Portfolio Composition</h2>
+      <div class="comp">${pie(items, { donut: true, size: 240 })}<div style="overflow-x:auto"><table class="ltable"><thead><tr><th>Symbol</th><th>Amount</th><th>Proportion</th></tr></thead><tbody>
+        ${rows.map((r, i) => `<tr><td><span class="sw" style="background:${PIE_COLORS[i % PIE_COLORS.length]}"></span>${esc(r.h.symbol)}</td><td class="num">${money(r.amt, fc)}</td><td class="num">${Math.round(r.amt / (value || 1) * 100)}%</td></tr>`).join("")}
+        <tr><td><span class="sw" style="border:1px solid var(--line)"></span><b>Total</b></td><td class="num"><b>${money(value, fc)}</b></td><td class="num">100%</td></tr>
+        <tr><td style="color:var(--muted)">Return</td><td class="num chg ${cls(value / cost - 1)}" colspan="2" style="text-align:right">${pctTxt((value / cost - 1) * 100)}</td></tr>
+      </tbody></table>${mixed ? `<p style="font-size:12px;color:var(--muted);margin-top:10px">${fc === "KRW" ? "US dollar" : "Korean won"} holdings converted at ₩${fmtN(Math.round(fx))} per $1.</p>` : ""}</div></div>`;
+  }
+  const empty = !secs && !keys && !holdings;
+  return `<a class="back" href="#fund">${ICONS.back}<span>All funds</span></a>
+    <section class="fund-hero"><div><h1>${esc(f.name)}</h1><p>${esc(f.manager)}</p>${tot.length ? `<div class="totals num">${tot.map(([l, v]) => `<div><span>${l}</span><b>${v}</b></div>`).join("")}</div>` : ""}</div><div class="ic">${icon(f.icon, f.name)}</div></section>
+    <div class="fund-body">${secs}${keys}${holdings}
+    ${empty ? `<div class="empty" style="margin-top:40px"><strong>Fund details coming soon</strong>${esc(f.manager)} hasn't published this fund's write-up yet.</div>` : ""}</div>`;
+};
+
+V.portfolio = () => {
+  const H = S.port.holdings, i0 = H.map((h, i) => ({ h, i, q: quote(h) }));
+  const rows = i0.map(r => ({ ...r, cost: r.h.purchase * r.h.shares, val: (r.q.price ?? r.h.purchase) * r.h.shares }));
+  const cost = rows.reduce((a, r) => a + r.cost, 0), val = rows.reduce((a, r) => a + r.val, 0);
+  const live = S.port.returnMode !== "reported" && H.every(h => h.shares);
+  const total = live ? (val / cost - 1) * 100 : S.port.reportedReturn;
+  const sortedR = [...rows].sort((a, b) => (b.q.change ?? -1e9) - (a.q.change ?? -1e9)), best = sortedR[0], worst = sortedR[sortedR.length - 1];
+  const sortBy = S.portSort || "val";
+  const list = [...rows].sort((a, b) => sortBy === "ret" ? (b.q.change ?? 0) - (a.q.change ?? 0) : sortBy === "name" ? a.h.symbol.localeCompare(b.h.symbol) : b.val - a.val);
+  const maxW = Math.max(...rows.map(r => r.val / val));
+  const tab = S.allocTab || "name";
+  const sorted = [...H].sort((a, b) => b.weight - a.weight).map(h => ({ label: h.symbol, value: h.weight }));
+  const alloc = tab === "sector" ? allocBlock("BY SECTOR", group(H, "sector"), "Sector") : tab === "industry" ? allocBlock("BY INDUSTRY", group(H, "industry"), "Industry") : allocBlock("BY HOLDING", sorted, "Symbol");
+  const th = (k, l) => `<th><button data-act="psort" data-k="${k}" style="font:inherit;color:${sortBy === k ? "var(--ink)" : "inherit"};letter-spacing:inherit;text-transform:inherit">${l}${sortBy === k ? " ↓" : ""}</button></th>`;
+  return `${pageHead("Portfolio", "Main fund portfolio", "The flagship Youth Impact Fund portfolio, picked and managed by students. Prices update hourly during market hours.")}
+    <div class="kpis">
+      <div class="kpi lead"><span>${live ? "Total return" : "Total fund return"}</span><b>${pctTxt(total)}</b><small>since purchase</small></div>
+      <div class="kpi"><span>Current value</span><b>${money(val)}</b><small>cost ${money(cost)}</small></div>
+      <div class="kpi"><span>Gain / loss</span><b class="${cls(val - cost)}">${val >= cost ? "+" : "−"}${money(Math.abs(val - cost))}</b><small>${H.length} holdings</small></div>
+      <div class="kpi"><span>Best performer</span><b class="up">${esc(best.h.symbol)}</b><small>${pctTxt(best.q.change)} · worst ${esc(worst.h.symbol)} ${pctTxt(worst.q.change)}</small></div>
+    </div>
+    <div class="sec-title"><h2>Holdings</h2><span>Prices as of ${dateTxt(S.prices.updated)} · <button data-act="refresh" style="color:var(--blue);font:inherit">Refresh</button></span></div>
+    <div class="ptable-wrap"><table class="ptable"><thead><tr>${th("name", "Company")}<th>Shares</th><th>Avg cost</th><th>Price</th>${th("val", "Value")}<th>Weight</th>${th("ret", "Return")}</tr></thead><tbody>
+      ${list.map(r => `<tr data-act="goStock" data-sym="${esc(r.h.symbol)}"><td><div class="co">${logoBox(r.h, r.i)}<div><b>${esc(r.h.symbol)}</b><small>${esc(r.h.name)}</small></div></div></td>
+        <td>${fmtN(r.h.shares)}</td><td>${money(r.h.purchase)}</td><td>${money(r.q.price)}</td><td><b>${money(r.val)}</b></td>
+        <td><span class="wbar">${r.val / val < 0.01 ? "<1" : Math.round(r.val / val * 100)}%<i><em style="width:${r.val / val / maxW * 100}%"></em></i></span></td>
+        <td><span class="ret-pill chg ${cls(r.q.change)}">${pctTxt(r.q.change)}</span></td></tr>`).join("")}</tbody>
+      <tfoot><tr><td>Total</td><td></td><td>${money(cost)}</td><td></td><td>${money(val)}</td><td>100%</td><td><span class="ret-pill chg ${cls(total)}">${pctTxt(total)}</span></td></tr></tfoot></table></div>
+    <div class="sec-title"><h2>Allocation</h2><span>Share of the amount invested</span></div>
+    <section class="panel"><div class="alloc-tabs">${[["name", "By holding"], ["sector", "By sector"], ["industry", "By industry"]].map(([k, l]) => `<button class="chip" data-act="atab" data-k="${k}" aria-pressed="${tab === k}">${l}</button>`).join("")}</div>${alloc.replace(/<h3>[^<]*<\/h3>/, "")}</section>`;
+};
+
+V.stock = sym => {
+  const H = S.port.holdings, i = H.findIndex(h => h.symbol === sym), h = H[i]; if (!h) return V.notfound();
+  const q = quote(h), I = h.info || {};
+  const cell = (l, v) => v || v === 0 ? `<div><span>${l}</span><b>${esc(v)}</b></div>` : "";
+  return `<a class="back" href="#portfolio">${ICONS.back}<span>Back to portfolio</span></a>
+    <section class="panel"><div class="stock-head">${logoBox(h, i)}<div><h1>${esc(h.symbol)}</h1><div style="color:var(--ink-2)">${esc(h.name)}</div></div>
+      <div class="px"><b class="num">${money(q.price, q.currency)}</b><span class="chg ${cls(q.change)}">${pctTxt(q.change)}</span> <span style="color:var(--muted);font-size:12px">since purchase · ${dateTxt(q.time)}</span></div></div>
+      <div class="info-grid">${cell("Purchase price", money(h.purchase))}${cell("Shares held", h.shares)}${cell("Position value", money((q.price || 0) * h.shares))}${cell("Allocation", Math.round(h.weight) + "%")}${cell("Sector", h.sector)}${cell("Industry", h.industry)}${cell("Market cap", I.marketCap)}${cell("Revenue", I.revenue)}${cell("Profit margin", I.profitMargin)}${cell("Operating margin", I.operatingMargin)}${cell("P/E ratio", I.peRatio)}${cell("Beta", I.beta)}${cell("Float", I.float)}${cell("Founded", I.founded)}</div>
+      ${I.product ? `<h2 style="margin:32px 0 10px;font-size:18px;font-weight:600">Products &amp; services</h2><p style="color:var(--ink-2)">${esc(I.product)}</p>` : ""}
+      ${I.esg ? `<h2 style="margin:28px 0 10px;font-size:18px;font-weight:600">ESG efforts</h2><p style="color:var(--ink-2)">${esc(I.esg)}</p>` : ""}
+      ${h.url ? `<p style="margin-top:24px"><a class="btn btn-outline" href="${esc(h.url)}" target="_blank" rel="noopener">View on Yahoo Finance ↗</a></p>` : ""}</section>`;
+};
+
+const SEARCH_ICON = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>';
+function reportThumb(r) {
+  return r.thumb ? `<img src="${esc(r.thumb)}" alt="" loading="lazy">` : docThumb(r);
+}
+function voteCard(v) {
+  const r = S.site.reports.find(x => x.id === v.report); if (!r) return "";
+  const lv = live("vote:" + v.report + ":" + (DB.user?.uid || ""), () => DB.votes(v.report)) || { counts: {}, mine: null };
+  const K = [["agree", "Agree", ICONS.up], ["disagree", "Disagree", ICONS.down], ["hold", "Review", ICONS.hold]];
+  const tot = Object.fromEntries(K.map(([k]) => [k, (v[k] || 0) + (lv.counts[k] || 0)]));
+  const t = tot.agree + tot.disagree + tot.hold, pc = k => t ? Math.round(tot[k] / t * 100) : 0;
+  const end = new Date(v.endDate + "T23:59:59"), days = Math.ceil((end - Date.now()) / 864e5), ended = days < 0, lock = ended;
+  const when = ended ? "Voting closed" : days === 0 ? "Closes today" : `Closes ${end.toLocaleDateString("en-US", { month: "short", day: "numeric" })} · ${days} day${days === 1 ? "" : "s"} left`;
+  return `<article class="vcard"><div class="vl"><span class="tag">${esc(r.tag || r.category)}</span><h3>${esc(r.title)}</h3>
+      <p class="by">${esc(r.author)}${r.file ? ` · <a href="${esc(r.file)}" target="_blank" rel="noopener">Read report ↗</a>` : ""}</p>
+      <div class="vote-note">${lv.mine ? `Your vote: <b style="color:var(--ink)">${{ agree: "Agree", disagree: "Disagree", hold: "Review" }[lv.mine]}</b>${ended ? "" : " (tap another option to change)"} · ` : ""}${fmtN(t)} vote${t === 1 ? "" : "s"} · ${when}${!DB.user && !ended ? " · log in to vote" : ""}</div></div>
+    <div class="vr"><div class="tally" role="img" aria-label="Agree ${pc("agree")}%, disagree ${pc("disagree")}%, review ${pc("hold")}%">${t ? K.map(([k]) => `<i class="c-${k}" style="width:${tot[k] / t * 100}%"></i>`).join("") : ""}</div>
+      <div class="legend">${K.map(([k, l]) => `<span><i class="c-${k}"></i>${l} ${pc(k)}%</span>`).join("")}</div>
+      <div class="seg">${K.map(([k, l, ic]) => `<button class="vbtn" data-act="vote" data-id="${esc(v.report)}" data-choice="${k}" aria-pressed="${lv.mine === k}" ${lock ? "disabled" : ""}>${ic}${l}</button>`).join("")}</div></div></article>`;
+}
+function reportCardNew(r) {
+  const inner = `<span class="tag">${esc(r.tag || r.category)}</span><h3>${esc(r.title)}</h3><span class="au">${esc(r.author)}</span><span class="go">${r.file ? "PDF ↗" : ""}</span>`;
+  return r.file ? `<a class="rrow" href="${esc(r.file)}" target="_blank" rel="noopener">${inner}</a>` : `<button class="rrow" data-act="report" data-id="${esc(r.id)}">${inner}</button>`;
+}
+V.reports = () => {
+  const { reports, votes, reportCategories } = S.site, f = S.reportFilter, q = (S.reportQuery || "").trim().toLowerCase();
+  const counts = Object.fromEntries(reportCategories.map(c => [c, reports.filter(r => r.category === c).length]));
+  const list = reports.filter(r => (!f || r.category === f) && (!q || `${r.title} ${r.author} ${r.tag}`.toLowerCase().includes(q)));
+  const chip = (c, label, n) => `<button class="chip" data-act="filter" data-cat="${esc(c)}" aria-pressed="${(f || "") === c}">${esc(label)}<small>${n}</small></button>`;
+  return `${votes.length ? `<section><div class="rp-head"><div><h1>Open votes</h1><p>Members decide whether each analysis goes into the fund. One vote per member.</p></div></div>
+      <div class="votes">${votes.map(voteCard).join("")}</div></section>` : ""}
+    <section style="margin-top:${votes.length ? 64 : 0}px"><div class="rp-head"><div><h2>Report library</h2><p>Company, industry, ESG and macro research written by YIF members.</p></div><span class="count">${list.length} of ${reports.length} reports</span></div>
+      <div class="lib-tools"><div class="chips">${chip("", "All", reports.length)}${reportCategories.filter(c => counts[c]).map(c => chip(c, c, counts[c])).join("")}</div>
+        <label class="search" for="rq">${SEARCH_ICON}<input id="rq" type="search" placeholder="Search reports or authors" value="${esc(S.reportQuery || "")}" autocomplete="off"></label></div>
+      ${list.length ? `<div class="lib"><div class="lib-head"><span>Type</span><span>Title</span><span>Author</span><span></span></div>${list.slice(0, S.reportLimit).map(reportCardNew).join("")}</div>${list.length > S.reportLimit ? `<div class="more"><button class="btn btn-blue" data-act="more">Show more (${list.length - S.reportLimit})</button></div>` : ""}`
+        : `<div class="empty"><strong>No reports match</strong>Try another category or search term.</div>`}</section>`;
+};
+
+V.login = (mode = "login") => {
+  if (DB.user) return `<section class="panel login" style="text-align:center"><span class="avatar" style="width:56px;height:56px;font-size:18px;margin:0 auto 14px">${esc(initials(DB.user.name))}</span>
+    <h1 style="font-size:24px;font-weight:700">You're logged in</h1><p class="sub">${esc(DB.user.name)} · ${esc(DB.user.email)}</p>
+    <div style="display:flex;gap:10px;justify-content:center;margin-top:22px;flex-wrap:wrap"><a class="btn btn-blue" href="#home">Go to home</a><button class="btn btn-ghost" data-act="profile">Profile &amp; settings</button><button class="btn btn-ghost" data-act="logout">Log out</button></div></section>`;
+  const up = mode === "signup";
+  return `<section class="panel login"><h1 style="font-size:28px;font-weight:700">${up ? "Create your account" : "Welcome back"}</h1>
+  <p class="sub">${up ? "Join to sign campaigns, vote on reports and join lesson discussions." : "Log in to vote on reports and comment on lessons."}</p>
+  ${up ? `<label class="consent" id="consentWrap" style="margin-top:22px"><input type="checkbox" id="agree"><span>I agree to the <a href="#terms" target="_blank">Terms of Service</a> and <a href="#privacy" target="_blank">Privacy Policy</a>.</span></label>` : ""}
+  <button class="btn-google" data-act="google" ${up ? 'style="margin-top:14px"' : ""}>${GOOGLE_G}Continue with Google</button>
+  ${up ? "" : `<p class="fine-note">By continuing, you agree to our <a href="#terms">Terms of Service</a> and <a href="#privacy">Privacy Policy</a>.</p>`}
+  <div class="or">or use email</div>
+  <form data-act="auth" data-mode="${mode}" novalidate>${up ? `<label for="nm">Name<input id="nm" autocomplete="name" maxlength="100" required></label>` : ""}
+  <label for="em">Email<input id="em" type="email" autocomplete="email" required></label>
+  <label for="pw">Password<input id="pw" type="password" autocomplete="${up ? "new-password" : "current-password"}" minlength="6" required></label>
+  ${up ? "" : `<button type="button" class="linkbtn" data-act="reset">Forgot password?</button>`}
+  <div class="msg" id="authMsg" role="alert" hidden></div>
+  <button class="btn btn-blue" id="authBtn">${up ? "Create account" : "Log In"}</button></form>
+  <p style="margin-top:16px;font-size:13px;color:var(--ink-2)">${up ? `Already a member? <a href="#login" style="color:var(--blue)">Log in</a>` : `New here? <a href="#signup" style="color:var(--blue)">Create an account</a>`}</p>
+  ${previewNote()}</section>`;
+};
+
+V.legal = which => {
+  const L2 = S.site.legal, d = L2[which], B = S.site.brand;
+  const contact = B.contactEmail ? `<a href="mailto:${esc(B.contactEmail)}">${esc(B.contactEmail)}</a>` : "the YIF team through our Instagram or the contact details on this website";
+  const body = bb(d.body).split("{{contact}}").join(contact);
+  return `${pageHead("Legal", d.title, `Last updated ${L2.updated}`)}
+    <div class="legal"><nav aria-label="Legal pages"><a href="#terms" aria-current="${which === "terms" ? "page" : "false"}">Terms of Service</a><a href="#privacy" aria-current="${which === "privacy" ? "page" : "false"}">Privacy Policy</a></nav>
+    <article class="doc-body">${body}</article></div>`;
+};
+
+V.notfound = () => `<div class="empty" style="margin-top:40px"><strong>Page not found</strong><a href="#home" style="color:var(--blue)">Go to the home page</a></div>`;
+
+/* ===================== router ===================== */
+/* Internal route ids look like "campaign-amazon-injuries". In clean mode they map to real paths (campaigns/amazon-injuries/). */
+const CLEAN = !!window.YIF_CLEAN && /^https?:$/.test(location.protocol);
+const SIMPLE = ["about", "team", "curriculum", "portfolio", "reports", "campaigns", "login", "signup", "privacy", "terms"];
+function toPath(id) {
+  let m;
+  if (!id || id === "home") return "";
+  if (SIMPLE.includes(id)) return id + "/";
+  if (id === "fund") return "funds/";
+  if ((m = id.match(/^fund-(.+)$/))) return `funds/${m[1]}/`;
+  if ((m = id.match(/^campaign-(.+)$/))) return `campaigns/${m[1]}/`;
+  if ((m = id.match(/^lesson-(.+)-(\d+)$/))) return `curriculum/${m[1]}/${m[2]}/`;
+  if ((m = id.match(/^course-(.+)$/))) return `curriculum/${m[1]}/`;
+  if ((m = id.match(/^stock-(.+)$/))) return `portfolio/${m[1]}/`;
+  return id + "/";
+}
+function fromPath(p) {
+  const seg = p.split("/").filter(Boolean).map(decodeURIComponent);
+  if (!seg.length) return "home";
+  const [a, b, c] = seg;
+  if (a === "funds") return b ? "fund-" + b : "fund";
+  if (a === "campaigns" && b) return "campaign-" + b;
+  if (a === "curriculum" && b) return c ? `lesson-${b}-${c}` : "course-" + b;
+  if (a === "portfolio" && b) return "stock-" + b;
+  return a;
+}
+const basePath = () => new URL(document.baseURI).pathname;
+function currentId() {
+  if (!CLEAN) return (location.hash || "#home").slice(1) || "home";
+  let p = location.pathname; const b = basePath();
+  if (p.startsWith(b)) p = p.slice(b.length);
+  return fromPath(p.replace(/index\.html$/, ""));
+}
+const linkFor = id => CLEAN ? new URL(toPath(id), document.baseURI).pathname : "#" + id;
+function go(id, replace) {
+  if (!CLEAN) { if (location.hash.slice(1) === id) route(); else location.hash = "#" + id; return; }
+  history[replace ? "replaceState" : "pushState"](null, "", linkFor(id));
+  route(); if (!replace) scrollTo(0, 0);
+}
+function fixLinks(root = document) {
+  if (!CLEAN) return;
+  root.querySelectorAll('a[href^="#"]').forEach(a => { const id = a.getAttribute("href").slice(1); if (id) a.setAttribute("href", linkFor(id)); });
+}
+function route() {
+  const h = currentId();
+  let html, after = "", nav = h.split("-")[0];
+  let m;
+  if (h === "home" || h === "") html = V.home();
+  else if (h === "about") html = V.about();
+  else if (h === "team") html = V.team();
+  else if (h === "campaigns") html = V.campaigns();
+  else if ((m = h.match(/^campaign-(.+)$/))) { html = V.campaign(m[1]); nav = "campaigns"; }
+  else if (h === "curriculum") html = V.curriculum();
+  else if ((m = h.match(/^course-(.+)$/))) { html = V.course(m[1]); nav = "curriculum"; }
+  else if ((m = h.match(/^lesson-(.+)-(\d+)$/))) { html = V.lesson(m[1], +m[2]); nav = "curriculum"; }
+  else if (h === "fund") html = V.fund();
+  else if ((m = h.match(/^fund-(.+)$/))) { html = V.fundDetail(m[1]); nav = "fund"; }
+  else if (h === "portfolio") html = V.portfolio();
+  else if ((m = h.match(/^stock-(.+)$/))) { html = V.stock(decodeURIComponent(m[1])); nav = "portfolio"; }
+  else if (h === "reports") html = V.reports();
+  else if (h === "login" || h === "signup") html = V.login(h);
+  else if (h === "privacy" || h === "terms") html = V.legal(h);
+  else html = V.notfound();
+
+  const app = $("#app");
+  app.innerHTML = html;
+  fixLinks(app);
+  document.querySelectorAll(".after-main").forEach(e => e.remove());
+  if (after) { const d = document.createElement("div"); d.className = "after-main"; d.innerHTML = after; app.after(d); app.style.paddingBottom = "0"; }
+  else app.style.paddingBottom = "";
+  document.querySelectorAll("#menu a").forEach(a => { if (a.dataset.k === nav) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+  setMenu(false);
+  const t = S.site.brand.name;
+  const extra = { privacy: "Privacy Policy", terms: "Terms of Service", login: "Log In", signup: "Sign Up" };
+  let mm, detail = null;
+  if ((mm = h.match(/^campaign-(.+)$/))) detail = S.site.campaigns.find(c => c.id === mm[1])?.title;
+  else if ((mm = h.match(/^fund-(.+)$/))) detail = S.site.funds.find(f => f.slug === mm[1])?.name;
+  else if ((mm = h.match(/^stock-(.+)$/))) { const x = S.port.holdings.find(k => k.symbol === mm[1]); detail = x && `${x.symbol} · ${x.name}`; }
+  else if ((mm = h.match(/^lesson-(.+)-(\d+)$/))) detail = S.site.curriculum.find(c => c.slug === mm[1])?.lessons[mm[2] - 1]?.title;
+  else if ((mm = h.match(/^course-(.+)$/))) detail = S.site.curriculum.find(c => c.slug === mm[1])?.title.replace(/\n/g, " ");
+  const label = detail || (h === "fund" ? "Funds" : NAV.find(n => n[0] === nav)?.[1]) || extra[h] || (html === V.notfound() ? "Page not found" : "Page");
+  document.title = h === "home" || !h ? t : label + " · " + t;
+}
+function rerender() {
+  const y = scrollY, vals = {}, act = document.activeElement?.id;
+  const checks = {};
+  document.querySelectorAll("#app input[id], #app textarea[id]").forEach(i => { if (i.type === "checkbox") checks[i.id] = i.checked; else if (i.value) vals[i.id] = i.value; });
+  route();
+  Object.entries(vals).forEach(([id, v]) => { const i = document.getElementById(id); if (i && i.type !== "password") i.value = v; });
+  Object.entries(checks).forEach(([id, v]) => { const i = document.getElementById(id); if (i) i.checked = v; });
+  if (act) document.getElementById(act)?.focus({ preventScroll: true });
+  scrollTo(0, y);
+}
+
+/* ===================== events ===================== */
+document.addEventListener("click", async e => {
+  const el = e.target.closest("[data-act]"); if (!el) return;
+  const act = el.dataset.act, B = S.site.brand;
+  if (act === "refresh") {
+    e.preventDefault(); el.classList.add("spin");
+    await loadPrices(); rerender();
+    toast("Prices as of " + new Date(S.prices.updated).toLocaleString("en-US", { month: "2-digit", day: "2-digit", year: "numeric", hour: "numeric", minute: "2-digit" }));
+  } else if (act === "filter") {
+    S.reportFilter = el.dataset.cat || null; S.reportLimit = 20; rerender();
+  } else if (act === "psort") { S.portSort = el.dataset.k; rerender();
+  } else if (act === "atab") { S.allocTab = el.dataset.k; rerender();
+  } else if (act === "goStock") { go("stock-" + el.dataset.sym);
+  } else if (act === "more") {
+    S.reportLimit += 20; rerender();
+  } else if (act === "report") {
+    const r = S.site.reports.find(x => x.id === el.dataset.id);
+    if (r?.file) { e.preventDefault(); window.open(r.file, "_blank", "noopener"); }
+    else if (el.tagName === "BUTTON") toast("This report's PDF hasn't been uploaded yet.");
+  } else if (act === "vote") {
+    if (!requireLogin("Log in to vote on reports.")) return;
+    const key = "vote:" + el.dataset.id + ":" + DB.user.uid, prev = L[key]?.mine || null;
+    if (prev === el.dataset.choice) { toast("That's already your vote. Pick another option to change it."); return; }
+    el.disabled = true;
+    try { await DB.vote(el.dataset.id, el.dataset.choice, prev); toast(prev ? "Vote changed." : "Vote recorded."); }
+    catch (err) { toast(err instanceof AuthError ? err.message : "Couldn't save your vote. Try again."); }
+    drop("vote:" + el.dataset.id + ":" + DB.user.uid); rerender();
+  } else if (act === "like") {
+    if (!requireLogin("Log in to like lessons.")) return;
+    const k = "lk:" + el.dataset.id + ":" + DB.user.uid, cur = L[k];
+    const on = !(cur?.mine);
+    L[k] = { count: (cur?.count || 0) + (on ? 1 : -1), mine: on }; rerender();
+    try { await DB.toggleLike(el.dataset.id, on); } catch { toast("Couldn't save your like."); }
+    drop(k); rerender();
+  } else if (act === "delComment") {
+    try { await DB.deleteComment(el.dataset.lid, el.dataset.id); toast("Comment deleted."); } catch { toast("Couldn't delete the comment."); }
+    drop("cm:" + el.dataset.lid); rerender();
+  } else if (act === "toSign") {
+    $("#sign")?.scrollIntoView({ behavior: "smooth", block: "center" }); setTimeout(() => $("#sgName")?.focus({ preventScroll: true }), 400);
+  } else if (act === "google") {
+    const msg = $("#authMsg"); msg.hidden = true;
+    if ($("#agree") && !$("#agree").checked) { needConsent(msg); return; }
+    try { await DB.google(); afterAuth("Logged in with Google."); } catch (err) { msg.className = "msg error"; msg.textContent = err.message; msg.hidden = false; }
+  } else if (act === "reset") {
+    const msg = $("#authMsg");
+    try { await DB.reset($("#em").value.trim()); msg.className = "msg ok"; msg.textContent = "Check your inbox for a link to reset your password."; }
+    catch (err) { msg.className = "msg error"; msg.textContent = err.message; }
+    msg.hidden = false;
+  } else if (act === "acct") {
+    const m = $("#acctMenu"); m.hidden = !m.hidden; el.setAttribute("aria-expanded", !m.hidden);
+  } else if (act === "profile") {
+    const m = $("#acctMenu"); if (m) m.hidden = true; setMenu(false); openProfile();
+  } else if (act === "closeProfile") { closeProfile();
+  } else if (act === "profileDelete") { openProfile("delete");
+  } else if (act === "profileBack") { openProfile("main");
+  } else if (act === "logout") {
+    closeProfile(true);
+    await DB.logOut(); toast("You're logged out.");
+  }
+  else if (act === "login" && B.loginUrl) { e.preventDefault(); location.href = B.loginUrl; }
+  else if (act === "signup" && B.signupUrl) { e.preventDefault(); location.href = B.signupUrl; }
+  else if (act === "play") {
+    const p = $("#player"), src = p.dataset.video;
+    if (!src) return toast("This lesson's video link hasn't been added yet.");
+    p.innerHTML = `<iframe src="${esc(src)}" title="Lesson video" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>`;
+  }
+});
+document.addEventListener("click", e => {
+  if (e.target.closest("#menu a")) setMenu(false);
+  const m = $("#acctMenu"); if (m && !m.hidden && !e.target.closest(".acct")) { m.hidden = true; $(".acct-btn")?.setAttribute("aria-expanded", "false"); }
+});
+function needConsent(msg) {
+  msg.className = "msg error"; msg.textContent = "Please agree to the Terms of Service and Privacy Policy to continue."; msg.hidden = false;
+  const w = $("#consentWrap") || $("#signConsent"); if (w) { w.classList.remove("shake"); void w.offsetWidth; w.classList.add("shake"); }
+  $("#agree, #sgAgree")?.focus();
+}
+function afterAuth(msg) {
+  toast(msg); const to = S.returnTo && !/^(login|signup)$/.test(S.returnTo) ? S.returnTo : "home"; S.returnTo = null;
+  if (currentId() === to) rerender(); else go(to);
+}
+document.addEventListener("submit", async e => {
+  const f = e.target; e.preventDefault();
+  const act = f.dataset.act;
+  if (act === "comment") {
+    if (!requireLogin("Log in to comment.")) return;
+    const inp = f.querySelector("textarea, input"), text = inp.value.trim(); if (!text) return;
+    inp.disabled = true;
+    try { await DB.addComment(f.dataset.id, text); inp.value = ""; } catch { toast("Couldn't post your comment. Try again."); }
+    inp.disabled = false; drop("cm:" + f.dataset.id); rerender();
+  } else if (act === "saveName") {
+    const msg = $("#pfMsg"), btn = $("#pfSave"), v = $("#pfName").value;
+    btn.disabled = true; btn.textContent = "Saving…";
+    try { await DB.updateName(v); msg.className = "msg ok"; msg.textContent = "Your name has been updated."; $("#pfTitle").textContent = DB.user.name; $("#pfAv").textContent = initials(DB.user.name); }
+    catch (err) { msg.className = "msg error"; msg.textContent = err.message; }
+    msg.hidden = false; btn.disabled = false; btn.textContent = "Save changes";
+  } else if (act === "confirmDelete") {
+    const msg = $("#pfDelMsg"), btn = $("#pfDel");
+    msg.hidden = true; btn.disabled = true; btn.textContent = "Deleting…";
+    try { await DB.deleteAccount($("#pfPw")?.value); closeProfile(true); toast("Your account has been deleted."); if (/^(login|signup)$/.test(currentId())) rerender(); }
+    catch (err) { msg.textContent = err.message; msg.hidden = false; btn.disabled = false; btn.textContent = "Delete my account"; }
+  } else if (act === "auth") {
+    const msg = $("#authMsg"), btn = $("#authBtn"), up = f.dataset.mode === "signup";
+    msg.hidden = true;
+    if (up && !$("#agree").checked) { needConsent(msg); return; }
+    btn.disabled = true; btn.textContent = up ? "Creating account…" : "Logging in…";
+    try {
+      const em = $("#em").value.trim(), pw = $("#pw").value;
+      if (up) await DB.signUp($("#nm").value.trim(), em, pw); else await DB.logIn(em, pw);
+      afterAuth(up ? "Welcome to Youth Impact Fund!" : "Welcome back!");
+    } catch (err) {
+      msg.className = "msg error"; msg.textContent = err.message; msg.hidden = false;
+      btn.disabled = false; btn.textContent = up ? "Create account" : "Log In";
+    }
+  } else if (act === "sign") {
+    const cid = f.dataset.id, name = $("#sgName").value.trim(), email = $("#sgEmail").value.trim(), msg = $("#signMsg"), btn = $("#signBtn");
+    const fail = t => { msg.textContent = t; msg.hidden = false; };
+    msg.hidden = true;
+    if (!name) return fail("Enter your full name.");
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return fail("Enter a valid email address.");
+    if (!$("#sgAgree").checked) { const w = $("#signConsent"); w.classList.remove("shake"); void w.offsetWidth; w.classList.add("shake"); return fail("Please agree to the Terms of Service and Privacy Policy to sign."); }
+    btn.disabled = true; btn.textContent = "Adding your signature…";
+    try {
+      await DB.sign(cid, name, email);
+      store.set("yif:signed:" + cid, name);
+      L["pet:" + cid] = (L["pet:" + cid] || 0) + 1; rerender();
+      $("#signNum")?.classList.add("pop"); toast("Thank you for signing!");
+      setTimeout(() => DB.petitionCount(cid).then(v => { L["pet:" + cid] = v; rerender(); }).catch(() => {}), 1500);
+    } catch (err) {
+      fail(err instanceof AuthError ? err.message : "Couldn't add your signature. Check your connection and try again.");
+      btn.disabled = false; btn.textContent = "Sign this petition";
+    }
+  }
+});
+document.addEventListener("keydown", e => {
+  const m = $("#profileModal");
+  if (m && e.key === "Tab") {
+    const f = [...m.querySelectorAll("button, input:not([readonly]), a[href]")].filter(x => !x.disabled);
+    if (!f.length) return;
+    if (e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f[f.length - 1].focus(); }
+    else if (!e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus(); }
+  }
+});
+document.addEventListener("keydown", e => {
+  if (e.target.id === "cmt" && e.key === "Enter" && !e.shiftKey && !e.isComposing) { e.preventDefault(); e.target.form.requestSubmit(); }
+});
+document.addEventListener("input", e => {
+  if (e.target.id !== "rq") return;
+  S.reportQuery = e.target.value; S.reportLimit = 20;
+  clearTimeout(S.qt); S.qt = setTimeout(rerender, 150);
+});
+function setMenu(open) {
+  $("#menu").classList.toggle("open", open); document.body.classList.toggle("menu-open", open);
+  const b = $("#burger"); b.setAttribute("aria-expanded", open); b.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+}
+document.addEventListener("keydown", e => {
+  if (e.key !== "Escape") return;
+  if ($("#profileModal")) { closeProfile(); return; }
+  if ($("#menu").classList.contains("open")) { setMenu(false); $("#burger").focus(); }
+});
+window.matchMedia("(min-width: 901px)").addEventListener?.("change", e => { if (e.matches) setMenu(false); });
+$("#burger").addEventListener("click", () => {
+  setMenu(!$("#menu").classList.contains("open"));
+});
+window.addEventListener("hashchange", () => {
+  if (CLEAN) { const id = location.hash.slice(1); if (id && !document.getElementById(id)) go(id, true); return; }
+  route(); scrollTo(0, 0);
+});
+window.addEventListener("popstate", () => { if (CLEAN) route(); });
+document.addEventListener("click", e => {
+  if (!CLEAN || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+  const a = e.target.closest("a[href]"); if (!a || a.target === "_blank" || a.hasAttribute("download")) return;
+  const u = new URL(a.href, location.href); if (u.origin !== location.origin || !u.pathname.startsWith(basePath())) return;
+  if (/\.(pdf|json|png|jpe?g|webp|svg|xml|txt|ico)$/i.test(u.pathname)) return;
+  e.preventDefault();
+  const id = fromPath(u.pathname.slice(basePath().length));
+  if (u.pathname === location.pathname) { setMenu(false); scrollTo({ top: 0, behavior: "smooth" }); return; }
+  go(id);
+}, true);
+
+/* ===================== boot ===================== */
+(async () => {
+  try {
+    [S.site, S.port] = await Promise.all([getJSON("data/site.json"), getJSON("data/portfolio.json")]);
+    await Promise.all([loadPrices(), DB.init()]);
+  } catch (err) {
+    $("#app").innerHTML = `<div class="empty" style="margin-top:40px"><strong>Couldn't load site data</strong>${esc(err.message)}. If you opened index.html directly from your computer, run a local server instead (see README).</div>`;
+    return;
+  }
+  const cost = S.port.holdings.reduce((a, h) => a + h.purchase * (h.shares || 0), 0);
+  S.port.holdings.forEach(h => { if (h.weight == null) h.weight = cost ? h.purchase * h.shares / cost * 100 : 0; });
+  const B = S.site.brand;
+  $("#brand").innerHTML = (B.logo ? `<img src="${esc(B.logo)}" alt="">` : LOGO_SVG) + `<span>${esc(B.name).replace(" Fund", "<br>Fund")}</span>`;
+  $("#menu").innerHTML = NAV.map(([k, l]) => `<a href="#${k}" data-k="${k}">${l}</a>`).join("") + `<div class="menu-acct" id="menuAcct"></div>`;
+  renderAccount();
+  DB.onChange(() => { renderAccount(); Object.keys(L).filter(k => /^(vote|lk):/.test(k)).forEach(k => delete L[k]); rerender(); });
+  const col = (t, items) => `<div class="foot-col"><h4>${t}</h4><ul>${items.map(([k, l]) => `<li><a href="#${k}">${l}</a></li>`).join("")}</ul></div>`;
+  $("#footer").innerHTML = `<div class="foot-top">
+      <div class="foot-brand"><a class="logo" href="#home">${B.logo ? `<img src="${esc(B.logo)}" alt="">` : LOGO_SVG}<span>${esc(B.name)}</span></a><p>${esc(B.tagline)} The world's first student-run ESG fund, founded in 2020.</p></div>
+      ${col("Explore", [["about", "About"], ["team", "Team"], ["curriculum", "Curriculum"]])}
+      ${col("Invest", [["fund", "Funds"], ["portfolio", "Portfolio"], ["reports", "Reports"]])}
+      ${col("Act", [["campaigns", "Campaigns"], ["signup", "Sign Up"], ["login", "Log In"]])}
+    </div>
+    <div class="foot-bottom"><span>${esc(B.footer.join(" · "))}</span><span class="foot-legal"><a href="#terms">Terms of Service</a><a href="#privacy">Privacy Policy</a></span></div>`;
+  if (CLEAN && location.hash.length > 1) { const old = location.hash.slice(1); history.replaceState(null, "", linkFor(old)); }
+  fixLinks(document);
+  route();
+  setInterval(async () => {
+    if (document.hidden) return;
+    const before = S.prices.updated; await loadPrices();
+    if (S.prices.updated !== before && !document.activeElement?.matches("input")) rerender();
+  }, 5 * 60 * 1000);
+})();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1814 @@
+{
+  "brand": {
+    "name": "Youth Impact Fund",
+    "tagline": "Empowering youth to make impact through investing.",
+    "logo": "assets/logo.png",
+    "loginUrl": "",
+    "signupUrl": "",
+    "footer": [
+      "YIF by Youth Impact",
+      "Copyright, Youth Impact Fund. All rights reserved."
+    ],
+    "contactEmail": "",
+    "siteUrl": "https://youthimpactfund.com",
+    "basePath": "/"
+  },
+  "home": {
+    "heroImage": "assets/home/hero-chart-hand.webp",
+    "aboutImage": "assets/home/about-plant-hand.webp",
+    "aboutText": "Founded in 2020, Youth Impact Fund is the world's first student-run ESG fund, with over $100,000 assets under management.",
+    "portfolioText": "From analyzing corporations to making investments, the entire process is directly managed by youths who bring fresh perspectives and innovative strategies to the world of business and finance."
+  },
+  "about": {
+    "headline": "World's first\nstudent-run ESG fund",
+    "image": "",
+    "missionLabel": "OUR MISSION",
+    "mission": "Empowering youth to make impact through investing.",
+    "pillars": [
+      {
+        "icon": "assets/about/youth.png",
+        "title": "Youth Fund",
+        "text": "From analyzing corporations to making investments, the entire process is directly managed by youths who bring fresh perspectives and innovative strategies to the world of business and finance."
+      },
+      {
+        "icon": "assets/about/esg.png",
+        "title": "ESG Fund",
+        "text": "Following ESG standards, we invest in everyone's future by prioritizing environmental sustainability, social responsibility, and good governance practices, striving to create a more equitable and sustainable world."
+      },
+      {
+        "icon": "assets/about/activist.png",
+        "title": "Activist Fund",
+        "text": "Intervening in management through targeted campaigns and shareholder proposals, we strive to drive positive change and hold corporations accountable for their actions and decisions."
+      }
+    ],
+    "stats": [
+      {
+        "icon": "money",
+        "value": "$100,000",
+        "label": "assets under management"
+      },
+      {
+        "icon": "globe",
+        "value": "ESG",
+        "label": "at the heart of our investment approach"
+      },
+      {
+        "icon": "people",
+        "value": "100%",
+        "label": "student-led fund"
+      }
+    ],
+    "joinTitle": "Ready to join?",
+    "joinText": "Get involved and be a part of our mission to create a positive impact through responsible investing.",
+    "joinIcon": "assets/about/join.png"
+  },
+  "team": [
+    {
+      "name": "Kyeongsup Song",
+      "role": "Mentor",
+      "photo": "assets/team/kyeongsup-song.webp"
+    },
+    {
+      "name": "David Koo",
+      "role": "Project Leader",
+      "photo": "assets/team/david-koo.webp"
+    },
+    {
+      "name": "Derek Kim",
+      "role": "Deputy Leader",
+      "photo": "assets/team/derek-kim.webp"
+    },
+    {
+      "name": "Jaeho Lee",
+      "role": "Director: Company Research",
+      "photo": "assets/team/jaeho-lee.webp"
+    },
+    {
+      "name": "Jonathan Park",
+      "role": "Director: Macroeconomics Research",
+      "photo": "assets/team/jonathan-park.webp"
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "project-esg",
+      "title": "Project ESG: Visualizing Ethics in the Digital Age",
+      "author": "Lynn Kim",
+      "date": "26 August, 2025",
+      "summary": "For the metaverse gallery hosted on Spatial.io, a scavenger hunt game was designed to encourage visitor engagement. Small 3D objects were installed within the artwork with hyperlinks that redirected visitors to google forms. These objects were blended within the artwork to prevent the hunt from being too easy since the gallery space is relatively compact. Once a participant finds an image code, they will be prompted to take a screenshot and submit it via the YIF email or Instagram DM to earn a price.The google forms had questions where the visitors were required to solve ESG related questions, fulfilling the goal of education while also keeping them interactive.",
+      "body": "For the metaverse gallery hosted on Spatial.io, a scavenger hunt game was designed to encourage visitor engagement. Small 3D objects were installed within the artwork with hyperlinks that redirected visitors to google forms. These objects were blended within the artwork to prevent the hunt from being too easy since the gallery space is relatively compact. Once a participant finds an image code, they will be prompted to take a screenshot and submit it via the YIF email or Instagram DM to earn a price.The google forms had questions where the visitors were required to solve ESG related questions, fulfilling the goal of education while also keeping them interactive. \n\nThe scavenger hunt will run for two full months, providing visitors enough time to participate. After the event ends, a prize draw will be conducted. The winner is distributed into 4 categories: one participant will receive the first prize, three will receive second prize, six will receive third prize, and ten participants will receive participation rewards. For google forms, the players’ score would determine their prize tier.\n\nThe first prize will be a gift card valued at over 10,000₩, such as a Starbucks or convenience store gifticon. The second prize will consist of a gifticon around 5,000₩ while the third prize will be around 2,000₩. All participants who complete the challenge but do not win a major prize will receive an ESG-themed NFT. This approach ensures that everyone receives a reward for participating. \n\nTo advertise the metaverse and keep engagement high, the scavenger hunt will be promoted primarily through Instagram and YouTube. Instagram Reels and Youtube shorts will help gain more exposure, promoting prize reveals. There will also be videos that will explain how to participate in the hunt and how to apply to win a prize. Threads may also be used to post updates during the campaign.\n\nIn addition to the scavenger hunt, we are creating and selling merchandise based on our ESG themed NFT artwork. The production and sales will be designed through Marpple Shop – a website that allows users to upload custom designs and sell them– with features such as international shipping  making the goods accessible to a global audience. \n\nThe goods will incorporate the designs of the ESG-themed NFTs and will be categorised into two main types. First, there are practical ESG goods – tumblers, eco-bags, and mugs — items that align with the environmental aspect of ESG by promoting reusable alternatives. Second, there are smaller collectible items – stickers, keyrings, phone grips, and custom-wrapped chocolates.\n\nReport: [url=https://drive.google.com/file/d/1Yy2EB3jq9BoTVh5d8p8aAg3LcPg65hqX/view?usp=sharing][b][color=#003CDB]Project ESG Visualizing Ethics in the Digital Age, Lynn Kim[/color][/b][/url]",
+      "url": "https://www.spatial.io/s/Project-ESG-Gallery-68836cba9864de18141535e3?share=901962842879347238",
+      "image": "assets/campaigns/7-project-esg-visualizing-ethics-in-the-digital-age.webp",
+      "petition": {
+        "startCount": 0
+      }
+    },
+    {
+      "id": "minority-shareholders",
+      "title": "대주주 중심의 물적분할 구조 개혁과 소액주주 보호법 제정",
+      "author": "Youth Impact Fund",
+      "date": "4 June, 2025",
+      "summary": "제안 정책/법안 요점 및 핵심: 1) 기업이 핵심 사업부를 물적분할한 뒤 자회사를 상장하는 방식(이중상장)은 소액주주의 권익을 침해하고, 모회사 주가 하락을 유발함. 2) 물적분할은 '중대한 경영 결정'으로 보고, 반드시 주주총회 특별결의를 통해 진행. 3) 물적분할 엄격한 심사를 통한 승인 및 기존 모회사 일반주주 신주 우선 배정. 4) 제도 개선을 통해 소액주주의 의결권 보장 및 기업에 대한 신뢰 회복 유도...",
+      "body": "[b]제안 정책/법안 요점 및 핵심[/b]\n[ul][li]기업이 핵심 사업부를 물적분할한 뒤 자회사를 상장하는 방식(이중상장)은 소액주주의 권익을 침해하고, 모회사 주가 하락을 유발함[/li]\n[li]물적분할은 '중대한 경영 결정'으로 보고, 반드시 주주총회 특별결의를 통해 진행[/li]\n[li]물적분할 엄격한 심사를 통한 승인 및 기존 모회사 일반주주 신주 우선 배정[/li]\n[li]제도 개선을 통해 소액주주의 의결권 보장 및 기업에 대한 신뢰 회복 유도[/li][/ul]\n\n[b]제안 정책/법안의 필요성 및 세부 내용[/b]\n[b]문제점:[/b]\n[ul][li]현행법상 물적분할은 이사회 결의만으로 가능하며, 자회사의 상장 역시 제한이 없어 소액주주가 배제된 채 가치가 외부로 이전됨[/li]\n[li]대표 사례: LG화학은 배터리 부문을 물적분할하고, 100% 자회사인 LG에너지솔루션을 상장했으며 이로 인해 LG화학의 주가는 약 800,000원에서 223,000원으로 급락[/li]\n[li]소액주주는 LG에너지솔루션 지분을 받지 못한 채 손실만 떠안음[/li][/ul]\n\n[b]제안 내용:[/b]\n[b]물적분할 시 주주총회 특별결의 의무화[/b]\n[ul][li]전체 주주의 ⅔ 이상 또는 소액주주 10% 이상 동의 요건[/li]\n[li]대주주가 과반을 점유한 상황에서도 형식적 결의 방지[/li][/ul]\n\n[b]회사 쪼개기 상장 심사 강화 및 소액주주 보호[/b]\n[ul][li]물적분할 후 일정 기간(예: 3년) 이내 자회사 상장 제한[/li]\n[li]상장이 필요할 경우 금융당국의 사전 심사 및 주주 보호 대책 의무화[/li]\n[li]쪼개기 상장 시 모회사 소액 주주에게 보상 신주 우선배정[/li][/ul]\n\n[b]주요 참고 사례[/b]\n[ul][li]메리츠금융: 자회사 상장폐지 + 대주주 지분 희생 → 주가 3.5배 상승[/li]\n[li]LG화학: 물적분할 후 이중상장 → 주가 급락, 소액주주 피해[/li][/ul]\n\n\n[b]예상 소요예산[/b]\n법령 개정 및 감독 강화를 위한 행정 비용 중심. 별도 예산은 크지 않음\n\n\n[b]제안 정책/법안의 차별성 및 기대효과[/b]\n[b]차별성:[/b]\n[ul][li]기존 제도는 기업의 결정권만 보장, 본 제안은 [b]소액주주의 동의권과 보호조치 명문화[/b][/li]\n[li]법적 의무화를 통해 기업의 자율 규범 수준을 제도화[/li]\n[li]메리츠 사례처럼 [b]주주 친화적 지배구조[/b]로 전환하는 구조 제시[/li][/ul]\n\n[b]기대효과:[/b]\n[ul][li]소액주주의 실질적 권리 보장[/li]\n[li]주가 하락에 따른 투자 불신 해소[/li]\n[li]ESG 관점에서 기업의 ‘G(Governance)’ 강화[/li]\n[li]자본시장의 장기 신뢰 회복과 투자 활성화[/li][/ul]",
+      "url": "https://blq.kr/suggest/?mod=document&category1=%EB%AF%BC%EC%83%9D%C2%B7%EA%B2%BD%EC%A0%9C&uid=776&execute_uid=776",
+      "image": "assets/campaigns/6-campaign.webp",
+      "petition": {
+        "startCount": 0
+      }
+    },
+    {
+      "id": "victorias-secret",
+      "title": "Petition for Victoria's Secret to Stop Promoting Unrealistic Beauty Standards",
+      "author": "Youth Impact Fund",
+      "date": "3 March, 2025",
+      "summary": "Victoria’s Secret has advocated unrealistic and misleading beauty standards and body images, lacking the inclusion of plus-size models and promoting the concept of “The Perfect Body.” This has contributed to causing mental health problems, including depression, eating disorders, and even suicidal thoughts, particularly influential for teenagers...",
+      "body": "[b]Petition Summary[/b]\n\nVictoria’s Secret has advocated unrealistic and misleading beauty standards and body images, lacking the inclusion of plus-size models and promoting the concept of “The Perfect Body.” This has contributed to causing mental health problems, including depression, eating disorders, and even suicidal thoughts, particularly influential for teenagers. We, the Youth Impact Fund, initiate a call for Victoria’s Secret to embrace diverse sizes of models on runways and foster the wording that supports self-love and true beauty. The Youth Impact Fund demands your signature on this petition for changes that extend beyond Victoria’s Secret to protect the teenagers by redefining beauty and body image and meeting global ESG goals. \n\n\n[b]Who we are[/b]\n\nYouth Impact Fund [url]www.youthimpact.com[/url] is the world’s first youth-managed fund pursuing global ESG goals. We manage a $100,000 valued investment portfolio, actively considering environmental, social, and governance factors to aim for better performances of corporations regarding their social responsibility. The Youth Impact Fund has launched a campaign against Victoria’s Secret to address the failure to include diverse sizes of models and destructive influences generated by their false marketing choices. \n\n\n[b]The issue[/b]\n\nVictoria’s Secret has contributed to shaping the standard of ‘ideal beauty’ for a long time, which is closely tied with mental health problems and body image issues for people, particularly for females in the younger generation. It has consistently advocated unrealistic beauty standards while lacking diversity and inclusion, promoting ‘perfect bodies’ and exposing models who are mostly white in its runway. While Victoria’s Secret has made attempts to undertake the issues, problems have not been adequately addressed since it fails to eliminate deep-rooted exclusion in its brand. It is crucial to understand the problems and pursue measurable changes that reflect true diversity and empower people of all shapes, sizes, races, and identities. \n\nVictoria’s Secret includes models increasingly thinner over 23 fashion shows. According to the study From Angels to #Real Women published in Spring 2020 (Kennedy), a total of 54 models appeared in Victoria's Secret’s 50 sample posts, and 88.9% (48) of them were categorized as wearing small size, 7.4% (4) as medium size, and 3.7% (2) of models as large size. It indicates that the average size of Victoria’s Secret’s models is far smaller than the national average size of women, 16-18, which is considered as women’s plus size 20W. Victoria’s Secret’s promotion of the concept of ‘The Perfect Body' deteriorates people’s perception of their own bodies, causing serious problems that are difficult to address at once. Mental Health Foundation has reported that 31% of teenagers and 35% of adults feel depressed or ashamed of their body image. Exposure to television, social media, and film influences the formation of their body images. Stricter standards of beauty and the use of unrealistic body images can lead individuals to feel deep dissatisfaction with their own body images, increasing the chance of mental health struggles, including low self-esteem, depression, shame and anxiety, eating disorders, and even suicidal thoughts (French). Indeed, according to the 2017 Dove Global Girls Beauty and Confidence Report, 52% of 1000 survey participants aged 10-17 answered that toxic beauty contents cause low self-esteem (Dove). In essence, Victoria’s Secret’s contents, including the concept of “The Perfect Body,” have developed these detrimental mental health problems resulting from negative body image by twisting the idea of “real beauty.” \n\n\n[b]Our Demands[/b]\n\nIt is a crucial responsibility for brands like Victoria’s Secret to be part of those who initiate inclusivity in the fashion industry. We sincerely call on Victoria’s Secret to increase the representation of models of all sizes. That is, inclusion of plus-size models is essential. According to the data provided by social commerce platform Mys Tyler, 54.4% of American women wear clothing size plus-size (CSA). Notwithstanding the reality, fashion brands, particularly on their runways, overlook the large portion of plus-size women, and it is reasonable that we request Victoria’s Secret to feature at least 10% of plus-size models to reflect on realistic distribution of clothing sizes. In addition to this, Victoria’s Secret must ensure diverse sizes of models are not portrayed differently from each other. \n\nFurthermore, extreme words like “The Perfect Body” easily lead to biased standards of beauty and body image, instigating mental health problems, which are major concerns that it must address. We request Victoria’s Secret to acknowledge the harm induced by their past word choices in advertisements and instead increase the use of words fostering self-love, individuality, and body positivity. \n\n\n[b]Why Your Signature Matters[/b]\n\nIn fact, overweight or underweight teenagers (determined by the actual measurement of height and weight) have merely slightly more suicidal tendencies than teenagers of normal weight (CBS). Yet, suicidal thoughts or attempts of 13,601 teenagers in 9th to 12th grade whose own body perception was extreme (either fat or skinny), which they believed was varied from ‘the standard’ developed by society, were more than twice as prevalent as those who did not perceive their body image as extreme (CBS). The study indicates that body image matters for young teenagers, underscoring that negative body image undoubtedly not only gives rise to the mental disorders but also to suicidal attempts. We urge you to take action by signing this petition to stop intensifying the problem and support teenagers suffering from mental disorders engendered by misled standards and body images. While this campaign is directed at Victoria’s Secret, the Youth Impact Fund aims to spread further impacts in the fashion industry, providing the opening of true inclusion based on earnest consideration of diverse sizes, races, and genders of models. We endeavor to raise awareness of mental health problems caused by unrealistic beauty standards and body image issues due to underrepresentation of diverse body sizes. Addressing social issues in advocacy of ESG principles starts with your signature, your contribution. By participating in this campaign, you advance to take the essential step of the change for protecting young teenagers, demanding true inclusivity, and redefining beauty in a way that uplifts individuals.",
+      "url": "https://www.change.org/p/petition-for-victoria-s-secret-to-stop-promoting-unrealistic-beauty-standards?recruiter=1316289225&recruited_by_id=24977a10-52d6-11ee-a81e-83b2a5c75bd1&utm_source=share_petition&utm_campaign=petition_dashboard&utm_medium=copylink",
+      "image": "assets/campaigns/5-petition-for-victoria-s-secret-to-stop-promoting-unrealistic.webp",
+      "petition": {
+        "startCount": 0
+      }
+    },
+    {
+      "id": "amazon-injuries",
+      "title": "Stop Amazon’s harsh working conditions that increase injury rates",
+      "author": "Youth Impact Fund",
+      "date": "17 February, 2025",
+      "summary": "Amazon consistently ranks among the top companies with the highest worker injury rates. Employees are subjected to relentless labor with minimal rest, lifting heavy loads under extreme time constraints. As a result, the Youth Impact Fund has launched this petition to advocate for better working conditions and to reduce Amazon’s alarming injury rates...",
+      "body": "[b]Petition Summary[/b]\n\nAmazon consistently ranks among the top companies with the highest worker injury rates. Employees are subjected to relentless labor with minimal rest, lifting heavy loads under extreme time constraints. As a result, the Youth Impact Fund has launched this petition to advocate for better working conditions and to reduce Amazon’s alarming injury rates.\n\n\n[b]Who We Are[/b]\n\nThe Youth Impact Fund is a group dedicated to addressing corporate issues, particularly those related to ESG (Environmental, Social, and Governance) violations. We started this initiative after witnessing numerous instances of ESG violations and recognizing the urgent need for change. Our goal is to protect Amazon workers and employees in similar industries from hazardous working conditions that put them at high risk of injury.\n\n\n[b]The Issue[/b]\n\nThe primary issue is the high injury rate at Amazon warehouses. Amazon has 30 percent more workplace injuries compared to other e-commerce and shipping companies like Target and FedEx. These injuries severely impact workers' physical and mental well-being, often pushing them to go on strike, as seen in the past.\n\nAdditionally, Amazon has repeatedly violated workers’ rights by exposing warehouse employees to dangerous conditions that lead to low back injuries, musculoskeletal disorders, and other long-term health issues. Workers are overworked in hazardous environments with minimal safety precautions.\n\nAnother critical issue is poor worker selection and training. Many employees who are not physically prepared for heavy lifting are assigned to labor-intensive tasks, increasing the likelihood of injuries.\n\nMoreover, seasonal work surges significantly worsen the situation. During peak periods such as Prime Day and holiday sales, workers experience excessive workloads, immense pressure, and insufficient rest, leading to even higher injury rates. However, instead of implementing protective measures, Amazon prioritizes profit over worker safety. According to OSHA investigators, Amazon warehouse workers are frequently exposed to high risks of back injuries and other musculoskeletal disorders.\n\n\n[b]Our Demands[/b]\n\n[b]Improved Warehouse Infrastructure & Worker Selection[/b]\n\nAmazon must expand warehouse spaces to accommodate workers more safely and reduce congestion.\n\nThe company must revise its hiring process to ensure that individuals assigned to heavy lifting are properly trained and physically capable.\n\nAmazon should increase the number of workers to distribute physical labor more effectively, reducing the risk of overexertion and workplace collisions.\n\n[b]Reduced Pressure During Peak Sales Periods[/b]\n\nAmazon must eliminate excessive pressure on workers during peak shopping seasons, including Prime Day, Black Friday, and the holiday season.\n\nWorkers should receive adequate breaks and reasonable work expectations to prevent exhaustion and injury.\n\nIn 2022, 10 percent of Amazon workers were injured during Prime Day. We demand that Amazon implement changes to reduce this injury rate to 4 percent this year.\n\n\n[b]Why Your Signature Matters[/b]\n\nYour signature is crucial in advocating for safer working conditions at Amazon. By signing this petition, you are helping:\n\n[ul][li]Reduce the injury rate among Amazon workers[/li]\n[li]Ensure a safer and fairer worker selection process[/li]\n[li]Hold Amazon accountable for unethical labor practices[/li]\n[li]Support workers who face unnecessary pressure during peak sales seasons[/li][/ul]\n\nLet’s stand together for the well-being of Amazon’s workforce. Sign this petition and demand immediate action from Amazon.",
+      "url": "https://www.change.org/p/stop-amazon-s-harsh-working-conditions-that-increase-injury-rates?recruiter=1316289225&recruited_by_id=24977a10-52d6-11ee-a81e-83b2a5c75bd1&utm_source=share_petition&utm_campaign=petition_dashboard&utm_medium=copylink",
+      "image": "assets/campaigns/4-stop-amazon-s-harsh-working-conditions-that-increase-injury-.webp",
+      "petition": {
+        "startCount": 0
+      }
+    },
+    {
+      "id": "coupang-logistics",
+      "title": "Request for Improved Working Conditions in Coupang's Logistics Centers",
+      "author": "Youth Impact Fund",
+      "date": "8 August, 2024",
+      "summary": "All of Coupang’s logistics centers are built in a mezzanine structure, which divides a single floor into three. Notwithstanding the efficiency of the structure in storage, it deteriorates the working conditions for the laborers...",
+      "body": "All of Coupang’s logistics centers are built in a mezzanine structure, which divides a single floor into three. Notwithstanding the efficiency of the structure in storage, it deteriorates the working conditions for the laborers. The greater number of floors allows the company to double or even triple the number of products stored, which eventually leads to an increase in the internal density of the logistic center. Such extremely high internal density not only increases the temperature and humidity but also disables proper ventilation, making those centers vulnerable to heatwaves during the summertime.\n\nConcerning such vulnerable structures of Coupang’s logistics center, the Ministry of Employment and Labor compared Coupang Dongtan Logistics Center with the nearby GMarket Logistics Center and pointed out the following. Coupang has a mezzanine structure, but G Market has a single-story structure with a higher floor height, allowing for smoother air circulation. Moreover, although the mezzanine structure impedes airflow, fans installed indiscriminately without considering industrial ventilation in a center reduce the cooling effect.\n\nDespite the vulnerability to heatwaves within Coupang’s logistics centers, a sufficient number of breaks are not guaranteed to the employees. In August 2023, Coupang’s temperature monitoring commission, which consists of actual employees, reported that the perceived temperature and humidity in Coupang’s logistic centers during the summertime are around 34°C and 58%, respectively. According to the Occupational Safety and Health Act, at a perceived temperature of 33°C, 10 minutes of break, and at a perceived temperature of 35°C, 15 minutes of break per hour are highly recommended to be provided. However, the commission reported that Coupang Logistics Centers do not guarantee break times in accordance with the heatwave warning recommended by the Ministry of Employment and Labor's guidelines. Moreover, they contended that Coupang Logistics Center determines whether break time is guaranteed based on the temperature and humidity of the time and location set by itself, rather than the time or location with the highest perceived temperature. In Coupang Daegu Center, for instance, workers on the 1.5 floor are working at a perceived temperature of 38°C. Furthermore, the commission disclosed that the company's headquarters are not taking any actions to equalize the break times for every center in different regions, and that break times differ by center, shift, and floor.\n\nHowever, it is impossible to mandate logistics centers like Coupang to install cooling, heating, and ventilation facilities due to the absence of legal provisions. According to the Mechanical Equipment Act, buildings with a total floor area of 10,000 square meters or more must be equipped with heating, cooling, and ventilation facilities that meet certain standards.\n\n“For buildings with a total floor area of 10,000 square meters (3,000 pyeong) or more, heating, cooling, and ventilation facilities must be confirmed to meet technical standards by the mayor or governor before construction begins, and they must undergo inspection before use after construction is completed.” Article 15 of the Mechanical Equipment Act and Article 11 of the Enforcement Decree.\n\nHowever, Coupang’s logistics centers are an exception to the law. According to the Building Act's 'Types of Buildings by Use,' the Coupang Logistics Center (Logistics Terminal) is a warehouse rather than a building. Ultimately, according to the current law, the installation of air conditioning and ventilation facilities is at the discretion of the business owner, no matter how hot the logistics center is.\n\nHence, reflecting on the devastating working conditions of Coupang’s logistics center, the protection of workers must be enforced through not only legislation that goes beyond recommendations for measures against heatwaves but also alterations to the contemporary Mechanical Equipment Act.\n\nIn essence, Coupang's \"Rocket Delivery\" has propelled the corporation to a prominent position in the e-commerce industry by guaranteeing the arrival of the ordered product in less than a day. Yet, behind the scenes of the so-called “Rocket Delivery,” the corporation has infringed on the major Environmental, Social, Governance (ESG) principles, more specifically on the social aspect of it. Reflecting on its lack of commitment to the welfare of employees, this report calls for not only public attention to the issue but also immediate action for the enhancement of working conditions, aligned with ethical standards and legal requirements. Hence, the success story of Coupang must be evaluated not only by its market dominance but also by its commitment to the welfare of its employees.",
+      "url": "https://www.change.org/p/request-for-improved-working-conditions-in-coupang-s-logistics-centers?recruiter=1316289225&recruited_by_id=24977a10-52d6-11ee-a81e-83b2a5c75bd1&utm_source=share_petition&utm_campaign=petition_dashboard&utm_medium=copylink",
+      "image": "assets/campaigns/3-request-for-improved-working-conditions-in-coupang-s-logisti.webp",
+      "petition": {
+        "startCount": 0
+      }
+    },
+    {
+      "id": "meta-user-data",
+      "title": "Request for Meta to Provide Transparency on Illegally Released User Data",
+      "author": "Youth Impact Fund",
+      "date": "September 23, 2023",
+      "summary": "In recent times, Meta (formerly Facebook), the renowned U.S. social media giant, has been facing a series of formidable challenges, leading to significant fines and a sharp decline in stock prices...",
+      "body": "In recent times, Meta (formerly Facebook), the renowned U.S. social media giant, has been facing a series of formidable challenges, leading to significant fines and a sharp decline in stock prices. The Irish Data Protection Commission (DPC) took action against Meta, imposing a hefty fine of $275 million for their continued violations of European privacy regulations. The situation had worsened over time, with the cumulative fines reaching a staggering 912 million euros since the previous fall.\n\nThe violations that prompted such penalties were severe and concerning. Meta had engaged in unauthorized data scraping and mishandling of personal information, particularly on its subsidiary platform, Instagram. These actions culminated in one of the most substantial cases of GDPR violations ever recorded. To make matters worse, Meta's grandiose and ambitious investment in the Metaverse, highlighted by a name change to reflect their vision, had not yielded the expected results. The disappointment was palpable, resulting in a sharp decline in the company's stock prices and prompting the CEO, Mark Zuckerberg, to announce a series of massive layoffs.\n\nIn response to the mounting public outrage and regulatory scrutiny, the National Assembly convened a heated debate on the right to disagree, drawing in prominent lawyers from various organizations and representatives from the Justice Party. The focus of the debate centered on Meta's handling of user information and privacy concerns.\n\nAmidst the growing opposition and mounting legal pressure, Meta was forced to postpone the implementation of its new personal information processing policy. This policy had sparked immense controversy as it required users to agree to share non-essential personal information for advertising and marketing purposes, raising valid concerns about user privacy and consent. Critics were quick to point out the problematic nature of Meta's use of personal information for customized advertisements, with particular concern over the company's uncertain control over user data even after obtaining consent. As a potential solution, they proposed introducing contextual advertisements as a more privacy-conscious alternative.\n\nThe critics' arguments were bolstered by the fact that such practices appeared to violate the Personal Information Act, which expressly prohibits service providers from refusing service based on users' refusal to provide non-essential personal information. The current information request by Meta was seen as excessive and potentially illegal, running afoul of the principles of minimum data collection and transparency, which the law aimed to protect.\n\nFurther fueling the controversy, the CEO of the Progressive Network Center came forward and revealed troubling findings. According to their investigations, Meta had been surreptitiously collecting personal information from users' external activities on Facebook without proper consent. This included details of users' interactions with partner websites and apps, raising serious concerns about unauthorized data distribution and the potential misuse of cookies for targeted advertising.\n\nIn light of the gravity of the situation, experts emphasized the need for robust legal and institutional measures to regulate social media platforms effectively. They argued that consumers must be provided with genuine choices when it comes to customized advertisements, ensuring that their privacy rights are upheld.\n\nAs a response to the mounting pressure and controversies surrounding Meta's data practices, the Personal Information Protection Committee launched a thorough investigation into the company's collection and handling of user data. The investigation aimed to ascertain whether Meta's collection of user data was genuinely essential for providing its services and whether any further violations had occurred.\n\nIn addition to the challenges and controversies mentioned earlier, Meta (formerly Facebook) faced further revelations concerning the infringement of users' personal information, leading to even more serious legal and public relations issues. It was disclosed that Meta had been surreptitiously collecting users' personal profiles, family and relationship/marriage status, education, and living place, without proper consent. This unauthorized data collection occurred through Facebook's third-party apps and services, exposing the personal information of millions of users without their knowledge or approval.\n\nThe situation in Korea mirrored the global concerns about Meta's data practices. In November 2020, the Korean Personal Information Protection Commission imposed a substantial penalty of KRW 6.7 billion on Meta for the unauthorized provision of personal information through Facebook's third-party apps. This penalty stemmed from the fact that Facebook, now Meta, had been illegally providing users' personal information to third-party app developers since 2007 through the Facebook Platform, violating privacy laws and regulations.\n\nThe investigation into Meta's activities revealed that not only did they share the personal information of users who had used the apps, but also the personal information of those users' friends, further compounding the breach of privacy. Despite making changes to their Graph API access in response to previous controversies, the unauthorized provision of personal information to third parties persisted until as late as June 2018, when the Cambridge Analytica scandal brought these practices to light.\n\nAs a result of these violations, the Korean Personal Information Protection Commission imposed fines and corrective measures on Meta. This included a surcharge of KRW 6.7 billion for the unauthorized provision of personal information, as well as additional fines for actions such as storing user passwords without encryption and submitting false data during the investigation. Despite the penalties and efforts by regulatory authorities, Meta's problems were not fully resolved, and the issue continued to escalate.\n\nYouth Impact Fund (www.youthimpact.com) has recently launched a critical campaign targeting Meta, addressing their failure in upholding ESG principles. The Youth Impact Fund, recognized as the world's first youth-managed social impact fund, is dedicated to making a difference by focusing on environmental, social, and governance factors when allocating its $100,000 investment. We strive to exert pressure on global corporations that deviate from ESG trends and fail to meet societal expectations of corporate social responsibility.\n\nOur current campaign is directed at Meta, a company that has fallen short in safeguarding users' personal information, highlighting an ESG failure. Similar to the strategy employed by Engine No. 1, the Youth Impact Fund is symbolically purchasing a share of Meta (NASDAQ: META) to become a shareholder. This status empowers us to rightfully demand Meta's leadership to act in the best interest of shareholders, focusing on minimizing long-term ESG risks, a concern of growing significance.\n\nBy taking this approach, we aim to raise awareness about Meta's disregard for user data privacy and to rally support for our campaign. The Youth Impact Fund is actively calling upon individuals to sign this petition to demonstrate their backing for our cause. Our central objective is to demand Meta to rectify its practices and cease its mishandling of users' personal information.\n\nThe Youth Impact Fund will ensure that the petition, along with the collected signatures, is delivered to relevant authorities, including regulatory bodies like the appropriate governing bodies for data privacy. It is our intent to highlight the urgency of addressing Meta's failures and the potential consequences of their actions.\n\nWe urge you to join us in this essential endeavor by signing this petition. By adding your support, you contribute to the call for Meta to immediately address its ESG failure and make the necessary changes to safeguard users' personal information. The significance of this campaign extends beyond a singular corporation; it is about holding companies accountable and advocating for ESG principles on a global scale.",
+      "url": "https://www.change.org/p/request-for-meta-to-provide-transparency-on-illegally-released-user-data?recruiter=1316289225&recruited_by_id=24977a10-52d6-11ee-a81e-83b2a5c75bd1&utm_source=share_petition&utm_campaign=share_petition&utm_medium=copylink&utm_content=cl_sharecopy_37512589_en-US%3A8",
+      "image": "assets/campaigns/2-request-for-meta-to-provide-transparency-on-illegally-releas.webp",
+      "petition": {
+        "startCount": 0
+      }
+    },
+    {
+      "id": "altria-juul",
+      "title": "Stop Altria's unethical marketing of Juul e-cigarettes to children",
+      "author": "Youth Impact Fund",
+      "date": "",
+      "summary": "Until 1954, when Scientists Cuyler Hammond and Daniel Horn discovered a cause-and-effect relationship between lung cancer and smoking, the general public was largely unaware of the negative effects of smoking (Mendes)...",
+      "body": "Until 1954, when Scientists Cuyler Hammond and Daniel Horn discovered a cause-and-effect relationship between lung cancer and smoking, the general public was largely unaware of the negative effects of smoking (Mendes). As such, smoking was a societal norm for most of the 20th century, with “around half of the population of industrialized nations [smoking]” (Rodrigues) in the late 1950s. Taking advantage of its widespread popularity, Big Tobacco not only marketed its products to adults, but also to children. Ad campaigns such as the Smooth Joe ads, advertising the Camel brand of cigarettes, were targeted to “children and young adolescents” (Burns, etl). This advertising was deemed so harmful that even the United States Department of Justice sued “several major tobacco companies” for “[targeting] the youth” (Eubanks).\n\nFortunately, in today’s society, the problem of smoking has largely been alleviated with smoking rates declining since 1959 (Burns, etl). Whilst this harmful vice is meeting its slow end, in its demise, vaping has taken place. Vaping refers to the inhaling of “vapor created by an electronic cigarette”. While electronic cigarettes (e-cigs) have fashioned themselves as a healthier alternative to smoking, in reality, vaping is extremely harmful with it having been linked to “serious lung damage and even death” (Gordan).\n\nAdding insult to injury, cigarette companies such as the Altria Group Inc., the parent company to Malbrough Cigarette, have managed to adapt to the current marketplace, becoming major stakeholders in the vaping industry themselves. With its acquisition of 35% of Juul Labs Inc., the largest vaping company in the world, Altria has become the largest shareholder of Juul. With this acquisition, Altria has managed to control Juul from the background with the former's own Chief Growth Officer, K.C Crosthwaite, being placed as Juul’s CEO. Altria's domination over Juul’s operations has led to the continuation of unethical practices by Big Tobacco with Altria bringing back old strategies, such as marketing to children, to Juul. For example, Juul has purchased ad space on several child-focused websites such as “Nickelodeon, the Cartoon Network, Seventeen magazine and educational sites for middle school and high school students” (Kaplan). Furthermore, Juul has also created fruit and candy-flavored e-cigarette flavors as these flavors were perceived as being less dangerous by the youth (British Medical Association). \n\nBy not only buying up ad space on platforms where children commonly frequent but also by creating vaping flavors that appeal to and seem safer for teenagers to use, it is clear that Juul and its parent company, Altria, are marketing their product towards the youth population. As a result of this strategy, roughly 20% of high school students are reported to have vaped in the United States according to the Partnership to End Addiction. In 2018, the National Institute of Health also reported that 37.3 percent of 12th graders reported having used a vaping product in the past 12 months, compared to just 27.8 percent in 2017.\n\nWhile it may be too hard to hold Juul and Atria legally accountable for their harmful marketing strategies and product, it is possible to spread awareness of their unethical business practices. Young students should not only be made aware of the extent to which vaping can harm them but also of how they have been lied to by Juul and Altria as e-cigarette flavors such as fruit or candy are dangerous despite the safe allure of these flavors. By spreading awareness of their unethical business practices, it may be possible to live in a future where children are no longer taken advantage of by vaping companies. \n\nThe most effective strategy to get Juul to change its unethical marketing practices is to effect change from within. Recently, Engine No. 1, an investment firm creating long-term value and driving positive impact through active ownership, was able to impact real change in the energy company ExxonMobil, a company notorious for its disregard of the environment, by winning three seats on ExxonMobil’s board. They were able to do this, ironically, by becoming shareholders of ExxonMobil themselves and winning the support of major institutional investors and pension funds with large investments in the company, including CalPERS, CalSTRS, and New York State Common Retirement Fund. Taking advantage of the current ESG trend, Engine No. 1 was able to bring the oil giant to its knees by effecting change from the inside. Similarly, like Engine 1, we can pursue a similar course of action towards Altria. \n\nRecently, Youth Impact (www.youthimpactse.com) started its own campaign against Juul and Altria through the Youth Impact Fund. The Youth Impact Fund is the world’s first youth-managed social impact fund that uses environmental, social, and governance factors in deciding how its managers will invest $40,000. The Youth Impact Fund also tries to pressure global companies that go against today’s ESG trend and people’s expectations in terms of corporate social responsibility, by initiating various campaigns against the company. Like Engine No. 1, one strategy that the Youth Impact Fund uses is symbolically buying a share of the company it is campaigning against and, as a shareholder, rightfully demanding the company’s leadership to act in the best interest of its shareholders - specifically, to minimize long-term ESG risks, which has become more important than ever. \n\nThe Youth Impact Fund has symbolically bought a share of Altria Group Inc. (NYSE: MO) to start a campaign objecting the company’s advertising of e-cigarettes to children through Juul, which Altria effectively has control over as the majority shareholder. Through this petition, the Youth Impact Fund aims to spread awareness about Altria's behind-the-scenes involvement in the vaping pandemic all over the world, and to mobilize support for the newly launched campaign. Please sign this petition to express your support for our campaign and to demand Altria to stop all marketing of Juul's e-cigarette products to children. The Youth Impact Fund will also send a copy of our petition and the signatures we receive to the U.S. Food and Drug Administration (FDA), which has the authority to reject Juul's application to continue marketing and selling highly addictive menthol-flavored and high-nicotine e-cigarettes.",
+      "url": "https://www.change.org/p/altria-group-inc-stop-juul-s-unethical-marketing-of-e-cigarettes-to-children?source_location=search",
+      "image": "assets/campaigns/1-stop-altria-s-unethical-marketing-of-juul-e-cigarettes-to-ch.webp",
+      "petition": {
+        "startCount": 0
+      }
+    }
+  ],
+  "curriculum": [
+    {
+      "slug": "basics",
+      "title": "The Basics of\nStocks and Activism",
+      "description": "How investor psychology moves the market.\nWe explore the core theories of behavioral finance and the patterns of irrational decision-making in the stock market.",
+      "lessons": [
+        {
+          "title": "The Basics of Stock Investing",
+          "duration": "6:53",
+          "video": "https://drive.google.com/file/d/1l8AcVBDWBK2fj5aCb44hrqM5PXKyU13m/view",
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "title": "Shareholder Rights and Voices",
+          "duration": "5:09",
+          "video": "https://drive.google.com/file/d/1a7n5lBZX013CV9hrMhbkzFWqzJJqhlgd/view",
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "title": "What is Shareholder Activism?",
+          "duration": "5:54",
+          "video": "https://drive.google.com/file/d/1t3CdHTyS0LMQMnNd1Iee_Oi6O3928Bj6/view",
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "title": "Shareholder Activism: A Boon or a Bane?",
+          "duration": "4:15",
+          "video": "https://drive.google.com/file/d/1-SmMkxeHtsp0mzLVY0TRc6nLMuRMchfL/view",
+          "likes": 0,
+          "comments": 0
+        }
+      ]
+    }
+  ],
+  "funds": [
+    {
+      "slug": "fund-x",
+      "manager": "Jihoo An",
+      "name": "FUND X",
+      "icon": "assets/funds/fund-x.webp",
+      "totals": {
+        "usd": 1790.11,
+        "krw": 2679169.0,
+        "cashUsd": null,
+        "cashKrw": null
+      },
+      "sections": [
+        {
+          "title": "Investment Objectives",
+          "body": "The purpose of FUND X, as detailed in the dossier, is to systematically extract the highest possible market returns while mathematically neutralizing the risk of capital loss, positioning investors at the absolute vanguard of the artificial intelligence revolution. By fusing a philosophical understanding of macroeconomic evolution with relentless, computationally heavy financial modeling, FUND X operates as an elite, fortress-like vehicle designed to capture asymmetric upside in the defining economic transition of our time."
+        },
+        {
+          "title": "Investment Philosophy",
+          "body": "Our investment thesis is built on the profound realization that artificial intelligence is no longer an emergent technology, but the fundamental infrastructure of the future global economy. To capture this growth, we deploy capital into a global AI marketplace valued at $2.52 trillion in 2026, surging by 44% year-over-year and projected to generate $15 to $23 trillion in annual economic value by 2040. FUND X transcends traditional sector analysis by philosophically deconstructing the industry into a rigorous 6-Layer Value Chain, tracing the flow of value from its physical origins in Energy and Semiconductors up through Hyperscaler Infrastructure and Foundation Models, terminating in Enterprise Applications. Furthermore, recognizing that algorithmic and AI-driven trading now accounts for 60-89% of major equity market volumes, FUND X aligns with this new reality by utilizing sophisticated market mechanics where the AI trading platform sector is projected to reach $33.45 billion by 2030, compounding at a 20.0% CAGR."
+        },
+        {
+          "title": "Investment Strategy",
+          "body": "Rather than relying on market sentiment, FUND X relies on heavy numerical computation, multi-scenario Discounted Cash Flow (DCF) frameworks, and deterministic probability models to engineer low-risk alpha. For core portfolio anchors like Microsoft, we utilize multi-scenario DCF and Forward P/E expansion models (28.0x–29.5x) to algorithmically derive a $500 target price, calculating a persistent revenue expansion of 13%-15% annually to ensure capital compounds alongside predictable, annuity-like enterprise software revenue. When valuing infrastructure titans like Alphabet, we compute base-case forward multiples of ~25x against mathematically modeled \"AI Optimism\" expansions of 28x to 32x, generating intrinsic price floors of $339 to $387 that protect downside while mapping a trajectory to $450-$470 as cloud growth achieves 70% YoY momentum. Capital loss is further minimized by aggressively quantifying geopolitical and macroeconomic risks through exact probabilistic threat matrices—assigning a 50% probability to U.S. political shifts, a 14% risk to data center shutdowns, and a 5% tail-risk to a Taiwan attack—and rotating capital into insulated Foundries, Memory, and Sovereign Defense AI during modeled crisis events to mathematically shield the portfolio from catastrophic drawdowns.\n\nTo achieve Wall Street's most coveted mandate of maximum return with minimal risk, FUND X exclusively targets entities possessing \"Fortress Balance Sheets\". We mandate allocations into assets demonstrating unmatched defensive stability, such as Alphabet's $213.75 billion in current assets against highly managed liabilities, yielding a pristine 1.92x current ratio. At the macro level, we computationally project the impact of AI on Total Factor Productivity (TFP) across global ecosystems, such as South Korea's supply of High-Bandwidth Memory (HBM) and its ability to offset a 16.5% demographic output drag by 2050, positioning our fund to capture the macroeconomic spillovers of multi-trillion-dollar sovereign AI initiatives. Ultimately, FUND X represents the intersection of visionary technological foresight and cold, calculated quantitative supremacy, allowing investors to align their capital with the computational inevitabilities of the future economy, protected by the most sophisticated risk-mitigation architecture ever deployed in the AI sector."
+        },
+        {
+          "title": "Portfolio Composition",
+          "body": "FUND X’s initial portfolio deployment comprises core positions in IONQ, SpaceX, RocketLab, and First Solar. These sectors are related to quantum computing, space, and future energy industries. Below are the investment strategies including entry price target, exit price target, and risk management. \n\n[b]IONQ[/b]\nAs of September 22, 2026, IONQ trades at $40.51. FUND X has established a target entry range of $35–$43, with capital execution slated for early October 2026. Holding through a 2028–2030 horizon, our projected price targets range from a conservative $100 base case to a hyper bubbled bullish target of $5,500+(per share).\n\nIONQ requires a moderate risk management profile, functioning as a mid-to-large-cap pure-play quantum computing enterprise entering an expansion phase projected to deliver 10X-100X valuation growth across a 2030 horizon. Because current market capitalization reflects long-term enterprise valuation and future industry adoption rather than immediate net profitability—as the company continues to operate at a net-margin deficit—FUND X has implemented structured capital protection rules: a primary downside threshold of $15.00–$23.00 will trigger a 50% position trim to de-risk exposure, while a breach of the $10.00 floor will prompt a 100% position liquidation to preserve remaining capital. \n\n[b]SPCX[/b]\nAs of September 22, 2026, SpaceX (SPCX) trades at approximately $151.85. FUND X has established an entry range of $145.00–$155.00, with capital deployment slated for early October 2026. Across a 2028–2030 investment horizon, our financial models project price targets ranging from a conservative base case of $160.00 to a hyper-bullish target exceeding $500.00.\nSpaceX requires a sophisticated risk management framework as a mid-to-large-cap enterprise positioned to capitalize on the emerging \"Space Economy 2.0.\" Isolating its core launch and exploration operations from Starlink, current valuations reflect long-term terminal value rather than near-term fundamentals. Given tail-risk scenarios—such as Starship test flight failures, potential mission casualties, and adverse media cycles—FUND X has established a structured capital protection strategy, balancing exposure by pairing SpaceX with Rocket Lab as a strategic pure-play hedge.\n\n[b]RKLB[/b]\nRocket Lab (RKLB) is held in FUND X’s portfolio primarily as a strategic pure-play hedge and core alternative to SpaceX (SPCX). Trading at approximately $69.89, FUND X has set a target entry window of $50.00–$71.00 through early October 2026. Over a 2028–2030 investment horizon, our financial models project price targets ranging from a conservative base case of $100.00 to a bullish upside scenario exceeding $600.00.\nRKLB requires a structured risk management framework as a mid-to-large-cap enterprise positioned as the premier market alternative to SpaceX within the emerging Space Economy 2.0.\n\n[b]FSLR[/b]\nFUND X has established a target entry range of $190.00–$205.00 for First Solar (FSLR), with capital deployment planned for early October 2026. Across the target investment horizon, our financial models project an exit price range between $400.00 and $1,000.00, implying a conservative 2.0x base-case return to a bullish 5.0x+ total capital appreciation.\nFSLR exhibits a defensive risk profile, benefiting from its established large-cap market presence and consistent net profitability—currently demonstrated by an attractive valuation multiple of 12.32x P/E. Consequently, the position requires minimal active risk intervention relative to high-volatility holdings."
+        }
+      ],
+      "currency": "USD",
+      "holdings": [
+        {
+          "symbol": "IONQ",
+          "name": "IonQ, Inc.",
+          "logo": "assets/logos/ionq.webp",
+          "purchase": 44.12,
+          "shares": 16,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/IONQ/"
+        },
+        {
+          "symbol": "SPCX",
+          "name": "Space Exploration Technologies Corp.",
+          "logo": "assets/logos/spcx.webp",
+          "purchase": 152.27,
+          "shares": 4,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/SPCX/"
+        },
+        {
+          "symbol": "RKLB",
+          "name": "Rocket Lab Corporation",
+          "logo": "assets/logos/rklb.webp",
+          "purchase": 70.33,
+          "shares": 10,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/RKLB/"
+        },
+        {
+          "symbol": "FSLR",
+          "name": "First Solar, Inc.",
+          "logo": "assets/logos/fslr.webp",
+          "purchase": 191.97,
+          "shares": 4,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/FSLR/"
+        }
+      ]
+    },
+    {
+      "slug": "real-estate-fund",
+      "manager": "Kaiden Kwon",
+      "name": "Responsible Real Estate Fund",
+      "icon": "assets/funds/real-estate-fund.webp",
+      "totals": {
+        "usd": 2616.67,
+        "krw": 3886026.0,
+        "cashUsd": null,
+        "cashKrw": null
+      },
+      "sections": [
+        {
+          "title": "Investment Objectives",
+          "body": "The purpose of my investment is not simply to earn money. Of course, financial return is important because investment should be economically meaningful. However, I also want my investment to reflect my values and beliefs.\n\nBy investing in a responsible construction company, I want to support businesses that improve society rather than harm it. Construction companies shape the spaces where people live, work, and build communities. Because of this, I believe they have a strong responsibility to protect workers, reduce environmental damage, and contribute to sustainable development.\n\nThis investment also helps me develop my own identity as an investor. Instead of choosing companies only because their stock prices may rise, I want to learn how to evaluate companies based on both financial performance and ethical responsibility. Through this process, I hope to become an investor who makes thoughtful decisions and supports companies that can create long-term positive impact.\n\nIn conclusion, my purpose is to invest in a company that can grow sustainably while respecting human safety, environmental protection, and financial responsibility. I believe this kind of investment is meaningful because it connects economic goals with social and environmental values."
+        },
+        {
+          "title": "Investment Philosophy",
+          "body": "My investment philosophy is based on the belief that companies should create value not only for shareholders, but also for workers, communities, and the environment. Since I am interested in investing in a construction company, I believe it is important to look beyond short-term profit and consider how the company operates in the real world.\n\nFirst, I want to invest in companies that genuinely care about the [b]safety and well-being of construction workers.[/b] Construction is a physically demanding and sometimes dangerous industry, so a responsible company should prioritize worker protection, provide proper training, follow safety regulations, and prevent accidents as much as possible. A company that protects its workers is more likely to be ethical, stable, and respected in the long term.\n\nSecond, I want to invest in companies that use [b]sustainable construction materials[/b] and reduce environmental harm. Construction can cause pollution, waste, carbon emissions, and damage to natural spaces. Therefore, I believe construction companies should try to use eco-friendly materials, reduce waste, improve energy efficiency, and avoid unnecessary environmental destruction.\n\nThird, I believe that a company should have [b]sustainable finance.[/b] This means that the company should not rely only on risky short-term profits, excessive debt, or environmentally harmful projects. Instead, it should maintain financial stability while investing in long-term innovation, worker safety, and environmental responsibility.\n\nOverall, my investment philosophy is to support construction companies that balance [b]profit, people, and the planet.[/b] I believe that truly strong companies are not only financially successful but also socially responsible and environmentally sustainable."
+        },
+        {
+          "title": "Investment Strategy",
+          "body": "My investment strategy is to choose construction companies that can grow sustainably while protecting workers, reducing environmental harm, and maintaining financial stability. Since construction companies shape homes, workplaces, and cities, I believe they should be evaluated not only by profit, but also by their responsibility toward people and the environment.\n\nFirst, I will focus on [b]worker safety.[/b] Construction is a dangerous industry, so I will prioritize companies that provide safety training, use accident-prevention systems, and protect workers on-site. Second, I will consider [b]environmental sustainability[/b], including the use of eco-friendly materials, waste reduction, pollution prevention, and energy efficiency. Third, I will examine [b]financial stability[/b], avoiding companies that depend too much on short-term profits, excessive debt, or risky projects.\n\nBased on this strategy, companies such as [b]Samsung C&T, Hyundai E&C, Daewoo E&C, and DL E&C[/b] could be strong candidates. These companies show different strengths in worker safety, ESG disclosure, sustainability reporting, and green construction.\n\nOverall, my strategy is to invest in construction companies that balance [b]profit, people, and the planet.[/b] This allows me to pursue financial return while supporting companies that create long-term positive impact."
+        }
+      ],
+      "holdings": [
+        {
+          "symbol": "028260.KS",
+          "name": "Samsung C&T Corporation",
+          "logo": "assets/logos/028260-ks.webp",
+          "purchase": 369500.0,
+          "shares": 5,
+          "currency": "KRW",
+          "url": "https://finance.yahoo.com/quote/028260.KS/"
+        },
+        {
+          "symbol": "000720.KS",
+          "name": "Hyundai Engineering & Construction Co.,Ltd.",
+          "logo": "assets/logos/000720-ks.webp",
+          "purchase": 140000.0,
+          "shares": 14,
+          "currency": "KRW",
+          "url": "https://finance.yahoo.com/quote/000720.KS/"
+        },
+        {
+          "symbol": "047040.KS",
+          "name": "Daewoo Engineering & Construction Co., Ltd.",
+          "logo": "assets/logos/047040-ks.webp",
+          "purchase": 27600.0,
+          "shares": 72,
+          "currency": "KRW",
+          "url": "https://finance.yahoo.com/quote/047040.KS/"
+        },
+        {
+          "symbol": "375500.KS",
+          "name": "DL E&C Co.,Ltd.",
+          "logo": "assets/logos/375500-ks.webp",
+          "purchase": 77100.0,
+          "shares": 26,
+          "currency": "KRW",
+          "url": "https://finance.yahoo.com/quote/375500.KS/"
+        }
+      ],
+      "currency": "KRW"
+    },
+    {
+      "slug": "aerospace-defense",
+      "manager": "Hansun Chung",
+      "name": "Aerospace & Defense Strategic Growth Fund",
+      "icon": "assets/funds/aerospace-defense.webp",
+      "totals": {
+        "usd": 1610.4,
+        "krw": 2415600.0,
+        "cashUsd": null,
+        "cashKrw": null
+      },
+      "sections": [
+        {
+          "title": "Investment Objectives",
+          "body": "The Fund seeks to generate long-term capital appreciation by investing in publicly listed companies and ETFs positioned to benefit from structural growth in the global aerospace and defense industries.\n\nThe Fund is built on the thesis that the aerospace and defense sectors are entering a multi-year structural expansion phase driven by:\n[ul][li]Sustained global defense spending increases amid geopolitical realignment[/li]\n[li]Commercial aviation recovery and fleet modernization[/li]\n[li]Technological inflection points in propulsion, autonomy, ISR, and advanced materials[/li]\n[li]Industrial bottlenecks in engines, avionics, sustainment, and defense electronics[/li][/ul]\n\nThe Fund aims to capture durable, policy-supported demand trends rather than short-term geopolitical volatility.\n\n\n[b]1. Capturing Growth in the Aerospace & Defense Sector[/b]\n\nThe main aim and objective of the portfolio is to benefit from the growth opportunities that are available in the aerospace and defense industry in the long term. The reason for this is that, with a rise in defense spending in countries around the world, a revival in commercial aviation, and rapid technological progress in autonomous systems, drones, and space technologies, the aerospace and defense industry is likely to continue growing in the future.\n\n[b]2. Achieving Diversified Exposure to Strategic Sub-Sectors[/b]\n\nThis investment strategy seeks to provide diversified exposure to different segments of the aerospace and defense industry, such as aircraft manufacturing, defense systems, space technologies, and unmanned aerial systems, among others. By doing so, the fund seeks to minimize the risks that are specific to the industry and benefit from the latest technologies in defense systems, such as AI-based defense systems, electronic warfare, and advanced materials in aerospace.\n\n[b]3. Balancing Stability and Growth Potential[/b]\n\nThe portfolio aims at balancing stability and growth by investing in established global defense firms as well as innovative technology-driven firms. Established defense firms provide stability with government contracts, while innovative technology firms provide higher growth prospects. This will enable the portfolio to increase its long-term return while maintaining an acceptable level of risk.\n\n[b]4. Maintaining Risk-Conscious Portfolio Allocation[/b]\n\nConsidering the geopolitical, regulatory, and policy-sensitive nature of the aerospace and defense industry, the portfolio focuses on disciplined risk management. The exposure of the portfolio to the aerospace and defense industry will not exceed 30% of the total portfolio. This is to avoid concentration risk.\n\n[url=https://drive.google.com/file/d/1ukoleqOfCGgnHtpCuSrzliM4Kcpwz4uR/view?usp=sharing][color=#0000FF]Click to read report[/color][/url]"
+        }
+      ],
+      "currency": "KRW",
+      "holdings": [
+        {
+          "symbol": "0080G0.KS",
+          "name": "Samsung Kodex K-Defense Top10 ETF",
+          "logo": "assets/logos/0080g0-ks.webp",
+          "purchase": 15100.0,
+          "shares": 330,
+          "currency": "KRW",
+          "url": "https://finance.yahoo.com/quote/0080G0.KS/"
+        }
+      ]
+    },
+    {
+      "slug": "social-equity-housing",
+      "manager": "Soyool Park",
+      "name": "Social Equity Housing Fund",
+      "icon": "assets/funds/social-equity-housing.webp",
+      "totals": {
+        "usd": 3518.17,
+        "krw": 5269755.0,
+        "cashUsd": null,
+        "cashKrw": null
+      },
+      "sections": [
+        {
+          "title": "Investment Objectives",
+          "body": "The fund's primary goal is to promote social equity through impact investing. This leads to the strategic allocation of capital toward companies and organizations that actively lower barriers to homeownership for low-income families. The focus remains on entities that provide innovative financing, affordable housing development, or rent-to-own programs. As a result, the portfolio is designed to achieve capital growth and steady income while facilitating measurable social progress in housing accessibility.\n\nRather than relying on broad or abstract values, the fund operates on the principle that meaningful impact must be measurable. Investments are evaluated based on clear, data-driven standards to ensure that capital is directed toward companies creating real and verifiable improvements in housing accessibility for low-income families."
+        },
+        {
+          "title": "Investment Strategy",
+          "body": "To achieve this goal, the fund prioritizes housing developers and financial platforms that meet specific criteria. Eligible companies must demonstrate at least a 12 percent reduction in environmental pollution compared to industry averages and ensure that 30 percent of housing units are reserved as affordable for low- and moderate-income households.\n\nIn addition, the fund prioritizes financing and development models that reduce upfront homeownership costs by approximately 6–8 percent while maintaining long-term financial viability. The fund favors financing models that reduce upfront homeownership costs, such as shared-equity arrangements with financial institutions, developer-provided down payment assistance, and cost-saving construction methods.\n\nThese approaches enable first-time buyers to enter the housing market with lower initial capital requirements while preserving long-term affordability and financial sustainability. All portfolio companies are required to report concrete outcomes, such as increases in first-time homeownership and measurable reductions in housing cost burdens, while maintaining long-term financial sustainability.\n\nThrough this approach, the fund seeks to generate both stable returns and lasting social impact.\n\n[url=https://drive.google.com/file/d/1xid7jTkH84pgBlGeRHhZlwl_ACRaChbz/view?usp=sharing][color=#0000FF]Click to read report[/color][/url]"
+        }
+      ],
+      "currency": "KRW",
+      "holdings": [
+        {
+          "symbol": "294870.KS",
+          "name": "HDC Hyundai Development Company",
+          "logo": "assets/logos/294870-ks.webp",
+          "purchase": 23900.0,
+          "shares": 83,
+          "currency": "KRW",
+          "url": "https://finance.yahoo.com/quote/294870.KS/"
+        },
+        {
+          "symbol": "375500.KS",
+          "name": "DL E&C Co.,Ltd.",
+          "logo": "assets/logos/375500-ks.webp",
+          "purchase": 51000.0,
+          "shares": 28,
+          "currency": "KRW",
+          "url": "https://finance.yahoo.com/quote/375500.KS/"
+        },
+        {
+          "symbol": "000880.KS",
+          "name": "Hanwha Corporation",
+          "logo": "assets/logos/000880-ks.webp",
+          "purchase": 132000.0,
+          "shares": 15,
+          "currency": "KRW",
+          "url": "https://finance.yahoo.com/quote/000880.KS/"
+        },
+        {
+          "symbol": "028260.KS",
+          "name": "Samsung C&T Corporation",
+          "logo": "assets/logos/028260-ks.webp",
+          "purchase": 338000.0,
+          "shares": 5,
+          "currency": "KRW",
+          "url": "https://finance.yahoo.com/quote/028260.KS/"
+        }
+      ]
+    },
+    {
+      "slug": "gamechanger-sports",
+      "manager": "Minjae Seo",
+      "name": "GameChanger Sports Fund",
+      "icon": "assets/funds/gamechanger-sports.webp",
+      "totals": {
+        "usd": 2835.98,
+        "krw": 4134050.0,
+        "cashUsd": null,
+        "cashKrw": null
+      },
+      "sections": [
+        {
+          "title": "Investment Objectives",
+          "body": "To capitalize in the rapidly expanding sports market, this fund aims to invest in leading companies and high-potential companies in the sport analytics, betting, and entertainment industries. By supporting firms that merge AI-driven sports analytics for athletes, teams, and customer bases, the fund seeks long-term capital growth and strategic exposure to the evolution of data-driven athletic performance management."
+        },
+        {
+          "title": "Investment Philosophy",
+          "body": "[b]Data-Driven Decisions[/b]:Companies to be invested will be first-handedly decided through objective financial metrics such as EBITDA, P/E ratio, revenue, profit margins, debt levels, and ensuring that the company meets or exceeds the standards in the industry.\n\nInnovative Vision: Our fund focuses on seeking companies that have the vision and growth to redefine the sports market, especially in product services and new standards related with AI-driven sports analytics.\n\nValuable, Game-Changing Product: While vision serves as a vital sign for a company to invest in, we focus on firms that have feasible, industry dominant products that other companies can not acquire easily. An unique product shows major potential in sales, development, and security in their position in the market.\n\nShort-term and long-term profitability: We look for companies that will bring both short-term and long-term profit, as we not only hope to earn money through our investments at the time but also invest in companies that will bring sustainable profit over time. \n\nAccountability: Alongside ESG analysis to check if the company is causing environmental waste, companies that harm a certain industry or have red flag signals in their employees and company sectors will be excluded from the fund’s portfolio."
+        },
+        {
+          "title": "Investment Strategy",
+          "body": "To maximize returns and profit while controlling risk, my portfolio will seek:\n\n[ul][li]Average EBITDA growth rate of at least 10% over the past three years[/li]\n[li]P/E Ratio within ±30% of the industry average[/li]\n[li]Consecutive growth in revenue over the past four years[/li]\n[li]Products and services that do not exist in the market[/li]\n[li]ESG analysis that ensures the company’s accountability in sustainability[/li]\n[ul][li]Carbon emissions assessment[/li]\n[li]Social Risk Assessment Related to Sports Betting[/li][/ul][/ul]"
+        },
+        {
+          "title": "Risk Management",
+          "body": "Sector Diversification: Since the company focuses on investing in diverse industries such as sports betting, sports analysis, and sports entertainment, to avoid risks of one industry failing, we plan to have no more than 20% allocation to a single industry. \n\nPeriodic Portfolio Rebalancing: Quarterly performance reviews to replace any underperforming stocks and rebalancing into stronger sectors if needed.\n\nContinuous Data Monitoring and Early Warning System: Implement to track key financial and operational indicators, allowing to detect early risks."
+        },
+        {
+          "title": "Commitment to Growth",
+          "body": "The fund prioritizes transparency, consistency, and long-term vision in investment approaches. Through a combination of objective financial analysis, innovative market insight, and careful risk control, the fund plans to generate profits and returns while ensuring that the portfolio remains resilient, ethical, and sustainable in a rapidly evolving market.\n\n[url=https://drive.google.com/file/d/1U9FWh_M1zVHsV3h5ZUgzZ2WG2_-cjf9V/view?usp=sharing][color=#0000FF]Flutter Entertainment Report[/color][/url]\n\n[url=https://drive.google.com/file/d/1EERPLbDWhLEmKJJSZ84u8pEVPNmtAAQK/view?usp=sharing][color=#0000FF]TKO Group Holdings Report[/color][/url]\n\n[url=https://drive.google.com/file/d/14EP8V98ocbjRLXllevFyRcsxqDfdesen/view?usp=sharing][color=#0000FF]Nike Report[/color][/url]"
+        }
+      ],
+      "currency": "USD",
+      "holdings": [
+        {
+          "symbol": "FLUT",
+          "name": "Flutter Entertainment PLC",
+          "logo": "assets/logos/flut.webp",
+          "purchase": 116.0,
+          "shares": 11,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/FLUT/"
+        },
+        {
+          "symbol": "TKO",
+          "name": "TKO Group Holdings, Inc.",
+          "logo": "assets/logos/tko.webp",
+          "purchase": 207.98,
+          "shares": 6,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/TKO/"
+        },
+        {
+          "symbol": "NKE",
+          "name": "NIKE, Inc.",
+          "logo": "assets/logos/nke.webp",
+          "purchase": 63.04,
+          "shares": 22,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/NKE/"
+        },
+        {
+          "symbol": "SRAD",
+          "name": "Sportradar Group AG",
+          "logo": "assets/logos/srad.webp",
+          "purchase": 17.67,
+          "shares": 80,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/SRAD/"
+        }
+      ]
+    },
+    {
+      "slug": "ai-denim",
+      "manager": "Jihan Nathan Kim",
+      "name": "AI Denim Fund",
+      "icon": "assets/funds/ai-denim.webp",
+      "totals": {
+        "usd": 5052.46,
+        "krw": 7548705.0,
+        "cashUsd": null,
+        "cashKrw": null
+      },
+      "sections": [
+        {
+          "title": "Investment Strategy",
+          "body": "[url=https://drive.google.com/file/d/1u5YWFfHSyBTm2IrrFkarPEi24h8ME9u6/view]The Generative AI Economy Industry Structure, Trends, and Strategic Implications[/url]"
+        }
+      ],
+      "currency": "KRW",
+      "holdings": [
+        {
+          "symbol": "GOOG",
+          "name": "Alphabet Inc.",
+          "logo": "assets/logos/goog.webp",
+          "purchase": 297.78,
+          "shares": 5,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/GOOG/"
+        },
+        {
+          "symbol": "TSLA",
+          "name": "Tesla, Inc.",
+          "logo": "assets/logos/tsla.webp",
+          "purchase": 470.79,
+          "shares": 2,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/TSLA/"
+        },
+        {
+          "symbol": "007660.KS",
+          "name": "ISU Petasys Co., Ltd.",
+          "logo": "assets/logos/007660-ks.webp",
+          "purchase": 122100.0,
+          "shares": 14,
+          "currency": "KRW",
+          "url": "https://finance.yahoo.com/quote/007660.KS/"
+        },
+        {
+          "symbol": "058470.KQ",
+          "name": "LEENO Industrial Inc.",
+          "logo": "assets/logos/058470-kq.webp",
+          "purchase": 57900.0,
+          "shares": 20,
+          "currency": "KRW",
+          "url": "https://finance.yahoo.com/quote/058470.KQ/"
+        },
+        {
+          "symbol": "084370.KQ",
+          "name": "Eugene Technology Co.,Ltd.",
+          "logo": "assets/logos/084370-kq.webp",
+          "purchase": 70500.0,
+          "shares": 25,
+          "currency": "KRW",
+          "url": "https://finance.yahoo.com/quote/084370.KQ/"
+        },
+        {
+          "symbol": "240810.KQ",
+          "name": "Wonik IPS Co., Ltd.",
+          "logo": "assets/logos/240810-kq.webp",
+          "purchase": 56200.0,
+          "shares": 21,
+          "currency": "KRW",
+          "url": "https://finance.yahoo.com/quote/240810.KQ/"
+        },
+        {
+          "symbol": "039030.KQ",
+          "name": "EO Technics Co., Ltd.",
+          "logo": "assets/logos/039030-kq.webp",
+          "purchase": 251000.0,
+          "shares": 9,
+          "currency": "KRW",
+          "url": "https://finance.yahoo.com/quote/039030.KQ/"
+        },
+        {
+          "symbol": "005930.KS",
+          "name": "Samsung Electronics Co., Ltd.",
+          "logo": "assets/logos/005930-ks.webp",
+          "purchase": 85600.0,
+          "shares": 11,
+          "currency": "KRW",
+          "url": "https://finance.yahoo.com/quote/005930.KS/"
+        }
+      ]
+    },
+    {
+      "slug": "korea-ai-semiconductor",
+      "manager": "Jihan Nathan Kim",
+      "name": "Korea AI Semiconductor Leaders Fund",
+      "icon": "assets/funds/korea-ai-semiconductor.webp",
+      "totals": {
+        "usd": 16688.2,
+        "krw": 24936314.0,
+        "cashUsd": 750.0,
+        "cashKrw": 1050000.0
+      },
+      "sections": [
+        {
+          "title": "Investment Objectives",
+          "body": "As AI emerges as a core industry in the global market, South Korea is also entering the competition in earnest, led by SK Hynix and Samsung Electronics. This fund aims not only to generate short-term returns through strategic investments in these companies but also to contribute to the innovation and technological competitiveness of the domestic AI industry."
+        },
+        {
+          "title": "Investment Strategy",
+          "body": "[b]Geographic Allocation:[/b]\n[ul][li]United States: 20% (hedging against exchange rate and policy uncertainties)[/li]\n[li]Korea: 80% (focus on industries benefiting from domestic policy support)[/li][/ul]\n\n[b]Sector Allocation:[/b]\n[ul][li]AI/Semiconductors: 80% (the sector with the highest growth potential)[/li]\n[li]Dividend Stocks: 10% (a stable source of income, serving as a hedge/insurance)[/li]\n[li]Cash Holdings: 10% (ensures liquidity; no need for a higher ratio given the dynamic market environment)[/li][/ul]"
+        },
+        {
+          "title": "Portfolio Composition",
+          "body": "[b]SK Hynix – 50%[/b]\n[ul][li]Strong growth driven by surging demand for HBM and its leading position in AI semiconductors.[/li][/ul]\n\n[b]Samsung Electronics – 10%[/b]\n[ul][li]Though a relative latecomer in AI, remains the central pillar of Korea’s semiconductor industry.[/li][/ul]\n\n[b]NVIDIA – 20%[/b]\n[ul][li]The dominant leader in GPUs and AI chips, holding a near-monopoly position in the global market.[/li][/ul]\n[b]Samsung Securities – 10%[/b]\n[ul][li]High dividends and shareholder return policies make it a reliable source of stable income.[/li][/ul]\n[b]Cash Reserve – 10%[/b]\n[ul][li]Provides flexibility to respond to market volatility and seize buy-the-dip opportunities.[/li][/ul]\n\n[u][url=https://drive.google.com/file/d/1xxNMbzol0UjXu7GmbYkB3PD1d-Q2jesF/view]Korea Equity Opportunities 2025 AI Leadership and Dividend Value, Jihan Nathan Kim[/url][/u]"
+        }
+      ],
+      "currency": "KRW",
+      "holdings": [
+        {
+          "symbol": "000660.KS",
+          "name": "SK hynix Inc.",
+          "logo": "assets/logos/000660-ks.webp",
+          "purchase": 354000.0,
+          "shares": 14,
+          "currency": "KRW",
+          "url": "https://finance.yahoo.com/quote/000660.KS/"
+        },
+        {
+          "symbol": "005930.KS",
+          "name": "Samsung Electronics Co., Ltd.",
+          "logo": "assets/logos/005930-ks.webp",
+          "purchase": 85600.0,
+          "shares": 11,
+          "currency": "KRW",
+          "url": "https://finance.yahoo.com/quote/005930.KS/"
+        },
+        {
+          "symbol": "016360.KS",
+          "name": "Samsung Securities Co.,Ltd.",
+          "logo": "assets/logos/016360-ks.webp",
+          "purchase": 72200.0,
+          "shares": 14,
+          "currency": "KRW",
+          "url": "https://finance.yahoo.com/quote/016360.KS/"
+        },
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA Corporation",
+          "logo": "assets/logos/nvda.webp",
+          "purchase": 177.05,
+          "shares": 8,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/NVDA/"
+        }
+      ]
+    },
+    {
+      "slug": "vue-2",
+      "manager": "Aiden Lee",
+      "name": "Vue 2",
+      "icon": "assets/funds/vue-2.webp",
+      "totals": {
+        "usd": 4446.33,
+        "krw": 6669500.0,
+        "cashUsd": null,
+        "cashKrw": null
+      },
+      "sections": [
+        {
+          "title": "Core Strategic Directions",
+          "body": "[b]1) Selecting Companies with Proven Crisis Management in Governance[/b]\n\nWe focus on evaluating companies’ responses to crises and the transparency of their decision-making structures. Both qualitative and quantitative analyses are conducted on governance factors such as board independence, internal control systems, conflict-of-interest prevention, and shareholder rights protection mechanisms, with active integration into investment decisions.\n\nWe favor companies that have demonstrated fair decision-making and accountable management during exceptional crisis situations.\n\n\n[b]2) Implementing an ESG Scoring System with Greater Weight on Governance (G)[/b]\n\nWhile maintaining our existing integrated ESG analysis framework, we will increase the weighting assigned to the Governance (G) component.\n\nA multi-layered governance assessment will be adopted, incorporating data from corporate governance reports, regular disclosures, general meeting agendas, CEO risk profiles, and whistleblower history.\n\n\n[b]3) Excluding Companies with Governance Risks that Exacerbate Crises[/b]\n\nCompanies showing persistent audit opinion issues, controlling shareholder abuse, excessive executive compensation, golden parachutes, or obstruction of shareholder meetings will be explicitly excluded from investment consideration.\n\n\nThis strategy combines “insight to identify opportunities within crises” with “analytical capability for structural sustainability.”\n\nBy maintaining the broad ESG framework but applying more stringent governance criteria and analysis, the fund will establish a robust risk management foundation, enabling consistent performance even in unpredictable future environments."
+        },
+        {
+          "title": "Governance-Centered Investment Evaluation Criteria",
+          "body": "[b]① Crisis Response and Decision-Making Structure[/b]\n[ul][li]Over the past year, has the company responded to crises (e.g., performance downturns, industry recessions, regulatory changes) in a transparent and consistent manner?[/li]\n[li]Were management’s accountability and decision-making rationale clearly disclosed?[/li]\n[li]In exceptional circumstances, did the board of directors sufficiently explain its decisions through post-disclosure or investor relations (IR) communications?[/li][/ul]\n\n[b]② Board of Directors and Internal Controls[/b]\n[ul][li]Independence of the board (≥ 50% outside directors)[/li]\n[li]Existence and effective operation of audit committees or equivalent bodies[/li]\n[li]Operation of a whistleblower system and records of actual whistleblowing cases (including case count and content analysis)[/li][/ul]\n\n[b]③ CEO and Controlling Shareholder Risk[/b]\n[ul][li]Potential conflicts of interest involving the CEO (e.g., concurrent positions, related-party transactions with subsidiaries)[/li]\n[li]Discrepancy between executive compensation and corporate performance[/li]\n[li]Existence of golden parachutes or irregular shareholder meeting practices[/li][/ul]\n\n[b]④ Treasury Shares and Shareholder Policy[/b]\n[ul][li]Is the proportion of treasury shares excessive? (calculated as holdings relative to market capitalization)[/li]\n[li]Potential use of treasury shares for management entrenchment[/li]\n[li]Eligibility for benefits if mandatory treasury share cancellation regulations are introduced[/li]\n[li]Is the dividend policy reasonable and aligned with industry benchmarks?[/li]\n[ul][li][b]Technology sector[/b]: Focus on reinvestment for growth — low dividends acceptable[/li]\n[li][b]Non-technology sector[/b]: Absence of dividends considered lack of dividend policy[/li][/ul][/ul]\n\n[b]⑤ External Signals (Market Trust Indicators)[/b]\n[ul][li]Frequency of governance-related issues raised in public investor forums (e.g., Naver stock discussion boards) over the past month[/li]\n[li]Recent trends in approval and opposition rates for shareholder meeting agendas[/li]\n[li]External governance ratings (e.g., corporate governance report grades, ESG ratings — G score specifically)[/li][/ul]"
+        }
+      ],
+      "currency": "KRW",
+      "holdings": [
+        {
+          "symbol": "329180.KS",
+          "name": "HD Hyundai Heavy Industries Co.,Ltd.",
+          "logo": "assets/logos/329180-ks.webp",
+          "purchase": 295500.0,
+          "shares": 14,
+          "currency": "KRW",
+          "url": "https://finance.yahoo.com/quote/329180.KS/"
+        },
+        {
+          "symbol": "214450.KQ",
+          "name": "PharmaResearch Co., Ltd.",
+          "logo": "assets/logos/214450-kq.webp",
+          "purchase": 676000.0,
+          "shares": 5,
+          "currency": "KRW",
+          "url": "https://finance.yahoo.com/quote/214450.KQ/"
+        },
+        {
+          "symbol": "042660.KS",
+          "name": "Hanwha Ocean Co., Ltd.",
+          "logo": "assets/logos/042660-ks.webp",
+          "purchase": 104000.0,
+          "shares": 27,
+          "currency": "KRW",
+          "url": "https://finance.yahoo.com/quote/042660.KS/"
+        }
+      ]
+    },
+    {
+      "slug": "gig-fund",
+      "manager": "Soyul Ahn",
+      "name": "Global IP Growth Fund (GIG Fund)",
+      "icon": "assets/funds/gig-fund.webp",
+      "totals": {
+        "usd": 2794.11,
+        "krw": 4171678.0,
+        "cashUsd": null,
+        "cashKrw": null
+      },
+      "sections": [
+        {
+          "title": "Investment Objectives",
+          "body": "To capitalize on the growing global demand for entertainment content, this fund aims to invest in high-potential companies across the music, film, animation, webtoon, and gaming industries. By focusing on intellectual property (IP)-driven business models and scalable digital platforms, the fund seeks long-term capital appreciation and strategic exposure to the evolving global cultural economy."
+        }
+      ],
+      "keyFeatures": [
+        "[b]IP-Centric Long-Term Focus[/b]\n\nWe invest in companies that own or create valuable intellectual property (characters, stories, music, etc.) with the potential for repeated consumption and multi-channel monetization.",
+        "[b]Global Expansion Potential[/b]\n\nPriority is given to businesses with a proven ability—or strategic plans—to expand beyond their domestic markets, especially into North America, Europe, and Southeast Asia.",
+        "[b]Platform and Distribution Advantage[/b]\n\nWe show strong preference for companies with access to—or control over—digital platforms such as OTT services, streaming platforms, or global content marketplaces.",
+        "[b]Fundamentals-Driven Selection[/b]\n\nBeyond hype and short-term trends, we evaluate content companies based on their earnings models, revenue sustainability, and the quality of their IP assets.",
+        "[b]Diversified Value Chain Exposure[/b]\n\nOur investments span the entire content value chain—from original creators to publishers, platforms, and tech enablers—to balance opportunity and risk."
+      ],
+      "currency": "USD",
+      "holdings": [
+        {
+          "symbol": "NFLX",
+          "name": "Netflix, Inc.",
+          "logo": "assets/logos/nflx.svg",
+          "purchase": 117.727,
+          "shares": 10,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/NFLX/"
+        },
+        {
+          "symbol": "DIS",
+          "name": "The Walt Disney Company",
+          "logo": "assets/logos/dis.webp",
+          "purchase": 122.17,
+          "shares": 10,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/DIS/"
+        },
+        {
+          "symbol": "SPOT",
+          "name": "Spotify Technology S.A.",
+          "logo": "assets/logos/spot.webp",
+          "purchase": 682.72,
+          "shares": 2,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/SPOT/"
+        },
+        {
+          "symbol": "SGOV",
+          "name": "iShares 0-3 Month Treasury Bond ETF",
+          "logo": "assets/logos/sgov.webp",
+          "purchase": 100.63,
+          "shares": 13,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/SGOV/"
+        },
+        {
+          "symbol": "GLD",
+          "name": "SPDR Gold Shares",
+          "logo": "assets/logos/gld.webp",
+          "purchase": 310.77,
+          "shares": 1,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/GLD/"
+        },
+        {
+          "symbol": "SLV",
+          "name": "iShares Silver Trust",
+          "logo": "assets/logos/slv.webp",
+          "purchase": 35.55,
+          "shares": 12,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/SLV/"
+        },
+        {
+          "symbol": "DBC",
+          "name": "Invesco DB Commodity Index Tracking Fund",
+          "logo": "assets/logos/dbc.svg",
+          "purchase": 22.38,
+          "shares": 22,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/DBC/"
+        }
+      ]
+    },
+    {
+      "slug": "origen",
+      "manager": "Brian Kang",
+      "name": "Origen Fund",
+      "icon": "assets/funds/origen.webp",
+      "totals": {
+        "usd": 8655.82,
+        "krw": 12979233.0,
+        "cashUsd": null,
+        "cashKrw": null
+      },
+      "sections": [
+        {
+          "title": "Mission",
+          "body": "I seek to generate consistent, high-yield returns within a 1–2 year investment horizon while maintaining disciplined risk management. Using a data-driven investment strategy, I identify and invest in financially strong, high-potential companies that meet strict quantitative benchmarks before assessing their long-term stability and growth potential."
+        },
+        {
+          "title": "Investment Philosophy",
+          "body": "My approach is built on rigorous financial analysis, sector diversification, and risk-aware decision-making. I follow these principles:\n\n[ul][li]Numbers-First Selection – Companies are first screened based on objective financial metrics, such as P/E ratio, revenue growth, profit margins, and debt levels, ensuring they meet or exceed industry standards.[/li]\n[li]Diversification for Stability – The portfolio is balanced across multiple sectors to mitigate industry-specific risks and enhance resilience.[/li]\n[li]Avoiding Speculation – We do not engage in high-risk speculative investments, including penny stocks or highly volatile assets, prioritizing stability and consistent growth instead.[/li]\n[li]Profitability & Growth Potential – After passing quantitative screening, companies are further evaluated based on market position, competitive edge, and long-term expansion prospects.[/li]\n[li]Responsible Investing – While ESG is not a primary selection factor, companies that directly harm the environment (e.g., excessive pollution, unsustainable practices) are excluded from the portfolio.[/li][/ul]"
+        },
+        {
+          "title": "Investment Strategy",
+          "body": "To maximize returns while controlling risk, I structure my portfolio as follow:\n[ul][li]50% Large-Cap Blue-Chip Stocks – Established, stable companies with strong earnings.[/li]\n[li]30% Mid-Cap Growth Stocks – High-potential firms with proven expansion strategies.[/li]\n[li]20% Small-Cap High-Growth Stocks – Emerging companies with solid fundamentals and strong profitability.[/li][/ul]\n\n[b]Risk Management[/b]\n[ul][li]Sector Diversification: No more than 20% allocation to any single industry to reduce exposure to market downturns.[/li]\n[li]Stop-Loss Mechanisms: Implemented to limit downside risk and protect investor capital.[/li]\n[li]Quarterly Portfolio Reviews: Performance is reassessed every three months, replacing underperforming stocks and rebalancing as needed.[/li][/ul]\n\n[b]My Commitment to Growth[/b]\nI focus on transparency, discipline, and strategic investment practices. By combining data-driven stock selection with strong risk management, I aim to outperform the market while maintaining a balanced and sustainable approach."
+        }
+      ],
+      "currency": "USD",
+      "holdings": [
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft Corp",
+          "logo": "assets/logos/msft.webp",
+          "purchase": 473.91,
+          "shares": 4,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/MSFT/"
+        },
+        {
+          "symbol": "GOOG",
+          "name": "Alphabet Inc.",
+          "logo": "assets/logos/goog.webp",
+          "purchase": 176.79,
+          "shares": 10,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/GOOG/"
+        },
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA Corporation",
+          "logo": "assets/logos/nvda.webp",
+          "purchase": 143.69,
+          "shares": 12,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/NVDA/"
+        },
+        {
+          "symbol": "TSLA",
+          "name": "Tesla, Inc.",
+          "logo": "assets/logos/tsla.webp",
+          "purchase": 317.88,
+          "shares": 3,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/TSLA/"
+        },
+        {
+          "symbol": "GLDM",
+          "name": "SPDR Gold MiniShares",
+          "logo": "assets/logos/gldm.webp",
+          "purchase": 65.5,
+          "shares": 5,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/GLDM/"
+        },
+        {
+          "symbol": "KBWB",
+          "name": "Invesco KBW Bank ETF",
+          "logo": "assets/logos/kbwb.svg",
+          "purchase": 67.37,
+          "shares": 6,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/KBWB/"
+        }
+      ]
+    },
+    {
+      "slug": "vue",
+      "manager": "Aiden Lee",
+      "name": "Vue",
+      "icon": "assets/funds/vue.webp",
+      "totals": {
+        "usd": 0.0,
+        "krw": 0.0,
+        "cashUsd": null,
+        "cashKrw": null
+      },
+      "sections": [
+        {
+          "title": "Investment Philosophy",
+          "body": "Our fund’s investment philosophy is to always seek opportunities amid economic and environmental crises. For instance, the COVID-19 pandemic, despite its disruptive impact on economies and societies, created unique and advantageous conditions for investment. Early in the pandemic, markets crashed significantly as uncertainty spiked. Many high-quality stocks and assets were heavily discounted, providing investors with \"buy low\" opportunities. Additionally, in response to the crisis, numerous emerging start-ups with high potential began to flourish. Recognizing these trends, our fund is committed to delving deeper into the challenges the world faces—whether major or seemingly minor—seeking investment opportunities that arise from them.\n\nAnother key factor influencing our investment decisions is ESG—environmental, social, and governance criteria. We believe that even highly profitable companies cannot sustain long-term success without aligning with ESG standards. As long-term investors, we prioritize ESG factors, with a particular emphasis on the environmental aspect, and assess them with a sophisticated approach.\n\nIn summary, our current focus is on climate change—an urgent global crisis that all nations must address. By exploring innovative solutions such as fuel cells, renewable energy, and eco-friendly business models, we aim to identify opportunities within this challenge."
+        },
+        {
+          "title": "Investment Criteria",
+          "body": "Qualitative Criteria\n\n[ul][li]News and Public Awareness[/li]\n[ul][li]Measure the frequency of mentions in news articles using Google Trends.[/li]\n[li]Identify links between ESG factors and investment opportunities.[/li][/ul]\n[li]Crisis Assessment (Disease-Related Investments)[/li]\n[ul][li]Reference the WHO’s official statements to determine the severity of a disease-related crisis.[/li]\n[li]Categorize severity levels based on WHO’s pandemic classification:[/li]\n[ul][li]Asymptomatic/Pre-Symptomatic: No visible symptoms.[/li]\n[li]Mild Cases: Minor symptoms, no hospitalization required.[/li]\n[li]Moderate Cases: Symptoms require medical attention but not intensive care.[/li]\n[li]Severe Cases: Serious symptoms requiring hospitalization.[/li]\n[li]Critical Cases: Life-threatening illness requiring intensive care.[/li][/ul][/ul]\n[li]ESG Evaluation[/li]\n[ul][li]Analyze the company’s balance sheet to assess financial success in ESG management.[/li]\n[li]Review the company’s environmental sustainability stance and commitments.[/li]\n[li]Conduct research on internal corporate complexity, focusing on stakeholder dynamics.[/li]\n[ul][li]Example: Korea Zinc has a vulnerable internal structure, making it a risk factor.[/li][/ul][/ul]\n[li]Scientific and Technological Relevance[/li]\n[ul][li]Study scientific literature on environmental sustainability.[/li]\n[li]Focus on specific products and innovations that drive sustainable investment opportunities.[/li]\n[ul][li]Example: Catalysts are essential for fuel cells, making investments in catalyst suppliers a strong long-term strategy.[/li][/ul][/ul][/ul]\n\nQuantitative Criteria\n\n[ul][li]Sustainability Measurement[/li]\n[ul][li]Analyze the company’s balance sheet to assess net income/loss.[/li]\n[li]Track financial trends over time to evaluate long-term stability.[/li][/ul]\n[li]Market Trend Analysis[/li]\n[ul][li]Utilize Google Trends to monitor public interest and industry momentum.[/li][/ul][/ul]\n\nBy combining qualitative insights (market perception, ESG impact, and scientific relevance) with quantitative data (financial performance and trend analysis), this framework ensures strategic and informed investment decisions.\n\n[u][url=https://drive.google.com/file/d/1wHgcbmZcmCmsn8SIItoDrQ0PnbCZsJKc/view?usp=sharing]Investment Report: Evaluating Promising Enterprises for 2025[/url][/u]\n\n[u][url=https://drive.google.com/file/d/1MTDGC_GHD82EiAF-erfod3vVQ0jqf23_/view?usp=sharing\n]2025 Economic Scenario & Investment Strategy[/url][/u]"
+        }
+      ],
+      "currency": "KRW"
+    },
+    {
+      "slug": "sustainable-fashion",
+      "manager": "Shiwoo Hur",
+      "name": "Sustainable Fashion Fund",
+      "icon": "assets/funds/sustainable-fashion.webp",
+      "totals": {
+        "usd": 5662.58,
+        "krw": 8153185.0,
+        "cashUsd": 3182.0,
+        "cashKrw": 4454800.0
+      },
+      "sections": [
+        {
+          "title": "Investment Objectives",
+          "body": "This fund is dedicated to supporting the growth of the sustainable fashion industry while delivering long-term returns for investors. By prioritizing companies committed to environmental responsibility and social impact, we aim to align financial success with meaningful contributions to a better future."
+        },
+        {
+          "title": "Investment Philosophy",
+          "body": "Our fund identifies opportunities based on the following principles:\n\n[b]1. Environmental Leadership[/b]\n[ul][li][b]Lower Carbon Emissions:[/b] Investments target companies that exceed industry standards in reducing their carbon footprint.\n[b]Eco-Friendly Materials:[/b] Prioritizing brands that incorporate recyclable and biodegradable materials into their products.[/li]\n[li][b]Renewable Energy Adoption:[/b] Supporting businesses that actively transition to renewable energy sources.[/li]\n[li][b]Strong ESG Scores:[/b] Partnering with companies rated above 70 on S&P Global's ESG scale.[/li]\n[li][b]Sustainable Growth Practices:[/b] Focused on businesses demonstrating consistent annual growth aligned with long-term environmental goals.[/li][/ul]\n\n[b]2. Exceptional Growth Potential[/b]\n[ul][li][b]Market Outperformance:[/b] Investing in companies that surpass global fashion growth rates, particularly in the sustainable sector.[/li]\n[li][b]Undervalued Opportunities:[/b] Identifying high-potential businesses with attractive valuation metrics.\nEmerging Leaders: Supporting smaller-cap companies expanding their market share rapidly and consistently.[/li]\n[li][b]Profitability Momentum:[/b] Backing businesses with improving revenue streams and operational efficiency.[/li][/ul]\n\n[b]3. Social Impact and Innovation[/b]\n[ul][li][b]Purpose-Driven Brands:[/b] Supporting companies that champion positive social messages through their business practices.[/li]\n[li][b]Sustainability R&D:[/b] Funding businesses investing in next-generation sustainable materials and production processes.[/li][/ul]"
+        },
+        {
+          "title": "Why Us?",
+          "body": "This fund uniquely combines financial growth with meaningful environmental and social impact. By focusing on leaders in sustainable fashion, we provide investors with the opportunity to drive change while achieving strong returns.\n\n[b]Invest in the future. Invest in sustainability.[/b]"
+        }
+      ],
+      "currency": "USD",
+      "holdings": [
+        {
+          "symbol": "LULU",
+          "name": "Lululemon Athletica Inc.",
+          "logo": "assets/logos/lulu.svg",
+          "purchase": 380.0,
+          "shares": 6,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/LULU/"
+        },
+        {
+          "symbol": "KXI",
+          "name": "iShares Global Consumer Staples ETF",
+          "logo": "assets/logos/kxi.webp",
+          "purchase": 60.0,
+          "shares": 11,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/KXI/"
+        },
+        {
+          "symbol": "XPH",
+          "name": "SPDR S&P Pharmaceuticals ETF",
+          "logo": "assets/logos/xph.webp",
+          "purchase": 43.0,
+          "shares": 16,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/XPH/"
+        },
+        {
+          "symbol": "IFRA",
+          "name": "iShares U.S. Infrastructure ETF",
+          "logo": "assets/logos/ifra.webp",
+          "purchase": 46.0,
+          "shares": 15,
+          "currency": "USD",
+          "url": "https://finance.yahoo.com/quote/IFRA/"
+        }
+      ]
+    },
+    {
+      "slug": "dividend-growth-income",
+      "manager": "Hansun Chung",
+      "name": "Dividend Growth & Income Fund",
+      "icon": "assets/funds/dividend-growth-income.webp",
+      "totals": {
+        "usd": 6731.99,
+        "krw": 9033060.0,
+        "cashUsd": null,
+        "cashKrw": null
+      },
+      "sections": [
+        {
+          "title": "Investment Objectives",
+          "body": "[b]1. Value-Based Investment Strategy[/b]: \n\nThe investment strategy utilizes the Price-to-Earnings (P/E) Ratio as a key indicator to identify undervalued stocks in the market. By focusing on companies with low P/E ratios, the strategy aims to capture long-term capital appreciation, providing investors with stable returns.\n\n\n[b]2. Maximizing Dividend Income[/b]: \n\nThe strategy emphasizes companies with high Dividend Yields to ensure a steady cash flow. Investing in companies with substantial dividend payouts not only secures dividend income but also benefits from potential capital gains. This approach targets stable investment returns through high dividend yields.\n\n\n[b]3. Ensuring Financial Stability[/b]: \n\nFinancial health is assessed using the Debt-to-Equity Ratio (DER) and Current Ratio. By selecting companies with low debt ratios and adequate current ratios, the strategy aims to strengthen financial stability and minimize risks during economic downturns.\n\n\n[b]4. Enhancing Capital Efficiency[/b]: \n\nThe Return on Equity (ROE) is used to evaluate how effectively a company utilizes its capital. By investing in companies with high ROE, the strategy seeks to maximize capital efficiency and assess the company's growth potential and profitability, thereby improving overall portfolio performance."
+        }
+      ],
+      "keyFeatures": [
+        "[b]Value Assessment-Based Investment[/b]: \n\nThe strategy employs the P/E Ratio to perform relative value assessments of companies, focusing on those that appear undervalued. This approach aims to exploit potential value increases and capitalize on long-term growth prospects of undervalued assets.",
+        "[b]Stable Dividend Strategy[/b]: \n\nThe investment strategy targets companies with high Dividend Yields to secure reliable dividend income. High dividend yield investments are selected to ensure a stable cash flow and to complement financial stability considerations in the investment approach.",
+        "[b]Financial Health Analysis[/b]: \n\nThe Debt-to-Equity Ratio and Current Ratio are used to scrutinize the financial condition of companies. Investing in companies with low debt and suitable current ratios aims to reduce financial risks and create a financially sound investment environment.",
+        "[b]Efficient Capital Utilization[/b]: \n\nROE is utilized to assess capital efficiency, focusing on companies that demonstrate high ROE. This approach seeks to enhance capital utilization and evaluate the company’s profitability and growth potential, thereby boosting long-term returns.",
+        "[b]Conservative Evaluation Approach[/b]: \n\nTrailing P/E (historical P/E Ratio) is preferred over Forward P/E to ensure a conservative evaluation method. Using Trailing P/E provides a stable basis for investment decisions based on past performance and helps manage potential risks effectively."
+      ],
+      "currency": "KRW",
+      "holdings": [
+        {
+          "symbol": "373220.KS",
+          "name": "LG Energy Solution Ltd.",
+          "logo": "assets/logos/373220-ks.webp",
+          "purchase": 327500.0,
+          "shares": 6,
+          "currency": "KRW",
+          "url": "https://finance.yahoo.com/quote/373220.KS/"
+        },
+        {
+          "symbol": "03473K.KS",
+          "name": "SK Inc.",
+          "logo": "assets/logos/03473k-ks.webp",
+          "purchase": 122500.0,
+          "shares": 16,
+          "currency": "KRW",
+          "url": "https://finance.yahoo.com/quote/03473K.KS/"
+        },
+        {
+          "symbol": "001740.KS",
+          "name": "SK Networks Company Limited",
+          "logo": "assets/logos/001740-ks.webp",
+          "purchase": 4400.0,
+          "shares": 454,
+          "currency": "KRW",
+          "url": "https://finance.yahoo.com/quote/001740.KS/"
+        },
+        {
+          "symbol": "008060.KS",
+          "name": "Daeduck Co.,Ltd.",
+          "logo": "assets/logos/008060-ks.webp",
+          "purchase": 7140.0,
+          "shares": 280,
+          "currency": "KRW",
+          "url": "https://finance.yahoo.com/quote/008060.KS/"
+        }
+      ]
+    }
+  ],
+  "reportCategories": [
+    "Company Analysis",
+    "Industry Analysis",
+    "ESG Analysis",
+    "Investment Strategy",
+    "Shareholder Proposal",
+    "Macroeconomic Analysis",
+    "Annual Reports"
+  ],
+  "votes": [
+    {
+      "report": "r77",
+      "endDate": "2026-11-05",
+      "agree": 2,
+      "disagree": 0,
+      "hold": 0
+    },
+    {
+      "report": "r76",
+      "endDate": "2026-11-05",
+      "agree": 1,
+      "disagree": 0,
+      "hold": 0
+    },
+    {
+      "report": "r66",
+      "endDate": "2026-11-05",
+      "agree": 0,
+      "disagree": 0,
+      "hold": 0
+    }
+  ],
+  "reports": [
+    {
+      "id": "r80",
+      "category": "Investment Strategy",
+      "tag": "Investment Strategy",
+      "title": "Investment Evaluation Report Alphabet Inc. (Google) & TSMC",
+      "author": "Brian Kang",
+      "file": "https://drive.google.com/file/d/1JijGKK4afWtAu1CtvEhAmBvJml6172BO/view",
+      "thumb": "assets/reports/80-investment-evaluation-report-alphabet-inc-google-tsmc.webp"
+    },
+    {
+      "id": "r79",
+      "category": "Investment Strategy",
+      "tag": "Investment Strategy",
+      "title": "Investment Criteria",
+      "author": "Brian Kang",
+      "file": "https://drive.google.com/file/d/1GFe6vf2aJR6gqM5gTZ8M-2eWC1hkvkk8/view",
+      "thumb": "assets/reports/79-investment-criteria.webp"
+    },
+    {
+      "id": "r78",
+      "category": "Investment Strategy",
+      "tag": "Investment Strategy",
+      "title": "Investment Philosophy",
+      "author": "Brian Kang",
+      "file": "https://drive.google.com/file/d/176HqK8Lcj21H0Tx4syw2TBSoDq6NuvIm/view",
+      "thumb": "assets/reports/78-investment-philosophy.webp"
+    },
+    {
+      "id": "r77",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "ASML Holding N.V.",
+      "author": "Jeewan Hong",
+      "file": "https://drive.google.com/file/d/1tB9QlXMGZcHH84yVcjB25JSY6X3wilrF/view",
+      "thumb": "assets/reports/77-asml-holding-n-v.webp"
+    },
+    {
+      "id": "r76",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Meta Platforms, Inc. (META)",
+      "author": "Jongmin Choi",
+      "file": "https://drive.google.com/file/d/1_eaMptmJsrS2x6g6HffC6CqmF_VzK8Wq/view",
+      "thumb": "assets/reports/76-meta-platforms-inc-meta.webp"
+    },
+    {
+      "id": "r75",
+      "category": "Investment Strategy",
+      "tag": "",
+      "title": "Investment Analysis of Selected Companies",
+      "author": "Hansun Chung",
+      "file": "https://drive.google.com/file/d/18HnpHc0cqlrbT4suTWHaiXEC6prsJvHc/view",
+      "thumb": "assets/reports/75-investment-analysis-of-selected-companies.webp"
+    },
+    {
+      "id": "r74",
+      "category": "ESG Analysis",
+      "tag": "ESG Analysis",
+      "title": "ESG: Between Truth and Lies in Tesla",
+      "author": "Lynn Kim",
+      "file": "https://drive.google.com/file/d/12sggv-GdikztUVuWKqyyAmP03PMgKEZE/view?usp=sharing",
+      "thumb": "assets/reports/74-esg-between-truth-and-lies-in-tesla.webp"
+    },
+    {
+      "id": "r73",
+      "category": "ESG Analysis",
+      "tag": "ESG Campaign",
+      "title": "Request for Improvement of the Industrial Safety and Health Act",
+      "author": "Soyul Ahn",
+      "file": "https://drive.google.com/file/d/13Qfe5B__xrcnKZIOCR0cDpvoBcN0vmbW/view?usp=sharing",
+      "thumb": "assets/reports/73-request-for-improvement-of-the-industrial-safety-and-health-.webp"
+    },
+    {
+      "id": "r72",
+      "category": "Shareholder Proposal",
+      "tag": "Shareholder Proposal",
+      "title": "Request for Information on Compliance with the Newly Amended Industrial Safety and Health Act",
+      "author": "Soyul Ahn",
+      "file": "https://drive.google.com/file/d/1m33Wx3bUuzpBxhQ0DUBhKJYrZ5CyRivw/view?usp=sharing",
+      "thumb": "assets/reports/72-request-for-information-on-compliance-with-the-newly-amended.webp"
+    },
+    {
+      "id": "r71",
+      "category": "Investment Strategy",
+      "tag": "Investment Strategy",
+      "title": "2025 Economic Scenario & Investment Strategy",
+      "author": "Aiden Lee",
+      "file": "https://drive.google.com/file/d/1MTDGC_GHD82EiAF-erfod3vVQ0jqf23_/view?usp=sharing",
+      "thumb": "assets/reports/71-2025-economic-scenario-investment-strategy.webp"
+    },
+    {
+      "id": "r70",
+      "category": "Investment Strategy",
+      "tag": "Investment Strategy",
+      "title": "Evaluating Promising Enterprises for 2025",
+      "author": "Aiden Lee",
+      "file": "https://drive.google.com/file/d/1wHgcbmZcmCmsn8SIItoDrQ0PnbCZsJKc/view?usp=sharing",
+      "thumb": "assets/reports/70-evaluating-promising-enterprises-for-2025.webp"
+    },
+    {
+      "id": "r69",
+      "category": "Investment Strategy",
+      "tag": "Investment Strategy",
+      "title": "Investment Criteria",
+      "author": "Aiden Lee",
+      "file": "https://drive.google.com/file/d/151kdRFroDpJw_FK_LsXlHSgvHDXkz1E_/view?usp=sharing",
+      "thumb": "assets/reports/69-investment-criteria.webp"
+    },
+    {
+      "id": "r68",
+      "category": "Investment Strategy",
+      "tag": "Investment Strategy",
+      "title": "Investment Philosophy",
+      "author": "Aiden Lee",
+      "file": "https://drive.google.com/file/d/1qyuwrvunRRWrRAw0vBCrHprBZ6mc_db7/view?usp=sharing",
+      "thumb": "assets/reports/68-investment-philosophy.webp"
+    },
+    {
+      "id": "r67",
+      "category": "Investment Strategy",
+      "tag": "Investment Strategy",
+      "title": "Investment Philosophy",
+      "author": "Eugene Lee",
+      "file": "https://drive.google.com/file/d/19_3o9wFpo0byL7xbIeOajD-QAu3r2yq1/view?usp=sharing",
+      "thumb": "assets/reports/67-investment-philosophy.webp"
+    },
+    {
+      "id": "r66",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "NextEra Energy",
+      "author": "Choisung (James) Park",
+      "file": "https://drive.google.com/file/d/16TSPklmVC2QSjs-5pLdAs4G5MUezIbWn/view",
+      "thumb": "assets/reports/66-nextera-energy.webp"
+    },
+    {
+      "id": "r65",
+      "category": "ESG Analysis",
+      "tag": "ESG Analysis",
+      "title": "Gaming Industry",
+      "author": "Chaeyoung Kim",
+      "file": "https://drive.google.com/file/d/1oMp4FdE9_7bPq05kTyVVfbsAB8VAEqwy/view?usp=sharing",
+      "thumb": "assets/reports/65-gaming-industry.webp"
+    },
+    {
+      "id": "r64",
+      "category": "Annual Reports",
+      "tag": "",
+      "title": "Investment Opinion Report",
+      "author": "Choisung James Park",
+      "file": "https://drive.google.com/file/d/1253CS-zAA-saZooy5FzMJpu5BI_MJEwm/view?usp=sharing",
+      "thumb": "assets/reports/64-investment-opinion-report.webp"
+    },
+    {
+      "id": "r63",
+      "category": "ESG Analysis",
+      "tag": "ESG Analysis",
+      "title": "Volkswagen Emission Scandal and ESG Transformation",
+      "author": "Bryan Suh",
+      "file": "https://drive.google.com/file/d/1g0G3q2DDe-r8jVUxI_DDHQd8qBe3kgel/view?usp=sharing",
+      "thumb": "assets/reports/63-volkswagen-emission-scandal-and-esg-transformation.webp"
+    },
+    {
+      "id": "r62",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "ExxonMobil Corporation",
+      "author": "Eugene Lee",
+      "file": "https://drive.google.com/file/d/1_8KXDSePEmNIzi4t_YQch6s2_N2gYTwx/view?usp=sharing",
+      "thumb": "assets/reports/62-exxonmobil-corporation.webp"
+    },
+    {
+      "id": "r61",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Apple Inc",
+      "author": "Brian Kang",
+      "file": "https://drive.google.com/file/d/1MDxJ0Fn8N88YSRUCK9fgMMMmgVW3uQ6O/view?usp=sharing",
+      "thumb": "assets/reports/61-apple-inc.webp"
+    },
+    {
+      "id": "r60",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Alphabet Inc",
+      "author": "Alexander Liu",
+      "file": "https://drive.google.com/file/d/1bCYnbwqX_cB6tygaBO_QD5wyBMUv4Sc4/view?usp=sharing",
+      "thumb": "assets/reports/60-alphabet-inc.webp"
+    },
+    {
+      "id": "r59",
+      "category": "ESG Analysis",
+      "tag": "ESG Analysis",
+      "title": "An Examination of the Chaebol Structure in Samsung",
+      "author": "Junhyuk Lee",
+      "file": "https://drive.google.com/file/d/1gNwCOak5Q9cy44Dv2167CQU6fKblGm8i/view?usp=sharing",
+      "thumb": "assets/reports/59-an-examination-of-the-chaebol-structure-in-samsung.webp"
+    },
+    {
+      "id": "r58",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "OpenAI",
+      "author": "Aiden Lee",
+      "file": "https://drive.google.com/file/d/13TLiq5ZVc3uTZxXEB6S0t51uR2vn60oZ/view?usp=sharing",
+      "thumb": "assets/reports/58-openai.webp"
+    },
+    {
+      "id": "r57",
+      "category": "ESG Analysis",
+      "tag": "ESG Analysis",
+      "title": "Analyzing ESG Violations at Tesla’s Fremont Facility",
+      "author": "Lynn Kim",
+      "file": "https://drive.google.com/file/d/1e7GzPeaxRGlDoFWQYy0AYWsnxFIN9rmO/view?usp=sharing",
+      "thumb": "assets/reports/57-analyzing-esg-violations-at-tesla-s-fremont-facility.webp"
+    },
+    {
+      "id": "r56",
+      "category": "Industry Analysis",
+      "tag": "Industry Analysis",
+      "title": "Game Industry",
+      "author": "Chaeyoung Kim",
+      "file": "https://drive.google.com/file/d/1RnDEtVWmbLzLHgavi2HmaPikOsSFiHmU/view?usp=sharing",
+      "thumb": "assets/reports/56-game-industry.webp"
+    },
+    {
+      "id": "r55",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "LVMH Moet Hennessy Louis Vuitton SE",
+      "author": "Shiwoo Hur",
+      "file": "https://drive.google.com/file/d/1mKq4ydsPbpMub8o3DqVCvb4Cyw0ioySA/view?usp=sharing",
+      "thumb": "assets/reports/55-lvmh-moet-hennessy-louis-vuitton-se.webp"
+    },
+    {
+      "id": "r54",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Richemont",
+      "author": "Yujin Hwang",
+      "file": "https://drive.google.com/file/d/132UhySzNrqa0m49AffjTpbmgN1nVlACG/view?usp=sharing",
+      "thumb": "assets/reports/54-richemont.webp"
+    },
+    {
+      "id": "r53",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Tesla",
+      "author": "Soyul Ahn",
+      "file": "https://drive.google.com/file/d/1IE9Q4sN3g2BYul-8JgdtmpLbYBrtwYDO/view?usp=sharing",
+      "thumb": "assets/reports/53-tesla.webp"
+    },
+    {
+      "id": "r52",
+      "category": "Annual Reports",
+      "tag": "",
+      "title": "Investment Criteria for Youth Impact Fund",
+      "author": "Hansun Chung",
+      "file": "https://drive.google.com/file/d/1N1H0Hg8Ua9Of4xmIcp80juPWzQTf3CDt/view?usp=sharing",
+      "thumb": "assets/reports/52-investment-criteria-for-youth-impact-fund.webp"
+    },
+    {
+      "id": "r51",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Tencent",
+      "author": "Heechan Lee",
+      "file": "https://drive.google.com/file/d/17uXxi-AFNpWKk_QGgjVEphd3RuPl7Ogf/view?usp=sharing",
+      "thumb": "assets/reports/51-tencent.webp"
+    },
+    {
+      "id": "r50",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Prada SpA",
+      "author": "SeongJae Park",
+      "file": "https://drive.google.com/file/d/1KwADE9ST1wqMCAXGt2VOY2XX1yFp9LfU/view?usp=sharing",
+      "thumb": "assets/reports/50-prada-spa.webp"
+    },
+    {
+      "id": "r49",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Saudi Arabian Oil Co",
+      "author": "Eugene Lee",
+      "file": "https://drive.google.com/file/d/105V-Yq8k9aXacTbxdBuaz-hQIX-j0U9K/view?usp=sharing",
+      "thumb": "assets/reports/49-saudi-arabian-oil-co.webp"
+    },
+    {
+      "id": "r48",
+      "category": "Macroeconomic Analysis",
+      "tag": "Macroeconomic Analysis",
+      "title": "Financial Crisis Analysis Causes and Solutions, Bill Cho",
+      "author": "Bill Cho",
+      "file": "https://drive.google.com/file/d/1SpWIbXqvmMTelp9pP1G6sQ-pfI1xz7wO/view?usp=sharing",
+      "thumb": "assets/reports/48-financial-crisis-analysis-causes-and-solutions-bill-cho.webp"
+    },
+    {
+      "id": "r47",
+      "category": "ESG Analysis",
+      "tag": "ESG Analysis",
+      "title": "Report on Shell's Adherence to ESG",
+      "author": "Junhyuk Lee",
+      "file": "https://drive.google.com/file/d/1RWogCbrlbIjeAZXfTeLCvSduC_8dxh4Z/view?usp=sharing",
+      "thumb": "assets/reports/47-report-on-shell-s-adherence-to-esg.webp"
+    },
+    {
+      "id": "r46",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "LVMH",
+      "author": "Yujin Hwang",
+      "file": "https://drive.google.com/file/d/167BIw1auresK-BKAWGJjdo97Q64RAJUs/view?usp=sharing",
+      "thumb": "assets/reports/46-lvmh.webp"
+    },
+    {
+      "id": "r45",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Dunkin' Donuts",
+      "author": "Donghyeon Oh",
+      "file": "https://drive.google.com/file/d/16diGiCgQBjLvSrzeMuECsgMZlvxfZhjD/view?usp=sharing",
+      "thumb": "assets/reports/45-dunkin-donuts.webp"
+    },
+    {
+      "id": "r44",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Climeworks",
+      "author": "Jaeho Lee",
+      "file": "https://drive.google.com/file/d/1UMnzIEESK9GCx3rKZ2MXQqmJrL280QOF/view?usp=sharing",
+      "thumb": "assets/reports/44-climeworks.webp"
+    },
+    {
+      "id": "r43",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "VF Corporation",
+      "author": "Shiwoo Hur",
+      "file": "https://drive.google.com/file/d/11koWHUbz5xpL7iCYIFAGe2Xv2WaCsQ2a/view?usp=sharing",
+      "thumb": "assets/reports/43-vf-corporation.webp"
+    },
+    {
+      "id": "r42",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "NVIDIA Corporation",
+      "author": "Haesung Bae",
+      "file": "https://drive.google.com/file/d/16Yi3q29LS9dslz8fUR1Ft0yKOYWJ6wNh/view?usp=sharing",
+      "thumb": "assets/reports/42-nvidia-corporation.webp"
+    },
+    {
+      "id": "r41",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "LVMH",
+      "author": "SeongJae Park",
+      "file": "https://drive.google.com/file/d/14EkJqydP7MUp8WRfBOUWSd_bhan6IPAl/view?pli=1",
+      "thumb": "assets/reports/41-lvmh.webp"
+    },
+    {
+      "id": "r40",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Activision Blizzard",
+      "author": "Heechan Lee",
+      "file": "https://drive.google.com/file/d/1FG6lMmFO8H9di-_xHorJjkGnIi9xKfrj/view",
+      "thumb": "assets/reports/40-activision-blizzard.webp"
+    },
+    {
+      "id": "r39",
+      "category": "Annual Reports",
+      "tag": "",
+      "title": "Youth Impact Fund Pitch Deck",
+      "author": "Youth Impact Fund Team",
+      "file": "https://70948820c8528fa6a9f850db995ce2e1.cdn.bubble.io/f1710848826056x774932109771274900/Youth%20Impact%20Fund_Pitch%20Deck.pdf",
+      "thumb": "assets/reports/39-youth-impact-fund-pitch-deck.webp"
+    },
+    {
+      "id": "r38",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Apple",
+      "author": "Hansun Chung",
+      "file": "https://drive.google.com/file/d/1uAKPbMnZppmhVKyUll4dGsyPqhsmH8DP/view",
+      "thumb": "assets/reports/38-apple.webp"
+    },
+    {
+      "id": "r37",
+      "category": "ESG Analysis",
+      "tag": "ESG Analysis",
+      "title": "Secrets Behind Coupang’s “Rocket Delivery”",
+      "author": "Choisung James Park",
+      "file": "https://drive.google.com/file/d/1i3L-kWxx7Qp4Nyr0jX7W4VTFJiPthQdv/view?usp=sharing",
+      "thumb": "assets/reports/37-secrets-behind-coupang-s-rocket-delivery.webp"
+    },
+    {
+      "id": "r36",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Florida Power & Light",
+      "author": "Jaeho Lee",
+      "file": "https://drive.google.com/file/d/1P1vQlG4o6slJsSeBDfMqy0mIp3KOsQRd/view?usp=sharing",
+      "thumb": "assets/reports/36-florida-power-light.webp"
+    },
+    {
+      "id": "r35",
+      "category": "Industry Analysis",
+      "tag": "Industry Analysis",
+      "title": "Alcoholic Beverages Industry",
+      "author": "Juyoung Chun",
+      "file": "https://drive.google.com/file/d/1QONzVkJY7INv_V_RBJpu0wrxsi_-E8FV/view?usp=sharing",
+      "thumb": "assets/reports/35-alcoholic-beverages-industry.webp"
+    },
+    {
+      "id": "r34",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Alphabet",
+      "author": "Junhyuk Lee",
+      "file": "https://drive.google.com/file/d/18vMS9NdZ9GJWjkOptHgaxFSebIrsTTA_/view?pli=1",
+      "thumb": "assets/reports/34-alphabet.webp"
+    },
+    {
+      "id": "r33",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Itochu",
+      "author": "Geonhwi Cho",
+      "file": "https://drive.google.com/file/d/1VDWB39BXcMfe7l7Rtr3O67wVndYg5rPY/view?pli=1",
+      "thumb": "assets/reports/33-itochu.webp"
+    },
+    {
+      "id": "r32",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Adidas AG",
+      "author": "Soomin Cho",
+      "file": "https://drive.google.com/file/d/1yjr3btlbx7GsygdgNc79B2hSd3gycIrW/view",
+      "thumb": "assets/reports/32-adidas-ag.webp"
+    },
+    {
+      "id": "r31",
+      "category": "ESG Analysis",
+      "tag": "ESG Analysis",
+      "title": "Unsustainable Company Walmart Inc.",
+      "author": "Derek Kim",
+      "file": "https://drive.google.com/file/d/1_hDtMiF-GcyHIbze4YEI22_aBq_AR_Ay/view",
+      "thumb": "assets/reports/31-unsustainable-company-walmart-inc.webp"
+    },
+    {
+      "id": "r30",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Nike",
+      "author": "Sam Chong",
+      "file": "https://drive.google.com/file/d/1qqfjyZzEtuI0821OMsaNC1T153nD9WRf/view",
+      "thumb": "assets/reports/30-nike.webp"
+    },
+    {
+      "id": "r29",
+      "category": "Industry Analysis",
+      "tag": "Industry Analysis",
+      "title": "The ESG Initiatives of Leading AI Companies, Jonathan Park",
+      "author": "Jonathan Park",
+      "file": "https://drive.google.com/file/d/1Q4tNXunjpwRxfK49J9ip3m5-Vk7X5Ibs/view?usp=sharing",
+      "thumb": "assets/reports/29-the-esg-initiatives-of-leading-ai-companies-jonathan-park.webp"
+    },
+    {
+      "id": "r28",
+      "category": "Macroeconomic Analysis",
+      "tag": "Macroeconomic Analysis",
+      "title": "Is Increasing Interest Rate An Optimum Solution In Mitigating Inflation?",
+      "author": "Choisung James Park",
+      "file": "https://drive.google.com/file/d/1BZiFBO7EM8psj8Ovr5iFnnmb9BsAh9i0/view",
+      "thumb": "assets/reports/28-is-increasing-interest-rate-an-optimum-solution-in-mitigatin.webp"
+    },
+    {
+      "id": "r27",
+      "category": "Macroeconomic Analysis",
+      "tag": "Macroeconomic Analysis",
+      "title": "Analysis of Interest Rate Trends in the United States",
+      "author": "Geonhwi Cho",
+      "file": "https://drive.google.com/file/d/1PxbWVlXVJkP7KcsoOnrz98ZTkpSRMpXB/view",
+      "thumb": "assets/reports/27-analysis-of-interest-rate-trends-in-the-united-states.webp"
+    },
+    {
+      "id": "r26",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Tesla Inc",
+      "author": "Hangyul (Jaden) Park",
+      "file": "https://drive.google.com/file/d/10JM5oYRiPeaPB6Js2a7YrEnFFIN7HG9q/view",
+      "thumb": "assets/reports/26-tesla-inc.webp"
+    },
+    {
+      "id": "r25",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Netflix",
+      "author": "Jaeho Lee",
+      "file": "https://drive.google.com/file/d/1IGgwnm-c3zewAgpQOHKP_K28gIMoryc3/view",
+      "thumb": "assets/reports/25-netflix.webp"
+    },
+    {
+      "id": "r24",
+      "category": "Annual Reports",
+      "tag": "",
+      "title": "Youth Impact Fund International 2023 Half-Year Report",
+      "author": "David Koo",
+      "file": "https://drive.google.com/file/d/1gppLptdJr5mlh7pkG0p9fHgfQU5bcNs9/view",
+      "thumb": "assets/reports/24-youth-impact-fund-international-2023-half-year-report.webp"
+    },
+    {
+      "id": "r23",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Kakao Corp",
+      "author": "Yeoram Kang",
+      "file": "https://drive.google.com/file/d/1r3qfFzh7suxRT8x0sJxbz7rAWgzEPg-u/view",
+      "thumb": "assets/reports/23-kakao-corp.webp"
+    },
+    {
+      "id": "r22",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Microsoft Corp",
+      "author": "Jin-Woo Ahn",
+      "file": "https://drive.google.com/file/d/1qoVKHbUwSFI4ufrrKCh7i_NxIus2pNB2/view",
+      "thumb": "assets/reports/22-microsoft-corp.webp"
+    },
+    {
+      "id": "r21",
+      "category": "ESG Analysis",
+      "tag": "ESG Analysis",
+      "title": "Navigating the Success and Failure of ESG Companies",
+      "author": "Jaehun Oh",
+      "file": "https://drive.google.com/file/d/1Ubxc-mtYXxchs-G59TePzFl7p7KPDoE4/view",
+      "thumb": "assets/reports/21-navigating-the-success-and-failure-of-esg-companies.webp"
+    },
+    {
+      "id": "r20",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Samsung Electronics Co Ltd",
+      "author": "Hansun Chung",
+      "file": "https://drive.google.com/file/d/15mS4PqR3VCZDdYf1d9WcD0_rGhgMBksA/view",
+      "thumb": "assets/reports/20-samsung-electronics-co-ltd.webp"
+    },
+    {
+      "id": "r19",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Tesla Inc",
+      "author": "JoonHyuk(Louie) Park",
+      "file": "https://drive.google.com/file/d/1THEKEwYGpEBqnCeaSrQ0lVqSxrvv0rRH/view",
+      "thumb": "assets/reports/19-tesla-inc.webp"
+    },
+    {
+      "id": "r18",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Nike Inc",
+      "author": "Soomin Cho",
+      "file": "https://drive.google.com/file/d/1eriUP_kz4Ocp9naGzcaAFKGbI_gMcM_N/view",
+      "thumb": "assets/reports/18-nike-inc.webp"
+    },
+    {
+      "id": "r17",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Boeing Co",
+      "author": "Derek Kim",
+      "file": "https://drive.google.com/file/d/1Gy77Gw5f7nbk-jHW3BzLG32C6bnqrbyl/view",
+      "thumb": "assets/reports/17-boeing-co.webp"
+    },
+    {
+      "id": "r16",
+      "category": "Industry Analysis",
+      "tag": "Industry Analysis",
+      "title": "All about Artificial Intelligence Industry",
+      "author": "Jonathan Park",
+      "file": "https://drive.google.com/file/d/1QxfL1_wOowZ_jlu21zxUXSEhX0a6j07n/view",
+      "thumb": "assets/reports/16-all-about-artificial-intelligence-industry.webp"
+    },
+    {
+      "id": "r15",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "JPMorgan Chase & Co.",
+      "author": "Geonhwi Cho",
+      "file": "https://drive.google.com/file/d/1ty6JCKHgVGWMRGt7DHCHtmdtgXx48rEA/view",
+      "thumb": "assets/reports/15-jpmorgan-chase-co.webp"
+    },
+    {
+      "id": "r14",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Kering SA",
+      "author": "SeongJae Park",
+      "file": "https://drive.google.com/file/d/19uBgOtYIb0-SpAlQMw6yLTifG-vH1AOp/view",
+      "thumb": "assets/reports/14-kering-sa.webp"
+    },
+    {
+      "id": "r13",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Microsoft Corporation",
+      "author": "Jaeho Joo",
+      "file": "https://drive.google.com/file/d/1iPKEvaSm1tOw5tgQbACiRkmZlmMd1W9p/view",
+      "thumb": "assets/reports/13-microsoft-corporation.webp"
+    },
+    {
+      "id": "r12",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Tesla Inc",
+      "author": "Jonathan Park",
+      "file": "https://drive.google.com/file/d/1lYruMrQtbjXBx9WuWrEHZ8756cxgiA1M/view",
+      "thumb": "assets/reports/12-tesla-inc.webp"
+    },
+    {
+      "id": "r11",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Walt Disney Company",
+      "author": "Jihu Park",
+      "file": "https://drive.google.com/file/d/1E1F8CMfS-9no3SsfNJbFYleuhlIzXp5S/view",
+      "thumb": "assets/reports/11-walt-disney-company.webp"
+    },
+    {
+      "id": "r10",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Albemarle Corporation",
+      "author": "Jaeho Lee",
+      "file": "https://drive.google.com/file/d/1p8hZowBS0L96c-81j1WUUvDANun1B4GU/view",
+      "thumb": "assets/reports/10-albemarle-corporation.webp"
+    },
+    {
+      "id": "r9",
+      "category": "Industry Analysis",
+      "tag": "Industry Analysis",
+      "title": "A Major Shakeup in the Gaming Industry: Microsoft’s Acquisition of Activision Blizzard",
+      "author": "Hansun Jeong",
+      "file": "https://drive.google.com/file/d/1jPYLEy3k76URwNvjdVA1RwZI5ws3dV3f/view",
+      "thumb": "assets/reports/9-a-major-shakeup-in-the-gaming-industry-microsoft-s-acquisiti.webp"
+    },
+    {
+      "id": "r8",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "Nintendo",
+      "author": "Heechan Lee",
+      "file": "https://drive.google.com/file/d/1Eqw9xTala-oxIOiYeoJqtwcqQzGO035h/view",
+      "thumb": "assets/reports/8-nintendo.webp"
+    },
+    {
+      "id": "r7",
+      "category": "Industry Analysis",
+      "tag": "Industry Analysis",
+      "title": "General Overview of the Renewable Energy Industry",
+      "author": "Jiho Ryu",
+      "file": "https://drive.google.com/file/d/1TS0YibOiqDtDrk9-VbS7Ep-N2Q04a4hY/view",
+      "thumb": "assets/reports/7-general-overview-of-the-renewable-energy-industry.webp"
+    },
+    {
+      "id": "r6",
+      "category": "Industry Analysis",
+      "tag": "Industry Analysis",
+      "title": "Future Prospects of the Renewable Energy Industry",
+      "author": "Jiho Ryu",
+      "file": "https://drive.google.com/file/d/1VK3JQetIeKr2gGiJextFZUn2N1WPOQsG/view",
+      "thumb": "assets/reports/6-future-prospects-of-the-renewable-energy-industry.webp"
+    },
+    {
+      "id": "r5",
+      "category": "Macroeconomic Analysis",
+      "tag": "Macroeconomic Analysis",
+      "title": "Impact of the Conflict Between Russia and Ukraine on the Global Economy",
+      "author": "Jonathan Park",
+      "file": "https://drive.google.com/file/d/1I3vJUTs7rOAWpNSb2zKPrKZMI0bdJkZi/view",
+      "thumb": "assets/reports/5-impact-of-the-conflict-between-russia-and-ukraine-on-the-glo.webp"
+    },
+    {
+      "id": "r4",
+      "category": "Company Analysis",
+      "tag": "Company Analysis",
+      "title": "General Motors (Update)",
+      "author": "Yeonjun Lim",
+      "file": "https://drive.google.com/file/d/1rDFQ_ApWIxRNplWnlZLz3R2c02n2m-Tc/view",
+      "thumb": "assets/reports/4-general-motors-update.webp"
+    },
+    {
+      "id": "r3",
+      "category": "Annual Reports",
+      "tag": "",
+      "title": "2022 Youth Impact Fund Report",
+      "author": "Youth Impact Fund Team",
+      "file": "https://drive.google.com/file/d/1aDJY8cnGaSoLbWNDLyzVZwoxk-gCLXOA/view",
+      "thumb": "assets/reports/3-2022-youth-impact-fund-report.webp"
+    },
+    {
+      "id": "r2",
+      "category": "Annual Reports",
+      "tag": "",
+      "title": "2021 Youth Impact Fund Report",
+      "author": "Youth Impact Fund Team",
+      "file": "https://drive.google.com/file/d/1O8L4bCsck5jOjLXNJqZRgVXVVzupIJM_/view",
+      "thumb": "assets/reports/2-2021-youth-impact-fund-report.webp"
+    }
+  ],
+  "legal": {
+    "updated": "October 29, 2026",
+    "privacy": {
+      "title": "Privacy Policy",
+      "body": "This Privacy Policy explains what information Youth Impact Fund (\"YIF\", \"we\", \"us\") collects when you use this website, how we use it, and the choices you have. YIF is a student-run organization based in the Republic of Korea.\n\n[h]1. Information we collect[/h]\n[b]Account information.[/b] When you create an account we collect your name, email address and a password. Passwords are handled by Google Firebase Authentication and are never visible to us. If you sign in with Google, we receive your name, email address and Google account ID from Google.\n\n[b]Petition signatures.[/b] When you sign a petition we collect the name and email address you enter. If you are logged in, we also link the signature to your account.\n\n[b]Votes, likes and comments.[/b] When you vote on a report, like a lesson or post a comment, we store your choice or text together with your account ID. Comments are shown publicly with your name.\n\n[b]Technical information.[/b] Your browser stores a small amount of data on your device (local storage) to keep you logged in and to remember which petitions you have signed. Our hosting and service providers may automatically log technical data such as your IP address, browser type and the time of your visit.\n\nWe do not collect payment information, and we do not use advertising or tracking cookies.\n\n[h]2. How we use your information[/h]\n[ul][li]To create and manage your account and let you log in.[/li][li]To count petition signatures and make sure each person signs only once.[/li][li]To record report votes (one per member) and show lesson likes and comments.[/li][li]To reply to you when you contact us, and to send account emails you request, such as password resets.[/li][li]To keep the website secure and prevent abuse.[/li][/ul]\n\n[h]3. What is shown publicly[/h]\n[ul][li]Petition pages show only the total number of signatures. Signers' names and email addresses are not shown on the website.[/li][li]Report vote results are shown as totals and percentages, not by member.[/li][li]Lesson comments are shown with the commenter's name.[/li][/ul]\n\n[h]4. When we share information[/h]\nWe do not sell or rent your personal information. We share it only in these cases:\n[ul][li][b]Petition recipients.[/b] When a petition is delivered, we may share signers' names (never email addresses) with the company, organization or public authority the petition is addressed to.[/li][li][b]Service providers.[/b] We use Google Firebase (Google LLC) for accounts and data storage, GitHub Pages (GitHub, Inc.) to host the website, Google Fonts for typefaces, and Google Drive to host report files and lesson videos. These providers process data on our behalf and may store it on servers outside Korea.[/li][li][b]Legal reasons.[/b] If required by law or to protect the safety of our members or the public.[/li][/ul]\n\n[h]5. How long we keep information[/h]\n[ul][li]Account information is kept until you delete your account.[/li][li]Petition signatures are kept while the campaign is active and for up to 12 months after it ends, then deleted.[/li][li]Votes, likes and comments are kept while your account exists. You can delete your own comments at any time.[/li][/ul]\n\n[h]6. Your choices and rights[/h]\n[ul][li][b]Edit your name:[/b] open your profile from the account menu.[/li][li][b]Delete your account:[/b] open your profile and choose Delete account. This permanently removes your login. Comments you posted stay unless you delete them first or ask us to remove them.[/li][li][b]Other requests:[/b] you can ask us to access, correct or delete your information, including a petition signature, by contacting us at {{contact}}.[/li][/ul]\n\n[h]7. Children and young people[/h]\nMany YIF members are students. If you are under 14, you need permission from a parent or legal guardian before you create an account or sign a petition. If we learn that we collected information from a child under 14 without that permission, we will delete it.\n\n[h]8. Security[/h]\nWe use Firebase security rules to limit who can read and change data. For example, petition signatures can only be read by YIF administrators. No online service is completely secure, so please use a strong, unique password.\n\n[h]9. Changes to this policy[/h]\nIf we change this policy, we will update the date at the top of this page. If the changes are significant, we will post a notice on the website.\n\n[h]10. Contact[/h]\nQuestions about this policy or your information can be sent to {{contact}}."
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "body": "These Terms of Service (\"Terms\") apply to your use of the Youth Impact Fund website, including accounts, petitions, report voting, lessons and comments. By creating an account, signing a petition or otherwise using the website, you agree to these Terms and to our [url=#privacy]Privacy Policy[/url].\n\n[h]1. Who can use the website[/h]\nAnyone can browse the website. To create an account or sign a petition you must provide accurate information. If you are under 14, you need permission from a parent or legal guardian first.\n\n[h]2. Your account[/h]\n[ul][li]Keep your password private. You are responsible for activity on your account.[/li][li]Use your real name. Do not create accounts for other people or impersonate anyone.[/li][li]You can delete your account at any time from your profile.[/li][/ul]\n\n[h]3. Not financial advice[/h]\nYIF is an educational, student-run organization. Reports, fund pages, portfolio data, lessons and all other content on this website are for educational and informational purposes only. They are [b]not[/b] investment, financial, legal or tax advice, and they are not an offer or recommendation to buy or sell any security. Prices and returns shown may be delayed or inaccurate. Past performance does not guarantee future results. Do your own research and speak to a qualified professional before making investment decisions.\n\n[h]4. Petitions[/h]\n[ul][li]Sign a petition only once, and only with your own name and email address.[/li][li]By signing, you agree that YIF may count your signature and deliver your name (not your email address) to the petition's recipient.[/li][li]Signing a petition on this website is separate from signing on other platforms such as Change.org.[/li][/ul]\n\n[h]5. Report voting[/h]\nEach member may vote once per report. Votes help YIF's members guide the fund's decisions, but they are advisory; final investment decisions are made by the fund's student leadership and mentor.\n\n[h]6. Comments and community rules[/h]\nWhen you post a comment, you are responsible for what you write. Do not post anything that:\n[ul][li]is abusive, harassing, hateful or threatening;[/li][li]shares someone else's personal information;[/li][li]is spam, advertising or a scam, including promotion of specific securities for personal gain;[/li][li]infringes someone else's copyright or other rights; or[/li][li]breaks any law.[/li][/ul]\nWe may remove comments, or suspend or delete accounts, that break these rules.\n\n[h]7. Content ownership[/h]\nReports, lessons, campaign texts, logos and other materials on this website belong to Youth Impact Fund or their student authors. You may read, share links to and quote small parts of them with credit to YIF. Do not copy or republish whole works, or use them commercially, without permission. You keep ownership of comments you post, but you allow YIF to display them on the website.\n\n[h]8. Third-party links and services[/h]\nThe website links to and uses services run by others, such as Google Drive, Change.org and Yahoo Finance. We are not responsible for their content or how they work, and their own terms apply.\n\n[h]9. Availability and liability[/h]\nWe run this website as students and provide it \"as is\". We try to keep it accurate and available, but we cannot promise that it will always work or be error-free. To the extent the law allows, YIF is not liable for losses resulting from your use of the website, including investment decisions based on its content.\n\n[h]10. Changes to these Terms[/h]\nWe may update these Terms. When we do, we will change the date at the top of this page. If you keep using the website after a change, you accept the updated Terms.\n\n[h]11. Governing law[/h]\nThese Terms are governed by the laws of the Republic of Korea.\n\n[h]12. Contact[/h]\nQuestions about these Terms can be sent to {{contact}}."
+    }
+  }
+}
