@@ -647,7 +647,9 @@ button.pill:hover, a.pill:hover { background: #DDE3EC; }
 .consent input:checked::after { content: ""; width: 10px; height: 6px; border: 2px solid #fff; border-top: 0; border-right: 0; transform: translateY(-1px) rotate(-45deg); }
 .consent input:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
 .consent a { color: var(--blue); text-decoration: underline; text-underline-offset: 2px; }
-.sign .consent { grid-column: 1 / -1; }
+.sign .consent { grid-column: 1 / -1; margin: 8px 0 6px; }
+.ext-btn { width: 100%; height: 46px; margin-top: 14px; background: var(--surface); color: var(--blue); font-weight: 600; box-shadow: 0 0 0 1.5px var(--blue) inset; }
+.ext-btn:hover { background: var(--blue-soft); }
 .consent.shake { animation: shake .35s; }
 @keyframes shake { 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
 .fine-note { font-size: 12px; color: var(--muted); text-align: center; margin-top: 10px; }
@@ -1292,8 +1294,9 @@ function petitionBox(c) {
         <label class="consent" id="signConsent"><input type="checkbox" id="sgAgree"><span>I agree to the <a href="#terms" target="_blank">Terms of Service</a> and <a href="#privacy" target="_blank">Privacy Policy</a>.</span></label>
         <div class="msg error" id="signMsg" hidden></div>
         <button class="btn btn-blue" id="signBtn">Sign this petition</button>
-        <p class="fine">Your email is only used to make sure each person signs once. It's never shown publicly.${c.url ? ` ${/change\.org/.test(c.url) ? "Also posted on" : "Campaign page:"} <a href="${esc(c.url)}" target="_blank" rel="noopener" style="text-decoration:underline">${esc(site)}</a>.` : ""}</p>
+        <p class="fine">Your email is only used to make sure each person signs once. It's never shown publicly.</p>
       </form>`}
+    ${c.url ? `<a class="btn ext-btn" href="${esc(c.url)}" target="_blank" rel="noopener">${/change\.org/.test(c.url) ? "View the petition on Change.org" : /spatial\.io/.test(c.url) ? "Visit the gallery on Spatial" : `Visit the original on ${esc(site)}`} ↗</a>` : ""}
     ${previewNote()}
   </section>`;
 }
