@@ -353,7 +353,7 @@ main { flex: 1; padding-block: 28px 96px; }
 .search svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--muted); }
 .lib { background: var(--surface); border-radius: var(--r); overflow: hidden; }
 .rrow { display: grid; grid-template-columns: 170px minmax(0, 1fr) 190px 64px; gap: 20px; align-items: center; padding: 16px 24px; border-top: 1px solid var(--line); text-align: left; width: 100%; transition: background .12s; }
-.rrow:first-child { border-top: 0; }
+.rrow:first-child, .lib-head + .rrow { border-top: 0; }
 .rrow:hover { background: #F7F9FC; }
 .rrow .tag { justify-self: start; align-self: center; }
 .rrow h3 { font-size: 15px; font-weight: 600; line-height: 1.4; letter-spacing: -0.01em; }
