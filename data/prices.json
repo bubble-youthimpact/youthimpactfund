@@ -1,88 +1,88 @@
 {
-  "updated": "2026-11-02T15:39:39Z",
+  "updated": "2026-11-02T22:42:00Z",
   "prices": {
     "GOOGL": {
-      "price": 285.43,
+      "price": 278.99,
       "currency": "USD",
-      "time": "2026-11-02T15:38:59Z",
+      "time": "2026-11-02T21:00:02Z",
       "previousClose": 316.8
     },
     "META": {
-      "price": 617.42,
+      "price": 606.73,
       "currency": "USD",
-      "time": "2026-11-02T15:38:55Z",
+      "time": "2026-11-02T21:00:01Z",
       "previousClose": 630.56
     },
     "MSFT": {
-      "price": 527.059,
+      "price": 507.12,
       "currency": "USD",
-      "time": "2026-11-02T15:39:00Z",
+      "time": "2026-11-02T21:00:01Z",
       "previousClose": 532.6
     },
     "BEPC": {
-      "price": 29.71,
+      "price": 30.54,
       "currency": "USD",
-      "time": "2026-11-02T15:38:56Z",
+      "time": "2026-11-02T21:00:02Z",
       "previousClose": 29.32
     },
     "C": {
-      "price": 123.945,
+      "price": 123.1,
       "currency": "USD",
-      "time": "2026-11-02T15:39:00Z",
+      "time": "2026-11-02T21:02:04Z",
       "previousClose": 121.04
     },
     "DIS": {
-      "price": 112.685,
+      "price": 113.11,
       "currency": "USD",
-      "time": "2026-11-02T15:38:59Z",
+      "time": "2026-11-02T21:01:02Z",
       "previousClose": 110.4
     },
     "GE": {
-      "price": 314.685,
+      "price": 315.78,
       "currency": "USD",
-      "time": "2026-11-02T15:39:02Z",
+      "time": "2026-11-02T21:00:02Z",
       "previousClose": 288.43
     },
     "GM": {
-      "price": 89.135,
+      "price": 89.94,
       "currency": "USD",
-      "time": "2026-11-02T15:39:00Z",
+      "time": "2026-11-02T21:00:03Z",
       "previousClose": 76.31
     },
     "TSM": {
-      "price": 409.71,
+      "price": 398.63,
       "currency": "USD",
-      "time": "2026-11-02T15:39:04Z",
+      "time": "2026-11-02T21:00:02Z",
       "previousClose": 424.37
     },
     "XPEV": {
-      "price": 9.73,
+      "price": 9.57,
       "currency": "USD",
-      "time": "2026-11-02T15:39:00Z",
+      "time": "2026-11-02T21:01:34Z",
       "previousClose": 9.12
     },
     "IONQ": {
-      "price": 30.515,
+      "price": 28.17,
       "currency": "USD",
-      "time": "2026-11-02T15:39:03Z",
+      "time": "2026-11-02T21:00:03Z",
       "previousClose": 30.76
     },
     "SPCX": {
-      "price": 140.995,
+      "price": 136.37,
       "currency": "USD",
-      "time": "2026-11-02T15:39:07Z",
+      "time": "2026-11-02T21:00:00Z",
       "previousClose": 146.9
     },
     "RKLB": {
-      "price": 54.705,
+      "price": 52.07,
       "currency": "USD",
-      "time": "2026-11-02T15:39:06Z",
+      "time": "2026-11-02T21:00:01Z",
       "previousClose": 53.82
     },
     "FSLR": {
-      "price": 184.96,
+      "price": 182.05,
       "currency": "USD",
-      "time": "2026-11-02T15:39:01Z",
+      "time": "2026-11-02T21:00:01Z",
       "previousClose": 168.15
     },
     "028260.KS": {
@@ -128,39 +128,39 @@
       "previousClose": 91200.0
     },
     "FLUT": {
-      "price": 85.85,
+      "price": 87.66,
       "currency": "USD",
-      "time": "2026-11-02T15:38:57Z",
+      "time": "2026-11-02T21:00:02Z",
       "previousClose": 80.18
     },
     "TKO": {
-      "price": 184.25,
+      "price": 185.14,
       "currency": "USD",
-      "time": "2026-11-02T15:39:00Z",
+      "time": "2026-11-02T21:00:02Z",
       "previousClose": 171.23
     },
     "NKE": {
-      "price": 39.2,
+      "price": 39.12,
       "currency": "USD",
-      "time": "2026-11-02T15:39:14Z",
+      "time": "2026-11-02T21:00:02Z",
       "previousClose": 37.91
     },
     "SRAD": {
-      "price": 12.83,
+      "price": 12.87,
       "currency": "USD",
-      "time": "2026-11-02T15:39:10Z",
+      "time": "2026-11-02T21:00:01Z",
       "previousClose": 12.6
     },
     "GOOG": {
-      "price": 283.84,
+      "price": 278.04,
       "currency": "USD",
-      "time": "2026-11-02T15:39:17Z",
+      "time": "2026-11-02T21:00:01Z",
       "previousClose": 314.19
     },
     "TSLA": {
-      "price": 409.77,
+      "price": 403.82,
       "currency": "USD",
-      "time": "2026-11-02T15:39:17Z",
+      "time": "2026-11-02T21:00:01Z",
       "previousClose": 391.62
     },
     "007660.KS": {
@@ -212,9 +212,9 @@
       "previousClose": 76300.0
     },
     "NVDA": {
-      "price": 208.79,
+      "price": 202.06,
       "currency": "USD",
-      "time": "2026-11-02T15:39:23Z",
+      "time": "2026-11-02T21:00:01Z",
       "previousClose": 216.0
     },
     "329180.KS": {
@@ -236,75 +236,75 @@
       "previousClose": 53000.0
     },
     "NFLX": {
-      "price": 61.985,
+      "price": 62.34,
       "currency": "USD",
-      "time": "2026-11-02T15:39:26Z",
+      "time": "2026-11-02T21:00:00Z",
       "previousClose": 63.9
     },
     "SPOT": {
-      "price": 595.078,
+      "price": 594.04,
       "currency": "USD",
-      "time": "2026-11-02T15:39:06Z",
+      "time": "2026-11-02T21:00:02Z",
       "previousClose": 572.36
     },
     "SGOV": {
-      "price": 100.425,
+      "price": 100.43,
       "currency": "USD",
-      "time": "2026-11-02T15:39:25Z",
+      "time": "2026-11-02T21:00:14Z",
       "previousClose": 100.67
     },
     "GLD": {
-      "price": 362.3,
+      "price": 361.65,
       "currency": "USD",
-      "time": "2026-11-02T15:39:25Z",
+      "time": "2026-11-02T21:00:00Z",
       "previousClose": 367.82
     },
     "SLV": {
-      "price": 45.905,
+      "price": 45.57,
       "currency": "USD",
-      "time": "2026-11-02T15:39:28Z",
+      "time": "2026-11-02T21:00:00Z",
       "previousClose": 48.66
     },
     "DBC": {
-      "price": 32.79,
+      "price": 32.46,
       "currency": "USD",
-      "time": "2026-11-02T15:38:48Z",
+      "time": "2026-11-02T21:00:00Z",
       "previousClose": 33.78
     },
     "GLDM": {
-      "price": 78.19,
+      "price": 78.03,
       "currency": "USD",
-      "time": "2026-11-02T15:39:28Z",
+      "time": "2026-11-02T21:00:00Z",
       "previousClose": 79.38
     },
     "KBWB": {
-      "price": 89.64,
+      "price": 89.6,
       "currency": "USD",
-      "time": "2026-11-02T15:39:18Z",
+      "time": "2026-11-02T21:00:01Z",
       "previousClose": 88.2
     },
     "LULU": {
-      "price": 109.0,
+      "price": 107.83,
       "currency": "USD",
-      "time": "2026-11-02T15:39:24Z",
+      "time": "2026-11-02T21:00:02Z",
       "previousClose": 102.91
     },
     "KXI": {
-      "price": 72.67,
+      "price": 73.15,
       "currency": "USD",
-      "time": "2026-11-02T15:20:45Z",
+      "time": "2026-11-02T21:00:00Z",
       "previousClose": 71.35
     },
     "XPH": {
-      "price": 63.96,
+      "price": 63.61,
       "currency": "USD",
-      "time": "2026-11-02T15:34:31Z",
+      "time": "2026-11-02T21:00:00Z",
       "previousClose": 62.9
     },
     "IFRA": {
-      "price": 58.76,
+      "price": 58.64,
       "currency": "USD",
-      "time": "2026-11-02T15:39:12Z",
+      "time": "2026-11-02T21:00:00Z",
       "previousClose": 56.87
     },
     "373220.KS": {
@@ -332,9 +332,9 @@
       "previousClose": 13720.0
     },
     "KRW=X": {
-      "price": 1344.19,
+      "price": 1345.75,
       "currency": "KRW",
-      "time": "2026-11-02T15:33:57Z",
+      "time": "2026-11-02T22:41:58Z",
       "previousClose": 1324.77
     }
   }
