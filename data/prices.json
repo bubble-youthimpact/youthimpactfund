@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T22:04:54Z",
+  "updated": "2026-11-20T07:04:01Z",
   "prices": {
     "GOOGL": {
       "price": 272.66,
@@ -86,46 +86,46 @@
       "previousClose": 172.3
     },
     "028260.KS": {
-      "price": 272500.0,
+      "price": 258000.0,
       "currency": "KRW",
-      "time": "2026-11-19T07:30:27Z",
-      "previousClose": 284500.0
+      "time": "2026-11-20T06:30:30Z",
+      "previousClose": 285000.0
     },
     "000720.KS": {
-      "price": 79500.0,
+      "price": 72700.0,
       "currency": "KRW",
-      "time": "2026-11-19T07:30:24Z",
-      "previousClose": 83600.0
+      "time": "2026-11-20T06:30:28Z",
+      "previousClose": 83800.0
     },
     "047040.KS": {
-      "price": 11320.0,
+      "price": 10460.0,
       "currency": "KRW",
-      "time": "2026-11-19T07:30:28Z",
-      "previousClose": 11410.0
+      "time": "2026-11-20T06:30:02Z",
+      "previousClose": 11560.0
     },
     "375500.KS": {
-      "price": 50500.0,
+      "price": 47000.0,
       "currency": "KRW",
-      "time": "2026-11-19T07:30:30Z",
-      "previousClose": 54100.0
+      "time": "2026-11-20T06:30:27Z",
+      "previousClose": 54000.0
     },
     "0080G0.KS": {
-      "price": 6395.0,
+      "price": 6100.0,
       "currency": "KRW",
-      "time": "2026-11-19T07:30:02Z",
-      "previousClose": 6750.0
+      "time": "2026-11-20T06:30:11Z",
+      "previousClose": 6525.0
     },
     "294870.KS": {
-      "price": 24900.0,
+      "price": 24200.0,
       "currency": "KRW",
-      "time": "2026-11-19T07:30:30Z",
-      "previousClose": 23850.0
+      "time": "2026-11-20T06:30:02Z",
+      "previousClose": 24200.0
     },
     "000880.KS": {
-      "price": 70200.0,
+      "price": 66000.0,
       "currency": "KRW",
-      "time": "2026-11-19T07:30:23Z",
-      "previousClose": 76900.0
+      "time": "2026-11-20T06:30:22Z",
+      "previousClose": 75500.0
     },
     "FLUT": {
       "price": 68.42,
@@ -164,52 +164,52 @@
       "previousClose": 397.45
     },
     "007660.KS": {
-      "price": 83000.0,
+      "price": 69600.0,
       "currency": "KRW",
-      "time": "2026-11-19T07:30:25Z",
-      "previousClose": 84100.0
+      "time": "2026-11-20T06:30:16Z",
+      "previousClose": 88500.0
     },
     "058470.KQ": {
-      "price": 53400.0,
+      "price": 45350.0,
       "currency": "KRW",
-      "time": "2026-11-19T07:30:05Z",
-      "previousClose": 52500.0
+      "time": "2026-11-20T06:30:13Z",
+      "previousClose": 51600.0
     },
     "084370.KQ": {
-      "price": 80700.0,
+      "price": 71000.0,
       "currency": "KRW",
-      "time": "2026-11-19T07:30:11Z",
-      "previousClose": 79800.0
+      "time": "2026-11-20T06:30:12Z",
+      "previousClose": 80000.0
     },
     "240810.KQ": {
-      "price": 76700.0,
+      "price": 65600.0,
       "currency": "KRW",
-      "time": "2026-11-19T07:30:29Z",
-      "previousClose": 79200.0
+      "time": "2026-11-20T06:30:15Z",
+      "previousClose": 77700.0
     },
     "039030.KQ": {
-      "price": 335000.0,
+      "price": 288000.0,
       "currency": "KRW",
-      "time": "2026-11-19T07:30:26Z",
-      "previousClose": 367500.0
+      "time": "2026-11-20T06:30:08Z",
+      "previousClose": 357500.0
     },
     "005930.KS": {
-      "price": 196900.0,
+      "price": 183100.0,
       "currency": "KRW",
-      "time": "2026-11-19T07:30:26Z",
-      "previousClose": 208000.0
+      "time": "2026-11-20T06:30:05Z",
+      "previousClose": 206000.0
     },
     "000660.KS": {
-      "price": 1183000.0,
+      "price": 1113000.0,
       "currency": "KRW",
-      "time": "2026-11-19T07:30:07Z",
-      "previousClose": 1254000.0
+      "time": "2026-11-20T06:30:16Z",
+      "previousClose": 1216000.0
     },
     "016360.KS": {
-      "price": 72200.0,
+      "price": 69200.0,
       "currency": "KRW",
-      "time": "2026-11-19T07:30:19Z",
-      "previousClose": 71400.0
+      "time": "2026-11-20T06:30:02Z",
+      "previousClose": 73900.0
     },
     "NVDA": {
       "price": 145.98,
@@ -218,22 +218,22 @@
       "previousClose": 166.19
     },
     "329180.KS": {
-      "price": 261500.0,
+      "price": 247000.0,
       "currency": "KRW",
-      "time": "2026-11-19T07:30:29Z",
-      "previousClose": 267500.0
+      "time": "2026-11-20T06:30:14Z",
+      "previousClose": 271000.0
     },
     "214450.KQ": {
-      "price": 278000.0,
+      "price": 275000.0,
       "currency": "KRW",
-      "time": "2026-11-19T07:30:16Z",
-      "previousClose": 247500.0
+      "time": "2026-11-20T06:30:27Z",
+      "previousClose": 251000.0
     },
     "042660.KS": {
-      "price": 45000.0,
+      "price": 42100.0,
       "currency": "KRW",
-      "time": "2026-11-19T07:30:05Z",
-      "previousClose": 48050.0
+      "time": "2026-11-20T06:30:16Z",
+      "previousClose": 48350.0
     },
     "NFLX": {
       "price": 58.46,
@@ -308,34 +308,34 @@
       "previousClose": 58.01
     },
     "373220.KS": {
-      "price": 302000.0,
+      "price": 299500.0,
       "currency": "KRW",
-      "time": "2026-11-19T07:30:22Z",
-      "previousClose": 329500.0
+      "time": "2026-11-20T06:30:11Z",
+      "previousClose": 324500.0
     },
     "03473K.KS": {
-      "price": 371000.0,
+      "price": 345500.0,
       "currency": "KRW",
-      "time": "2026-11-19T07:30:30Z",
-      "previousClose": 373500.0
+      "time": "2026-11-20T06:30:30Z",
+      "previousClose": 388500.0
     },
     "001740.KS": {
-      "price": 5300.0,
+      "price": 5020.0,
       "currency": "KRW",
-      "time": "2026-11-19T07:30:30Z",
-      "previousClose": 5690.0
+      "time": "2026-11-20T06:30:03Z",
+      "previousClose": 5610.0
     },
     "008060.KS": {
-      "price": 13090.0,
+      "price": 12340.0,
       "currency": "KRW",
-      "time": "2026-11-19T07:30:22Z",
-      "previousClose": 14010.0
+      "time": "2026-11-20T06:30:22Z",
+      "previousClose": 14060.0
     },
     "KRW=X": {
-      "price": 1333.9,
+      "price": 1335.2,
       "currency": "KRW",
-      "time": "2026-11-19T22:04:44Z",
-      "previousClose": 1333.78
+      "time": "2026-11-20T07:03:56Z",
+      "previousClose": 1333.25
     }
   }
 }
