@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T08:06:01Z",
+  "updated": "2026-11-26T22:55:12Z",
   "prices": {
     "GOOGL": {
       "price": 273.1,
@@ -332,9 +332,9 @@
       "previousClose": 13090.0
     },
     "KRW=X": {
-      "price": 1343.94,
+      "price": 1343.06,
       "currency": "KRW",
-      "time": "2026-11-26T08:05:57Z",
+      "time": "2026-11-26T22:55:00Z",
       "previousClose": 1334.79
     }
   }
